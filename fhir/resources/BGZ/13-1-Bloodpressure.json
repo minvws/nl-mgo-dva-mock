@@ -1,0 +1,185 @@
+{
+    "resourceType": "Bundle",
+    "id": "19a5f79d-b5b6-42f0-8935-3d14bca25c31",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:58:43.760+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation/$lastn?code=http%3A%2F%2Floinc.org%7C85354-9&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/a73d6722-5960-4378-afb7-c2a328986745",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "a73d6722-5960-4378-afb7-c2a328986745",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 2ceb032c-e3e4-11eb-1491-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief                              \n          <span style=\"display: block;\">Uitvoerende: G.Z.M. de Wit                                    \n            <span style=\"display: block;\">Zorgverlenerrol: Orthopedie</span></span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>08:53:00, 7 februari 2013</td></tr><tr><th>Methode</th><td><span title=\"non-invasief (kwalificatiewaarde) (22762002 - SNOMED CT)\">non-invasief (kwalificatiewaarde)</span></td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van linker bovenarm (lichaamsstructuur) (368208006 - SNOMED CT)\">structuur van linker bovenarm (lichaamsstructuur)</span></td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span></td><td/></tr><tr><td><span title=\"Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel (8480-6 - LOINC)\">Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel (8462-4 - LOINC)\">Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel</span></td><td>56 mmHg</td></tr><tr><td><span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span></td><td><span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span></td></tr><tr><td><span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span></td><td><span title=\"Zittende positie (33586001 - SNOMED CT)\">Zittende positie</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2ceb032c-e3e4-11eb-1491-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85354-9",
+                            "display": "Blood pressure panel with all children optional"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "effectiveDateTime": "2013-02-07T08:53:00+02:00",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/a1659ce5-8161-477a-9b69-7a3fdb3ca9e5",
+                                    "display": "Orthopedie"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/2f13adfe-3403-448b-b2f8-c64bf8317919",
+                        "display": "G.Z.M. de Wit"
+                    }
+                ],
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "368208006",
+                            "display": "structuur van linker bovenarm (lichaamsstructuur)"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "22762002",
+                            "display": "non-invasief (kwalificatiewaarde)"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 108,
+                            "unit": "mmHg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 56,
+                            "unit": "mmHg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8358-4",
+                                    "display": "Blood pressure device Cuff size"
+                                }
+                            ]
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                    "code": "L",
+                                    "display": "Groot"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8361-8",
+                                    "display": "Body position with respect to gravity"
+                                }
+                            ]
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "33586001",
+                                    "display": "Zittende positie"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

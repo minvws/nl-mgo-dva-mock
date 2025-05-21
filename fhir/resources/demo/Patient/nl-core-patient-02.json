@@ -1,0 +1,172 @@
+{
+    "resourceType": "Patient",
+    "id": "nl-core-patient-02",
+    "meta": {
+        "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 999911284 (BSN), Id 16906e4d-8fdf-11ec-7394-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Paul XXX_Mesker (Paul), Man, 1 augustus 1964, <span title=\"Domestic partner (T - v3/MaritalStatus)\">Domestic partner</span></div><div><a href=\"tel:+31611234567\">+31611234567</a> (Tel Privé), <a href=\"mailto:XXX_Mesker@hotmail.com\">XXX_Mesker@hotmail.com</a> (E-mail Privé)</div><div>Knolweg 1002, 9999ZZ Stitswerd, NLD (officieel Privé (hoofd))</div></div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+            "value": "999911284"
+        },
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "16906e4d-8fdf-11ec-7394-020000000000"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                    "valueCode": "NL4"
+                }
+            ],
+            "text": "Paul XXX_Mesker",
+            "family": "XXX_Mesker",
+            "_family": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                        "valueString": "XXX_Mesker"
+                    }
+                ]
+            },
+            "given": [
+                "Paul"
+            ],
+            "_given": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                            "valueCode": "CL"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "extension": [
+                {
+                    "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                "code": "LL",
+                                "display": "Vast telefoonnummer"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "system": "phone",
+            "value": "+31611234567",
+            "use": "home"
+        },
+        {
+            "system": "email",
+            "value": "XXX_Mesker@hotmail.com",
+            "use": "home"
+        }
+    ],
+    "gender": "male",
+    "_gender": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                            "code": "M",
+                            "display": "Man"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "birthDate": "1964-08-01",
+    "deceasedBoolean": false,
+    "address": [
+        {
+            "extension": [
+                {
+                    "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/v3/AddressUse",
+                                "code": "HP",
+                                "display": "Officieel adres"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+                    "valueBoolean": true
+                }
+            ],
+            "use": "home",
+            "line": [
+                "Knolweg 1002"
+            ],
+            "_line": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                            "valueString": "Knolweg"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                            "valueString": "1002"
+                        }
+                    ]
+                }
+            ],
+            "city": "Stitswerd",
+            "postalCode": "9999ZZ",
+            "country": "NLD",
+            "_country": {
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                    "code": "6030",
+                                    "display": "Nederland"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/v3/MaritalStatus",
+                "code": "T",
+                "display": "Domestic partner"
+            }
+        ]
+    },
+    "multipleBirthBoolean": false
+}

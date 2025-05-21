@@ -1,0 +1,89 @@
+{
+    "resourceType": "Bundle",
+    "id": "62064581-f9fd-40b8-b81d-e19d28accfda",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:58:18.274+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Immunization?patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949&status=completed"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Immunization/6ea04c1a-4d22-444e-b64c-dc51546fb031",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "6ea04c1a-4d22-444e-b64c-dc51546fb031",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan XXX_Helleman. Id: 34c92c2c-e3e4-11eb-7116-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Guatemala.</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (5 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>van Partners                                          \n              <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "34c92c2c-e3e4-11eb-7116-020000000000"
+                    }
+                ],
+                "status": "completed",
+                "notGiven": false,
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "J06BB11",
+                            "display": "hepatitis A immunoglobulin"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "date": "1999-03-05",
+                "primarySource": false,
+                "practitioner": [
+                    {
+                        "actor": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/9f41a6fb-270b-4adf-accb-51efa1c3cd5e",
+                                        "display": "Huisartsen, niet nader gespecificeerd"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ab7f1bf0-6664-4322-bfa3-7d0ef76c1e1c",
+                            "display": "van Partners"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Bezoek aan Guatemala."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

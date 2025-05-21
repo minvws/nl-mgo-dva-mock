@@ -1,0 +1,75 @@
+{
+    "resourceType": "ImmunizationRecommendation",
+    "id": "zib-vaccinationrecommendation-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatieschema. Patiënt: Johan XXX_Helleman. Id: d6eb3a71-0bb4-403f-be05-b137386779d4 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Gemaakt: 2019. Status: <span title=\"Due (due - immunization-recommendation-status)\">Due</span><div><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></div></th><td><div>2018 - <span title=\"Recommended (recommended - immunization-recommendation-date-criterion)\">Recommended</span></div></td></tr><tr><th>Eerdere vaccinatie</th><td>hepatitis A immunoglobulin</td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                        "code": "385644000",
+                        "display": "Aangevraagd"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "d6eb3a71-0bb4-403f-be05-b137386779d4"
+        }
+    ],
+    "patient": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "recommendation": [
+        {
+            "date": "2007",
+            "vaccineCode": {
+                "coding": [
+                    {
+                        "system": "http://www.whocc.no/atc",
+                        "code": "J06BB02",
+                        "display": "tetanus immunoglobulin"
+                    }
+                ]
+            },
+            "forecastStatus": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/immunization-recommendation-status",
+                        "code": "due",
+                        "display": "Due"
+                    }
+                ]
+            },
+            "protocol": {
+                "doseSequence": "1432",
+                "description": "Pellentesque vel metus et risus gravida maximus vitae vitae dolor. Morbi finibus varius orci ac sollicitudin.",
+                "authority": {
+                    "reference": "Organization/nl-core-organization-03",
+                    "display": "Test Medisch Centrum"
+                },
+                "series": "DF148-A"
+            },
+            "supportingImmunization": [
+                {
+                    "reference": "Immunization/zib-vaccination-01",
+                    "display": "hepatitis A immunoglobulin"
+                }
+            ]
+        }
+    ]
+}

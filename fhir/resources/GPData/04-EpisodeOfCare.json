@@ -1,0 +1,568 @@
+{
+    "resourceType": "Bundle",
+    "id": "9e6f9465-3259-4947-ac0c-fdd6bf1c812f",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:33.867+00:00"
+    },
+    "type": "searchset",
+    "total": 7,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/EpisodeOfCare?patient=Patient%2Font-ver-gpdata-patient-kwalificatie1"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-r2101",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#1c1e6eade15c625b"
+                        }
+                    ],
+                    "versionId": "3",
+                    "lastUpdated": "2024-06-06T12:21:44.168+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b9b4c4fc-041c-11ec-4998-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Keelpijn</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2024-01-08</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Keelpijn</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2024-01-08"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2024-05-27"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Keelpijn"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b9b4c4fc-041c-11ec-4998-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2024-01-08"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-l8601",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#c217546b083d1e75"
+                        }
+                    ],
+                    "versionId": "3",
+                    "lastUpdated": "2024-06-06T12:21:50.003+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b99e2fbc-041c-11ec-1440-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Rughernia</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2024-02-07</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>HNP (thoracaal/lumbaal)</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2024-02-07"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2024-05-27"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Rughernia"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b99e2fbc-041c-11ec-1440-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-l8601",
+                            "display": "HNP (thoracaal/lumbaal)"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2024-02-07"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-s7401",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-s7401",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#a055a6edc3df8f25"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:41.969+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: ba0555fc-041c-11ec-1302-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Tinea Pedis</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2023-12-19</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Tinea Pedis</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2023-12-19"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2023-12-19"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Tinea Pedis"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "ba0555fc-041c-11ec-1302-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-s7401",
+                            "display": "Tinea Pedis"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2023-12-19"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k70",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-k70",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#e82cb04fe646863c"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:47.264+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b96e1f0c-041c-11ec-1716-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Endocarditis profylaxe ivm mitralis insufficientie</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2023-08-11</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Dokter Bernard, Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Infectieziekte Hartvaatstelsel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Endocarditis profylaxe ivm mitralis insufficientie"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b96e1f0c-041c-11ec-1716-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-k70",
+                            "display": "Infectieziekte Hartvaatstelsel"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2023-08-11"
+                },
+                "careManager": {
+                    "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                    "display": "Dokter Bernard"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r96",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-r96",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#113d22c9d2227240"
+                        }
+                    ],
+                    "versionId": "3",
+                    "lastUpdated": "2024-06-06T12:22:21.265+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b9ca96ec-041c-11ec-1362-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Astma</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2023-11-19</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Dokter Bernard, Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Astma</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2023-12-29"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2023-12-29"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Astma"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b9ca96ec-041c-11ec-1362-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-r96",
+                            "display": "Astma"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2023-11-19"
+                },
+                "careManager": {
+                    "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                    "display": "Dokter Bernard"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-d02",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-d02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#5b4bd871130533fd"
+                        }
+                    ],
+                    "versionId": "3",
+                    "lastUpdated": "2024-06-06T12:22:14.224+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b95762bc-041c-11ec-8388-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Maagpijn</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>2024-02-27 - 2024-03-03</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Dokter Bernard, Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Maagpijn</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2024-03-03"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2024-03-03"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Maagpijn"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b95762bc-041c-11ec-8388-020000000000"
+                    }
+                ],
+                "status": "finished",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-d02",
+                            "display": "Maagpijn"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2024-02-27",
+                    "end": "2024-03-03"
+                },
+                "careManager": {
+                    "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                    "display": "Dokter Bernard"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "ont-ver-gpdata-episodeofcare-icpc-k78",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#1b18a83c2dfe13a0"
+                        }
+                    ],
+                    "versionId": "3",
+                    "lastUpdated": "2024-06-06T12:22:12.123+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgepisode. Patiënt: Jacqueline XXX_Cevat. Id: b985779c-041c-11ec-1939-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"aandoening (64572001 - SNOMED CT)\">aandoening</span>\n              <div>Hartkloppingen -paroxysmaal boezemfibrilleren</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>Vanaf 2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Zorgmanager</th>\n            <td>Aesculaap</td>\n          </tr>\n          <tr>\n            <th>Diagnose</th>\n            <td>Boezemfibrilleren/ -fladderen</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+                        "valueDateTime": "2023-05-03"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+                        "valueDateTime": "2023-05-03"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+                        "valueString": "Hartkloppingen -paroxysmaal boezemfibrilleren"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "b985779c-041c-11ec-1939-020000000000"
+                    }
+                ],
+                "status": "active",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "64572001",
+                                "display": "aandoening"
+                            }
+                        ]
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ont-ver-gpdata-condition-icpc-k78",
+                            "display": "Boezemfibrilleren/ -fladderen"
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
+                    "display": "Aesculaap"
+                },
+                "period": {
+                    "start": "2023-05-03"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

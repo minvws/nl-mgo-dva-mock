@@ -1,0 +1,205 @@
+{
+    "resourceType": "Bundle",
+    "id": "6e036dc5-9ba4-46ab-bafe-9d45caa127aa",
+    "meta": {
+        "lastUpdated": "2024-05-02T13:05:45.441+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/DocumentManifest?patient\u003dPatient%2Faae7b5aa-d796-4fba-b4d3-852d9043ee66\u0026status\u003dcurrent"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DocumentManifest/4fdcefc9-b41a-4e8d-9bbc-d334eb2b0e74",
+            "resource": {
+                "resourceType": "DocumentManifest",
+                "id": "4fdcefc9-b41a-4e8d-9bbc-d334eb2b0e74",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6fc57697c4867cea"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.DocumentManifest"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ctable\u003e\u003ccaption\u003eDocumentManifest. Subject: Eva XXX_Schulte. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.1787205428.8024.1526514975.220899 (urn:ietf:rfc:3986), Id: 789987 (http://xis.org/fhir/NamingSystem/DocumentManifestID), Status: actueel                              \n          \u003cspan style\u003d\"display: block;\"\u003eAuteur: B. Kneder\u003c/span\u003e\u003c/caption\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eType\u003c/th\u003e\u003ctd\u003e\u003cspan title\u003d\"Discharge summary (18842-5 - LOINC)\"\u003eDischarge summary\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eGemaakt\u003c/th\u003e\u003ctd\u003e2022-07-13\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eBron\u003c/th\u003e\u003ctd\u003ehttp://xis.org/example\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003eAllergy and immunology Discharge summary\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "b11e5265-a8e2-4354-a12e-5e547482d12f",
+                        "name": [
+                            {
+                                "family": "Kneder",
+                                "given": [
+                                    "B."
+                                ],
+                                "_given": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                                "valueCode": "IN"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:68669bf5-88a1-4bc2-938a-5a992aae14c0"
+                },
+                "identifier": [
+                    {
+                        "system": "http://xis.org/fhir/NamingSystem/DocumentManifestID",
+                        "value": "789987"
+                    }
+                ],
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18842-5",
+                            "display": "Discharge summary"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+                    "display": "Eva XXX_Schulte"
+                },
+                "created": "2022-07-13",
+                "author": [
+                    {
+                        "reference": "#b11e5265-a8e2-4354-a12e-5e547482d12f",
+                        "display": "B. Kneder"
+                    }
+                ],
+                "source": "http://xis.org/example",
+                "content": [
+                    {
+                        "pReference": {
+                            "reference": "DocumentReference/4c3da74f-c4e3-4444-9198-44df88872424",
+                            "display": "Allergy and immunology Discharge summary"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DocumentManifest/b5a4b0de-ad6d-416c-b374-f06c7ec7988d",
+            "resource": {
+                "resourceType": "DocumentManifest",
+                "id": "b5a4b0de-ad6d-416c-b374-f06c7ec7988d",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6fc57697c4867cea"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.DocumentManifest"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ctable\u003e\u003ccaption\u003eDocumentManifest. Subject: Eva XXX_Schulte. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.9857205428.8024.1526514975.440899 (urn:ietf:rfc:3986), Id: 7895463 (http://xis.org/fhir/NamingSystem/DocumentManifestID), Status: actueel                              \n          \u003cspan style\u003d\"display: block;\"\u003eAuteur: B. Kneder\u003c/span\u003e\u003c/caption\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eType\u003c/th\u003e\u003ctd\u003e\u003cspan title\u003d\"Consultverslag [bevinding] in {instelling} d.m.v. radiologie (document) (73575-3 - LOINC)\"\u003eConsultverslag [bevinding] in {instelling} d.m.v. radiologie (document)\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eGemaakt\u003c/th\u003e\u003ctd\u003e2023-06-03T00:00:00+01:00\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eBron\u003c/th\u003e\u003ctd\u003ehttp://xis.org/example\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003eKopie van ontslagbrief\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003eVerwijsbrief Arts\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "0feede07-6b16-4e10-a02d-0cd9d1f28cd8",
+                        "name": [
+                            {
+                                "family": "Kneder",
+                                "given": [
+                                    "B."
+                                ],
+                                "_given": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                                "valueCode": "IN"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:762e901c-e6b5-404a-80e1-09464dd68cd1"
+                },
+                "identifier": [
+                    {
+                        "system": "http://xis.org/fhir/NamingSystem/DocumentManifestID",
+                        "value": "7895463"
+                    }
+                ],
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "73575-3",
+                            "display": "Consultverslag [bevinding] in {instelling} d.m.v. radiologie (document)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+                    "display": "Eva XXX_Schulte"
+                },
+                "created": "2023-06-03T00:00:00+01:00",
+                "author": [
+                    {
+                        "reference": "#0feede07-6b16-4e10-a02d-0cd9d1f28cd8",
+                        "display": "B. Kneder"
+                    }
+                ],
+                "source": "http://xis.org/example",
+                "content": [
+                    {
+                        "pReference": {
+                            "reference": "DocumentReference/cd4679df-a7e6-43b7-ab12-b5570d7dd996",
+                            "display": "Kopie van ontslagbrief"
+                        }
+                    },
+                    {
+                        "pReference": {
+                            "reference": "DocumentReference/ba0837a5-59f9-4e2a-8fe6-f071270f79ba",
+                            "display": "Verwijsbrief Arts"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

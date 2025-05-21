@@ -1,0 +1,177 @@
+{
+    "resourceType": "Bundle",
+    "id": "5925645c-ad8a-4601-92ea-66c3edb061e8",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:51:17.948+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/MedicationDispense?_include=MedicationDispense%3Amedication&category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationDispense/94611f8e-588c-406e-b9d7-ede20a2d996a",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "94611f8e-588c-406e-b9d7-ede20a2d996a",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan XXX_Helleman. Id: 13610554 (http://example-implementer.com/fhir/MedicationRequest-ID), Categorie:                               \n          <span title=\"instrueren door zorgverlener over toediening van medicatie (verrichting) (422037009 - SNOMED CT)\">instrueren door zorgverlener over toediening van medicatie (verrichting)</span>, Status: voltooid                              \n          <span style=\"display: block;\">Uitvoerende: Apotheek de Gulle Gaper</span></caption><tbody><tr><th>Gemaakt</th><td>12:25:00, 1 juni 2018</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td><ul><li>Vanaf 00:00:00, 27 juni 2018</li><li>30 dag</li></ul></td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 1-6-2018, gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal</div><div>Timing:                                                 \n                <div>30 day, eenmalig per dag</div></div><div>Zo nodig:                                                 \n                <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg:                                                 \n                <span title=\"Rectaal (12 - G-Standaard thesaurus subtabel 0007)\">Rectaal</span></div><div>Dosering: 1 stuk</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement-AuthoredOn",
+                        "valueDateTime": "2018-06-01T12:25:00+02:00"
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2018-06-27T00:00:00+02:00"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+                        "valueDuration": {
+                            "value": 30,
+                            "unit": "dag",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "d"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://example-implementer.com/fhir/MedicationRequest-ID",
+                        "value": "13610554"
+                    }
+                ],
+                "status": "completed",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "422037009",
+                            "display": "instrueren door zorgverlener over toediening van medicatie (verrichting)"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/a380c7ac-09b5-48d1-a22b-0e681186768a",
+                    "display": "PRIMPERAN ZETPIL 20MG"
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "Organization/67a24a22-c638-4c43-a55f-3a933d3e499f",
+                            "display": "Apotheek de Gulle Gaper"
+                        }
+                    }
+                ],
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "Vanaf 1-6-2018, gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal",
+                        "timing": {
+                            "repeat": {
+                                "boundsDuration": {
+                                    "value": 30,
+                                    "unit": "day",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "d"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1137",
+                                    "display": "zo nodig"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "12",
+                                    "display": "Rectaal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Medication/a380c7ac-09b5-48d1-a22b-0e681186768a",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "a380c7ac-09b5-48d1-a22b-0e681186768a",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><th>Code</th><td><span title=\"PRIMPERAN ZETPIL 20MG (229709 - G-Standaard HPK)\">PRIMPERAN ZETPIL 20MG</span></td></tr></tbody></table></div>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.7",
+                            "code": "229709",
+                            "display": "PRIMPERAN ZETPIL 20MG"
+                        }
+                    ],
+                    "text": "PRIMPERAN ZETPIL 20MG"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

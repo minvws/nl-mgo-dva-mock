@@ -1,0 +1,53 @@
+{
+    "resourceType": "Device",
+    "id": "zib-medicaldeviceproduct-01",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan XXX_Helleman. Id: 1148130801, 1b95ac69-8fdf-11ec-1906-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tfoot><tr><td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Type</th><td><span title=\"Knee joint prosthesis, device (physical object) (109228008 - SNOMED CT)\">Knee joint prosthesis, device (physical object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td></tr><tr><th>Verloopdatum</th><td>31 januari 2016</td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/identifier-type",
+                        "code": "SNO"
+                    }
+                ]
+            },
+            "value": "1148130801"
+        },
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1b95ac69-8fdf-11ec-1906-020000000000"
+        }
+    ],
+    "udi": {
+        "deviceIdentifier": "05050474530799",
+        "carrierHRF": "{01}05050474530799{17}160131{21}1148130801"
+    },
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "109228008",
+                "display": "Knee joint prosthesis, device (physical object)"
+            }
+        ]
+    },
+    "expirationDate": "2016-01-31",
+    "patient": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "note": [
+        {
+            "text": "Implantant, Gen 2 Tibia Insert 5/6-9mm"
+        }
+    ]
+}

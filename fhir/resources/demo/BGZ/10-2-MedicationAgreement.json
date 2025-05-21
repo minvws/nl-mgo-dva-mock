@@ -1,0 +1,185 @@
+{
+    "resourceType": "Bundle",
+    "id": "ca8d7e41-0a06-43a7-a9c6-b68221099eb6",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:51:04.472+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/MedicationRequest?_include=MedicationRequest%3Amedication&category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationRequest/a257c163-5250-4589-9e0d-dfecf807ce0c",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "a257c163-5250-4589-9e0d-dfecf807ce0c",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Johan XXX_Helleman. Id: 875452574 (http://example-implementer.com/fhir/MedicationRequest-ID), Categorie:                               \n          <span title=\"Voorschrijven (verrichting) (16076005 - SNOMED CT)\">Voorschrijven (verrichting)</span>,                               \n          <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Peter van Pulver                                    \n            <span style=\"display: block;\">Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</span></span></caption><tbody><tr><th>Medicatie</th><td>Metoclopramide zetpil 10mg</td></tr><tr><th>Gemaakt</th><td>16:30:00, 14 augustus 2016</td></tr><tr><th>Reden</th><td><span title=\"medicatie gestart (situatie) (266709005 - SNOMED CT)\">medicatie gestart (situatie)</span></td></tr><tr><th>Gebruiksduur</th><td><ul><li>30 day</li><li>Vanaf 15 augustus 2016</li></ul></td></tr><tr><th>Doseerinstructie</th><td><div>Tekst: Gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal</div><div>Timing:                                                 \n                <div>eenmalig per dag</div></div><div>Zo nodig:                                                 \n                <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg:                                                 \n                <span title=\"Rectaal (12 - G-Standaard thesaurus subtabel 0007)\">Rectaal</span></div><div>Dosering: 1 stuk</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+                        "valueDuration": {
+                            "value": 30,
+                            "unit": "day",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "d"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2016-08-15"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://example-implementer.com/fhir/MedicationRequest-ID",
+                        "value": "875452574"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Voorschrijven (verrichting)"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/c81da0f1-c240-42e2-a090-c9d9f09ab9a3",
+                    "display": "Metoclopramide zetpil 10mg"
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "authoredOn": "2016-08-14T16:30:00+02:00",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/1a249336-3fe7-488f-bc88-44bc8e1ad2aa",
+                                    "display": "Huisartsen, niet nader gespecificeerd"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/205a1d3c-f453-4d5b-94e9-47731b227507",
+                        "display": "Peter van Pulver"
+                    }
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "266709005",
+                                "display": "medicatie gestart (situatie)"
+                            }
+                        ]
+                    }
+                ],
+                "dosageInstruction": [
+                    {
+                        "text": "Gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1137",
+                                    "display": "zo nodig"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "12",
+                                    "display": "Rectaal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Medication/c81da0f1-c240-42e2-a090-c9d9f09ab9a3",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "c81da0f1-c240-42e2-a090-c9d9f09ab9a3",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><th>Code</th><td><span title=\"Metoclopramide zetpil 10mg (6920 - G-Standaard PRK)\">Metoclopramide zetpil 10mg</span></td></tr></tbody></table></div>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.10",
+                            "code": "6920",
+                            "display": "Metoclopramide zetpil 10mg"
+                        }
+                    ],
+                    "text": "Metoclopramide zetpil 10mg"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

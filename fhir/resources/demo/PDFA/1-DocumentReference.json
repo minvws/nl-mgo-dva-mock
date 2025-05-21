@@ -1,0 +1,318 @@
+{
+    "resourceType": "Bundle",
+    "id": "a83e0fd4-6f7d-4b67-9f22-39feec318def",
+    "meta": {
+        "lastUpdated": "2024-05-02T09:53:50.890+00:00"
+    },
+    "type": "searchset",
+    "total": 3,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/DocumentReference?patient=Patient%2Ff92b6141-55db-46d5-a3ae-874b69907d22&status=current"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e7899",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "id": "06c6e783-3dc1-4236-84b1-3fb1d12e7899",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#911821da3666c085"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2023-07-05T09:12:40.649+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DocumentReference. Subject: E XXX_Baltus. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.220898 (urn:ietf:rfc:3986), Id: 852852 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: actueel                              \n          <span style=\"display: block;\">Auteur: A.F. Snijder</span></caption><tbody><tr><th>Type</th><td><span title=\"Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. neurochirurgie (document) (68688-1 - LOINC)\">Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. neurochirurgie (document)</span></td></tr><tr><th>Geïndexeerd</th><td>2022-07-13T00:00:00+01:00</td></tr><tr><th>Securitylabel</th><td/></tr><tr><th>Omschrijving</th><td>Anterior Cervical Discectomy Fusion - Discharge Summary</td></tr><tr><th>Content</th><td><img src=\"Binary/pdfa-binary1\" alt=\"null\" title=\"Example PDF - Anterior Cervical Discectomy Fusion - Discharge Summary\"/></td></tr></tbody></table></div>"
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "c5ea4b0a-aaeb-4770-ae61-a9e32711cd64",
+                        "name": [
+                            {
+                                "family": "Snijder",
+                                "given": [
+                                    "A.F."
+                                ],
+                                "_given": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                                "valueCode": "IN"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:0567a09b-0c38-414e-9193-7723c6910b3a"
+                },
+                "identifier": [
+                    {
+                        "system": "http://xis.org/fhir/NamingSystem/DocumentReferenceID",
+                        "value": "852852"
+                    }
+                ],
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "68688-1",
+                            "display": "Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. neurochirurgie (document)"
+                        }
+                    ]
+                },
+                "class": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18842-5",
+                            "display": "Samenvattende ontslagbrief"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "indexed": "2022-07-13T00:00:00+01:00",
+                "author": [
+                    {
+                        "reference": "#c5ea4b0a-aaeb-4770-ae61-a9e32711cd64",
+                        "display": "A.F. Snijder"
+                    }
+                ],
+                "description": "Samenvattende ontslagbrief neurochirurgie",
+                "securityLabel": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/v3/Confidentiality",
+                                "code": "V",
+                                "display": "very restricted"
+                            }
+                        ]
+                    }
+                ],
+                "content": [
+                    {
+                        "attachment": {
+                            "contentType": "application/pdf",
+                            "language": "en",
+                            "url": "Binary/pdfa-binary1",
+                            "title": "Samenvattende ontslagbrief neurochirurgie"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DocumentReference/3eb7bb2b-19c9-4632-9479-fea096eba519",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "id": "3eb7bb2b-19c9-4632-9479-fea096eba519",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#911821da3666c085"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2023-07-05T09:12:40.649+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DocumentReference. Subject: E XXX_Baltus. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.220899 (urn:ietf:rfc:3986), Id: 963369 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: actueel                              \n          <span style=\"display: block;\">Auteur: B. Kneder</span></caption><tbody><tr><th>Type</th><td><span title=\"Consultverslag [bevinding] in {instelling} d.m.v. infectioloog (document) (34781-5 - LOINC)\">Consultverslag [bevinding] in {instelling} d.m.v. infectioloog (document)</span></td></tr><tr><th>Geïndexeerd</th><td>2023-05-04T00:00:00+01:00</td></tr><tr><th>Securitylabel</th><td/></tr><tr><th>Omschrijving</th><td>Infectious disease Consult note</td></tr><tr><th>Content</th><td><img src=\"Binary/pdfa-binary2\" alt=\"null\" title=\"Example PDF - Infectious disease Consult note\"/></td></tr></tbody></table></div>"
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "d8e5007e-ad5c-4d29-b1e7-e62712999da9",
+                        "name": [
+                            {
+                                "family": "Kneder",
+                                "given": [
+                                    "B."
+                                ],
+                                "_given": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                                "valueCode": "IN"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:94afc324-fa26-4058-828e-42c35fa4ef24"
+                },
+                "identifier": [
+                    {
+                        "system": "http://xis.org/fhir/NamingSystem/DocumentReferenceID",
+                        "value": "963369"
+                    }
+                ],
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34781-5",
+                            "display": "Consultverslag [bevinding] in {instelling} d.m.v. infectioloog (document)"
+                        }
+                    ]
+                },
+                "class": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11488-4",
+                            "display": "Consultverslag"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "indexed": "2023-05-04T00:00:00+01:00",
+                "author": [
+                    {
+                        "reference": "#d8e5007e-ad5c-4d29-b1e7-e62712999da9",
+                        "display": "B. Kneder"
+                    }
+                ],
+                "description": "Consultverslag infectioloog",
+                "securityLabel": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/v3/Confidentiality",
+                                "code": "V",
+                                "display": "very restricted"
+                            }
+                        ]
+                    }
+                ],
+                "content": [
+                    {
+                        "attachment": {
+                            "contentType": "application/pdf",
+                            "language": "en",
+                            "url": "Binary/pdfa-binary2",
+                            "title": "Consultverslag infectioloog"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DocumentReference/cd4679df-a7e6-43b7-ab12-b5570d7dd996",
+            "resource":
+            {
+                "resourceType": "DocumentReference",
+                "id": "cd4679df-a7e6-43b7-ab12-b5570d7dd996",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6fc57697c4867cea"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ctable\u003e\u003ccaption\u003eDocumentReference. Subject: Eva XXX_Schulte. Set‑Id: 678903434902 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: vervangen                              \n          \u003cspan style\u003d\"display: block;\"\u003eAuteur: De Hoed\u003c/span\u003e\u003c/caption\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eType\u003c/th\u003e\u003ctd\u003e\u003cspan title\u003d\"ontslagbrief (11071000146104 - SNOMED CT)\"\u003eontslagbrief\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eGeïndexeerd\u003c/th\u003e\u003ctd\u003e2023-07-02T00:00:00+01:00\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eOmschrijving\u003c/th\u003e\u003ctd\u003eKopie van ontslagbrief\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003e\u003cimg src\u003d\"Binary/66af5660-a20c-4946-a928-fb429d3ae462\" alt\u003d\"null\" title\u003d\"Example PDF - Kopie van ontslagbrief\"/\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                },
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "id": "5aca7e83-588d-477f-bcee-9df98f676af4",
+                        "name": [
+                            {
+                                "family": "De Hoed"
+                            }
+                        ]
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:1d6acae7-2fe5-4188-88d7-5490ddb4bac5"
+                },
+                "status": "superseded",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "11071000146104",
+                            "display": "ontslagbrief"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+                    "display": "Johan XXX_Helleman"
+                },
+                "indexed": "2023-07-02T00:00:00+01:00",
+                "author": [
+                    {
+                        "reference": "#5aca7e83-588d-477f-bcee-9df98f676af4",
+                        "display": "De Hoed"
+                    }
+                ],
+                "description": "Kopie van ontslagbrief",
+                "content": [
+                    {
+                        "attachment": {
+                            "contentType": "application/pdf",
+                            "language": "nl",
+                            "url": "Binary/66af5660-a20c-4946-a928-fb429d3ae462",
+                            "title": "Kopie van ontslagbrief"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "resourceType": "Condition",
+    "id": "zib-problem-09",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 1d6852fd-8fdf-11ec-1565-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tfoot><tr><td colspan=\"2\">Gevallen tijdens het wielrenner.</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Open fractuur van femur (aandoening) (28576007 - SNOMED CT)\">Open fractuur van femur (aandoening)</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1d6852fd-8fdf-11ec-1565-020000000000"
+        }
+    ],
+    "clinicalStatus": "active",
+    "_clinicalStatus": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "55561003",
+                            "display": "Active"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "verificationStatus": "confirmed",
+    "_verificationStatus": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confimed present"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "28576007",
+                "display": "Open fractuur van femur (aandoening)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "note": [
+        {
+            "text": "Gevallen tijdens het wielrenner."
+        }
+    ]
+}
+

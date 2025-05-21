@@ -1,0 +1,107 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "4c3da74f-c4e3-4444-9198-44df88872424",
+    "meta": {
+        "extension": [
+            {
+                "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                "valueUri": "#6fc57697c4867cea"
+            }
+        ],
+        "versionId": "2",
+        "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DocumentReference. Subject: Eva XXX_Schulte. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.287798 (urn:ietf:rfc:3986), Id: 852852 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: actueel                              \n          <span style=\"display: block;\">Auteur: A.F. Snijder</span></caption><tbody><tr><th>Type</th><td><span title=\"Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. allergie+immunologie (document) (68626-1 - LOINC)\">Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. allergie+immunologie (document)</span></td></tr><tr><th>Geïndexeerd</th><td>2022-08-17T00:00:00+01:00</td></tr><tr><th>Securitylabel</th><td/></tr><tr><th>Omschrijving</th><td>Discharge summary</td></tr><tr><th>Content</th><td><img src=\"https://informatiestandaarden.nictiz.nl/images/2/29/Example_PDF_-_Discharge_Summary.pdf\" alt=\"null\" title=\"Example PDF - Discharge Summary\"/></td></tr></tbody></table></div>"
+    },
+    "contained": [
+        {
+            "resourceType": "Practitioner",
+            "id": "8202e3b8-585a-4811-9dc0-36d382d3147e",
+            "name": [
+                {
+                    "family": "Snijder",
+                    "given": [
+                        "A.F."
+                    ],
+                    "_given": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                    "valueCode": "IN"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "masterIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:f81d35f2-1fe6-4a89-91f9-1eacd61f96a9"
+    },
+    "identifier": [
+        {
+            "system": "http://xis.org/fhir/NamingSystem/DocumentReferenceID",
+            "value": "852852"
+        }
+    ],
+    "status": "current",
+    "type": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "68626-1",
+                "display": "Samenvattende ontslagbrief [bevinding] in {instelling} d.m.v. allergie+immunologie (document)"
+            }
+        ]
+    },
+    "class": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "18842-5",
+                "display": "Discharge summary"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+        "display": "Eva XXX_Schulte"
+    },
+    "indexed": "2022-08-17T00:00:00+01:00",
+    "author": [
+        {
+            "reference": "#8202e3b8-585a-4811-9dc0-36d382d3147e",
+            "display": "A.F. Snijder"
+        }
+    ],
+    "description": "Discharge summary",
+    "securityLabel": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/v3/Confidentiality",
+                    "code": "V",
+                    "display": "very restricted"
+                }
+            ]
+        }
+    ],
+    "content": [
+        {
+            "attachment": {
+                "contentType": "application/pdf",
+                "language": "en",
+                "url": "https://informatiestandaarden.nictiz.nl/images/2/29/Example_PDF_-_Discharge_Summary.pdf",
+                "title": "Example PDF - Discharge Summary"
+            }
+        }
+    ]
+}

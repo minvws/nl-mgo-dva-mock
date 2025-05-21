@@ -1,0 +1,22 @@
+{
+    "/valid/endpoint": {
+        "data_service": "Acme",
+        "matches": [
+            {
+                "required_params": [
+                    "_foo=bar"
+                ],
+                "resource_path": "Acme/Foobar.json"
+            }
+        ]
+    },
+    "/invalid/endpoint": {
+        "data_service": "Acme",
+        "matches": {
+            "required_params": [
+                "_foo=bar"
+            ],
+            "resource_path": "Acme/Foobar.json"
+        }
+    }
+}

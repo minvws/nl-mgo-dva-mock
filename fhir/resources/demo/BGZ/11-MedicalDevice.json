@@ -1,0 +1,313 @@
+{
+    "resourceType": "Bundle",
+    "id": "26c03ac3-fdc0-43c8-8c55-ff2d750de0f2",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:57:29.963+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/DeviceUseStatement?_include=DeviceUseStatement%3Adevice&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/059346e6-76ec-498d-a3be-2ab2d9890a2e",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "059346e6-76ec-498d-a3be-2ab2d9890a2e",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 312bba1c-e3e4-11eb-3049-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Gehoorapparaat</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van oor (lichaamsstructuur) (117590005 - SNOMED CT)\">structuur van oor (lichaamsstructuur)</span><span title=\"Rechts (24028007 - SNOMED CT)\">Rechts</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 2007</td></tr><tr><th>Indicatie</th><td><div>Presbyacusis</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+                        "valueReference": {
+                            "reference": "Organization/3ced4938-a44d-44a9-8fe9-5a08594fbe52",
+                            "display": "Test Medisch Centrum"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "312bba1c-e3e4-11eb-3049-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "whenUsed": {
+                    "start": "2007"
+                },
+                "device": {
+                    "reference": "Device/e4c4e4cd-85b4-4490-ad01-bef6c5332a6d",
+                    "display": "Gehoorapparaat"
+                },
+                "indication": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+                                "valueReference": {
+                                    "reference": "Condition/c953ca04-89b1-4ddf-8af1-d9c41f0f9c8d",
+                                    "display": "Presbyacusis"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "bodySite": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "24028007",
+                                        "display": "Rechts"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "117590005",
+                            "display": "structuur van oor (lichaamsstructuur)"
+                        }
+                    ]
+                },
+                "note": [
+                    {
+                        "text": "Apparaat niet zichtbaar (diep in de gehooringang)"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/82a2aabe-9830-4b79-ad93-7828e7bfe677",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "82a2aabe-9830-4b79-ad93-7828e7bfe677",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 314d72ec-e3e4-11eb-3256-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Implantant, Get 2Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Knee joint prosthesis, device (physical object)</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van knieregio (lichaamsstructuur) (72696002 - SNOMED CT)\">structuur van knieregio (lichaamsstructuur)</span><span title=\"Links (7771000 - SNOMED CT)\">Links</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 5 juni 2012</td></tr><tr><th>Indicatie</th><td><div>Artropathie (aandoening)</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+                        "valueReference": {
+                            "reference": "Organization/3ced4938-a44d-44a9-8fe9-5a08594fbe52",
+                            "display": "Test Medisch Centrum"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "314d72ec-e3e4-11eb-3256-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "whenUsed": {
+                    "start": "2012-06-05"
+                },
+                "device": {
+                    "reference": "Device/7a5fdb3c-ccf0-4232-9ad8-d7873404cea3",
+                    "display": "Knee joint prosthesis, device (physical object)"
+                },
+                "indication": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+                                "valueReference": {
+                                    "reference": "Condition/8794209f-9468-4c06-a2d2-ba10dc7d6325",
+                                    "display": "Artropathie (aandoening)"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "bodySite": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "7771000",
+                                        "display": "Links"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "72696002",
+                            "display": "structuur van knieregio (lichaamsstructuur)"
+                        }
+                    ]
+                },
+                "note": [
+                    {
+                        "text": "Implantant, Get 2Tibia Insert 5/6-9mm"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Device/e4c4e4cd-85b4-4490-ad01-bef6c5332a6d",
+            "resource": {
+                "resourceType": "Device",
+                "id": "e4c4e4cd-85b4-4490-ad01-bef6c5332a6d",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Id: 2ecc464c-e3e4-11eb-1886-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"hoortoestel (fysiek object) (6012004 - SNOMED CT)\">hoortoestel (fysiek object)</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2ecc464c-e3e4-11eb-1886-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "6012004",
+                            "display": "hoortoestel (fysiek object)"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Device/7a5fdb3c-ccf0-4232-9ad8-d7873404cea3",
+            "resource": {
+                "resourceType": "Device",
+                "id": "7a5fdb3c-ccf0-4232-9ad8-d7873404cea3",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan XXX_Helleman. Id: 1148130801</caption><tfoot><tr><td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Type</th><td><span title=\"Gewrichtsprothese van knie (fysiek object) (109228008 - SNOMED CT)\">Gewrichtsprothese van knie (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td></tr><tr><th>Verloopdatum</th><td>31 januari 2016</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/identifier-type",
+                                    "code": "SNO",
+                                    "display": "Serial Number"
+                                }
+                            ]
+                        },
+                        "value": "1148130801"
+                    }
+                ],
+                "udi": {
+                    "deviceIdentifier": "05050474530799",
+                    "carrierHRF": "{01}05050474530799{17}160131{21}1148130801"
+                },
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "109228008",
+                            "display": "Gewrichtsprothese van knie (fysiek object)"
+                        }
+                    ]
+                },
+                "expirationDate": "2016-01-31",
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "note": [
+                    {
+                        "text": "Implantant, Gen 2 Tibia Insert 5/6-9mm"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

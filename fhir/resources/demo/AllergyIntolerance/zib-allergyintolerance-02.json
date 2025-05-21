@@ -1,0 +1,148 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "zib-allergyintolerance-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Allergie/intolerantie. Patiënt: Paul XXX_Mesker. Id: ffd48926-cf79-4bd7-85ea-450855797614 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Allergy to substance (419199007 - SNOMED CT)\">Allergy to substance</span>, Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Bee venom (288328004 - SNOMED CT)\">Bee venom</span></td></tr><tr><th>Eerste symptomen</th><td>8 november 2008</td></tr><tr><th>Meest recente voorkomen</th><td>15 november 2009</td></tr><tr><th>Reactie</th><td><ul><li><div><span title=\"Severe (24484000 - SNOMED CT)\">Severe</span></div><div><span title=\"Nausea and vomiting (16932000 - SNOMED CT)\">Nausea and vomiting</span></div></li></ul></td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "ffd48926-cf79-4bd7-85ea-450855797614"
+        }
+    ],
+    "clinicalStatus": "inactive",
+    "_clinicalStatus": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/ActStatus",
+                            "code": "inactive",
+                            "display": "Inactive"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "verificationStatus": "unconfirmed",
+    "category": [
+        "biologic"
+    ],
+    "_category": [
+        {
+            "extension": [
+                {
+                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "419199007",
+                                "display": "Allergy to substance"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "criticality": "low",
+    "_criticality": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "371923003",
+                            "display": "Mild to moderate"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "1285426005",
+                "display": "Yellow fever mosquito venom"
+            }
+        ]
+    },
+    "patient": {
+        "reference": "Patient/nl-core-patient-02",
+        "display": "Paul XXX_Mesker"
+    },
+    "onsetDateTime": "1999-04-13",
+    "recorder": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                "valueReference": {
+                    "reference": "PractitionerRole/nl-core-practitionerrole-01",
+                    "display": "Medisch specialisten, Orthopedie || Orthopedie - UMCG"
+                }
+            }
+        ],
+        "reference": "Practitioner/nl-core-practitioner-01",
+        "display": "de Vries"
+    },
+    "asserter": {
+        "reference": "Patient/nl-core-patient-02",
+        "display": "Paul XXX_Mesker"
+    },
+    "lastOccurrence": "1999-04-13",
+    "reaction": [
+        {
+            "manifestation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16932000",
+                            "display": "Nausea and vomiting"
+                        }
+                    ]
+                }
+            ],
+            "severity": "moderate",
+            "_severity": {
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "371923003",
+                                    "display": "Mild to moderate"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "exposureRoute": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "46713006",
+                        "display": "Nasal route"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "resourceType": "Bundle",
+    "id": "d912da6a-8d1e-4639-a45f-7698844e9b26",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:33:34.739+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Consent/c080c6b9-ccee-4e1f-99f4-5637b594aa75",
+            "resource": {
+                "resourceType": "Consent",
+                "id": "c080c6b9-ccee-4e1f-99f4-5637b594aa75",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 349c4fcc-e3e4-11eb-1310-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Behandelaanwijzing (gegevensobject) (11291000146105 - SNOMED CT)\">Behandelaanwijzing (gegevensobject)</span>, Status: actief                        \n        </caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 -                                           \n              <span title=\"Patiënt (116154003 - SNOMED CT)\">Patiënt</span></td></tr><tr><th><span title=\"Kunstmatige beademing (40617009 - SNOMED CT)\">Kunstmatige beademing</span></th><td><span title=\"Ja, maar met beperkingen (JA_MAAR - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Ja, maar met beperkingen</span></td></tr><tr><th>Niet toegestaan tenzij</th><td><div><b>Behandelrestrictie</b><div>Eerst overleg met echtgenote</div></div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Verification",
+                        "extension": [
+                            {
+                                "url": "Verified",
+                                "valueBoolean": true
+                            },
+                            {
+                                "url": "VerifiedWith",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "116154003",
+                                            "display": "Patiënt"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "VerificationDate",
+                                "valueDateTime": "2018-04-09"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "40617009",
+                                    "display": "Kunstmatige beademing"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "modifierExtension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4",
+                                    "code": "JA_MAAR",
+                                    "display": "Ja, maar met beperkingen"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "349c4fcc-e3e4-11eb-1310-020000000000"
+                },
+                "status": "active",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "11291000146105",
+                                "display": "Behandelaanwijzing (gegevensobject)"
+                            }
+                        ]
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "period": {
+                    "start": "2018-04-09"
+                },
+                "policy": [
+                    {
+                        "uri": "http://wetten.overheid.nl/"
+                    }
+                ],
+                "except": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Restrictions",
+                                "valueString": "Eerst overleg met echtgenote"
+                            }
+                        ],
+                        "type": "deny"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

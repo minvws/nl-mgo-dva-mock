@@ -1,0 +1,45 @@
+{
+    "resourceType": "Flag",
+    "id": "zib-alert-01",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-Alert"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Attentievlag. Subject: Johan XXX_Helleman. Id: 18d78911-8fdf-11ec-3053-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"condition (75323-6 - LOINC)\">condition</span>, Status: actief</caption><tbody><tr><th>Code</th><td><span title=\"Methicillin resistant staphylococcus aureus carrier (432415000 - SNOMED CT)\">Methicillin resistant staphylococcus aureus carrier</span></td></tr><tr><th>Periode</th><td>Vanaf 1 juni 2010</td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "18d78911-8fdf-11ec-3053-020000000000"
+        }
+    ],
+    "status": "active",
+    "category": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "75323-6",
+                "display": "condition"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "432415000",
+                "display": "Methicillin resistant staphylococcus aureus carrier"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "period": {
+        "start": "2010-06-01"
+    }
+}

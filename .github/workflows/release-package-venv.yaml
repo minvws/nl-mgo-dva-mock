@@ -1,0 +1,27 @@
+
+name: Package python virtual env
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build-venv:
+    strategy:
+      matrix:
+        python_version: ['3.11']
+
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build venv package
+        uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/python-venv-package@main
+        with:
+          working_directory: './'
+          python_version: ${{ matrix.python_version }}
+          package_file_name: dva-mock
+          checkout_repository: 'false'

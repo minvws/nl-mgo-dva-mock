@@ -1,0 +1,513 @@
+{
+    "resourceType": "Bundle",
+    "id": "ad5d45de-fc5c-42c1-bb14-9ab5668e979d",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:35.221+00:00"
+    },
+    "type": "searchset",
+    "total": 3,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}MedicationRequest?_include=MedicationRequest%3Amedication&category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&patient=Patient%2Font-ver-gpdata-patient-kwalificatie1&periodofuse=ge2024-06-11"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}MedicationRequest/ont-ver-gpdata-medicationrequest-contact04-ibuprofen",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "ont-ver-gpdata-medicationrequest-contact04-ibuprofen",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#ef7a7313c90ca178"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:50.278+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Medicatieafspraak. Subject: Jacqueline XXX_Cevat. Id: ba23654b-041c-11ec-3660-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Voorschrijven (16076005 - SNOMED CT)\">Voorschrijven</span>, <span style=\"display: block;\">Intentie: aanvraag</span>\n          <span style=\"display: block;\">Aangevraagd door: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Medicamenteuze behandel-id</th>\n            <td>9795 (URA/00003333/MEDICAMENTEUZEBEHANDELINGEN)</td>\n          </tr>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>HNP (thoracaal/lumbaal)</li>\n                <li>Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Medicatie</th>\n            <td>IBUPROFEN 400MG TABLET</td>\n          </tr>\n          <tr>\n            <th>Gemaakt</th>\n            <td>2024-02-07</td>\n          </tr>\n          <tr>\n            <th>Gebruiksduur</th>\n            <td>Vanaf 2024-02-07</td>\n          </tr>\n          <tr>\n            <th>Doseerinstructie</th>\n            <td>\n              <div>Volgnummer: 1</div>\n              <div>Tekst: 3D1T zn (3 maal daags, 1 tablet, zo nodig)</div>\n              <div>Timing: <div>3 maal per dag</div>\n              </div>\n              <div>Zo nodig: <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span>\n              </div>\n              <div>Toedieningsweg: <span title=\"ORAAL (9 - G-Standaard thesaurus subtabel 0007)\">ORAAL</span>\n              </div>\n              <div>Dosering: 1 STUK</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+                        "valueIdentifier": {
+                            "system": "http://fhir.nl/fhir/NamingSystem/ura/00003333/medicamenteuzebehandelingen",
+                            "value": "9795"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                            "display": "HNP (thoracaal/lumbaal)"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2024-02-07"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "ba23654b-041c-11ec-3660-020000000000"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Voorschrijven"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/ont-ver-gpdata-product-ibuprofen",
+                    "display": "IBUPROFEN 400MG TABLET"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact04",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "authoredOn": "2024-02-07",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "3D1T zn (3 maal daags, 1 tablet, zo nodig)",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1137",
+                                    "display": "zo nodig"
+                                }
+                            ],
+                            "text": "zo nodig"
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "ORAAL"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "STUK",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}MedicationRequest/ont-ver-gpdata-medicationrequest-contactmmk-salbutamol",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "ont-ver-gpdata-medicationrequest-contactmmk-salbutamol",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#68aeac45368cdba0"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:07.827+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Medicatieafspraak. Subject: Jacqueline XXX_Cevat. Id: baba9c3b-041c-11ec-4939-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Voorschrijven (16076005 - SNOMED CT)\">Voorschrijven</span>, <span style=\"display: block;\">Intentie: aanvraag</span>\n          <span style=\"display: block;\">Aangevraagd door: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Medicamenteuze behandel-id</th>\n            <td>7776 (URA/00003333/MEDICAMENTEUZEBEHANDELINGEN)</td>\n          </tr>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Astma</li>\n                <li>Consult voor Astma met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Medicatie</th>\n            <td>SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH</td>\n          </tr>\n          <tr>\n            <th>Gemaakt</th>\n            <td>2023-12-29</td>\n          </tr>\n          <tr>\n            <th>Gebruiksduur</th>\n            <td>Vanaf 2023-12-29</td>\n          </tr>\n          <tr>\n            <th>Doseerinstructie</th>\n            <td>\n              <div>Volgnummer: 1</div>\n              <div>Tekst: 2 inhalaties half uur voor het sporten</div>\n              <div>Instructie: <span title=\"overig (OTH - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">overig</span>\n              </div>\n              <div>Toedieningsweg: <span title=\"ORAAL (9 - G-Standaard thesaurus subtabel 0007)\">ORAAL</span>\n              </div>\n              <div>Dosering: 2 Dosis</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+                        "valueIdentifier": {
+                            "system": "http://fhir.nl/fhir/NamingSystem/ura/00003333/medicamenteuzebehandelingen",
+                            "value": "7776"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r96",
+                            "display": "Astma"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2023-12-29"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "baba9c3b-041c-11ec-4939-020000000000"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Voorschrijven"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/ont-ver-gpdata-product-salbutamol",
+                    "display": "SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contactmmk",
+                    "display": "Consult voor Astma met Dokter Bernard"
+                },
+                "authoredOn": "2023-12-29",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "2 inhalaties half uur voor het sporten",
+                        "additionalInstruction": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                        "code": "OTH",
+                                        "display": "overig"
+                                    }
+                                ],
+                                "text": "half uur voor het sporten"
+                            }
+                        ],
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "ORAAL"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 2,
+                            "unit": "Dosis",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "208"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}MedicationRequest/ont-ver-gpdata-medicationrequest-contact06-paracetamol-codein",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "ont-ver-gpdata-medicationrequest-contact06-paracetamol-codein",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#dcad7f37d18321a7"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:10.533+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Medicatieafspraak. Subject: Jacqueline XXX_Cevat. Id: ba4210db-041c-11ec-8276-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Voorschrijven (16076005 - SNOMED CT)\">Voorschrijven</span>, <span style=\"display: block;\">Intentie: aanvraag</span>\n          <span style=\"display: block;\">Aangevraagd door: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Medicamenteuze behandel-id</th>\n            <td>2226 (URA/00003333/MEDICAMENTEUZEBEHANDELINGEN)</td>\n          </tr>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Medicatie</th>\n            <td>PARACETAMOL/CODEINE ZETPIL 500/10MG</td>\n          </tr>\n          <tr>\n            <th>Gemaakt</th>\n            <td>2024-01-08</td>\n          </tr>\n          <tr>\n            <th>Gebruiksduur</th>\n            <td>Vanaf 2024-01-08</td>\n          </tr>\n          <tr>\n            <th>Doseerinstructie</th>\n            <td>\n              <div>Volgnummer: 1</div>\n              <div>Tekst: 6D1T zn (6 maal daags, 1 tablet, zo nodig)</div>\n              <div>Timing: <div>6 maal per dag</div>\n              </div>\n              <div>Zo nodig: <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span>\n              </div>\n              <div>Toedieningsweg: <span title=\"ORAAL (9 - G-Standaard thesaurus subtabel 0007)\">ORAAL</span>\n              </div>\n              <div>Dosering: 1 STUK</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+                        "valueIdentifier": {
+                            "system": "http://fhir.nl/fhir/NamingSystem/ura/00003333/medicamenteuzebehandelingen",
+                            "value": "2226"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2024-01-08"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "ba4210db-041c-11ec-8276-020000000000"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Voorschrijven"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/ont-ver-gpdata-product-paracetamol-codein",
+                    "display": "PARACETAMOL/CODEINE ZETPIL 500/10MG"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact06",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "authoredOn": "2024-01-08",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "6D1T zn (6 maal daags, 1 tablet, zo nodig)",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 6,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1137",
+                                    "display": "zo nodig"
+                                }
+                            ],
+                            "text": "zo nodig"
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "ORAAL"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "STUK",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}Medication/ont-ver-gpdata-product-paracetamol-codein",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "ont-ver-gpdata-product-paracetamol-codein",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#e03119e82b7e070d"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-05T07:50:41.297+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"PARACETAMOL/CODEINE ZETPIL 500/10MG, inclusief doseerinstructie en toedieningsweg. (43990 - G-Standaard GPK)\">PARACETAMOL/CODEINE ZETPIL 500/10MG, inclusief doseerinstructie en toedieningsweg.</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1",
+                            "code": "43990",
+                            "display": "PARACETAMOL/CODEINE ZETPIL 500/10MG, inclusief doseerinstructie en toedieningsweg."
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}Medication/ont-ver-gpdata-product-ibuprofen",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "ont-ver-gpdata-product-ibuprofen",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#c5294fabaec0a6d5"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-05T07:50:45.549+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"IBUPROFEN 400MG TABLET (27278 - G-Standaard PRK)\">IBUPROFEN 400MG TABLET</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.10",
+                            "code": "27278",
+                            "display": "IBUPROFEN 400MG TABLET"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}Medication/ont-ver-gpdata-product-salbutamol",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "ont-ver-gpdata-product-salbutamol",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#c1178cb538ca57fa"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-05T07:50:47.671+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Product"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH (43281 - G-Standaard PRK)\">SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.10",
+                            "code": "43281",
+                            "display": "SALBUTAMOL AEROSOL 100UG/DO 200DO AUTOH"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "resourceType": "DeviceUseStatement",
+    "id": "zib-medicaldevice-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: I. Jongeneel-de Haas. Id: 1b88e083-8fdf-11ec-1325-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Apparaat/Systeem</th><td>Rollator</td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3",
+            "valueReference": {
+                "reference": "Observation/zib-mobility-01",
+                "display": "Ability to mobilise"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1b88e083-8fdf-11ec-1325-020000000000"
+        }
+    ],
+    "status": "active",
+    "subject": {
+        "reference": "Patient/nl-core-patient-03",
+        "display": "I. Jongeneel-de Haas"
+    },
+    "device": {
+        "reference": "Device/zib-medicaldeviceproduct-02",
+        "display": "Rollator"
+    }
+}

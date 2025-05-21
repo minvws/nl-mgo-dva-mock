@@ -1,0 +1,162 @@
+{
+    "resourceType": "MedicationDispense",
+    "id": "zib-administrationagreement-01",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan XXX_Helleman. Id: 1546339-f6753t65r (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.422037009.1), 189ef867-8fdf-11ec-6427-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Provider medication administration instructions (procedure) (422037009 - SNOMED CT)\">Provider medication administration instructions (procedure)</span><span style=\"display: block;\">Uitvoerende: Apotheek De Gulle Gaper</span></caption><tfoot><tr><td colspan=\"2\">Tekstuele toelichting bij deze toedieningsafspraak</td></tr></tfoot><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Gemaakt</th><td>10:54:12, 8 juni 2020</td></tr><tr><th>Gebaseerd op</th><td>relatie naar medicatieafspraak: #MB_01h#MA_01 || 2.16.840.1.113883.2.4.3.11.999.77.16076005.1 (Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1))</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 8 jun 2020, 1 maal per dag, rectaal</div><div>Timing: <div>eenmalig per dag</div></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div></td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AdministrationAgreement-AuthoredOn",
+            "valueDateTime": "2024-02-21T11:34:11+02:00"
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+            "valuePeriod": {
+                "start": "2024-02-21"
+            }
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-AdditionalInformation",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2053",
+                        "code": "1",
+                        "display": "Niet leverbaar"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+            "valueIdentifier": {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1",
+                "value": "#MB_01i1"
+            }
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+            "valueDuration": {
+                "value": 30,
+                "unit": "dag",
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.422037009.1",
+            "value": "1546339-f6753t65r"
+        },
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "189ef867-8fdf-11ec-6427-020000000000"
+        }
+    ],
+    "category": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "422037009",
+                "display": "Provider medication administration instructions (procedure)"
+            }
+        ],
+        "text": "Toedieningsafspraak"
+    },
+    "medicationReference": {
+        "reference": "Medication/zib-Product-02",
+        "display": "PARACETAMOL TABLET 500MG"
+    },
+    "subject": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "performer": [
+        {
+            "actor": {
+                "reference": "Practitioner/nl-core-practitioner-02",
+                "display": "Vaste Huisarts 1"
+            }
+        }
+    ],
+    "authorizingPrescription": [
+        {
+            "identifier": {
+                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1",
+                "value": "#MB_01h#MA_01"
+            },
+            "display": "relatie naar medicatieafspraak: #MB_01h#MA_01 || 2.16.840.1.113883.2.4.3.11.999.77.16076005.1"
+        }
+    ],
+    "note": [
+        {
+            "text": "Tekstuele toelichting bij deze toedieningsafspraak"
+        }
+    ],
+    "dosageInstruction": [
+        {
+            "sequence": 1,
+            "text": "Vanaf 22 februari 2024, gedurende 30 dagen, zo nodig maal per dag 1 à 2 stuks , maximaal 6 stuks per dag, oraal",
+            "timing": {
+                "repeat": {
+                    "frequencyMax": 6,
+                    "period": 1,
+                    "periodUnit": "d"
+                }
+            },
+            "asNeededCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                        "code": "1137",
+                        "display": "zo nodig"
+                    }
+                ]
+            },
+            "route": {
+                "coding": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                        "code": "9",
+                        "display": "oraal"
+                    }
+                ]
+            },
+            "doseRange": {
+                "low": {
+                    "value": 1,
+                    "unit": "stuk",
+                    "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                    "code": "245"
+                },
+                "high": {
+                    "value": 2,
+                    "unit": "stuk",
+                    "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                    "code": "245"
+                }
+            },
+            "maxDosePerPeriod": {
+                "numerator": {
+                    "value": 6,
+                    "unit": "stuk",
+                    "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                    "code": "245"
+                },
+                "denominator": {
+                    "value": 1,
+                    "unit": "dag",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                }
+            }
+        }
+    ]
+}

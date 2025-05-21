@@ -1,0 +1,309 @@
+{
+    "resourceType": "Bundle",
+    "id": "e57c10bc-a0f4-421f-a17a-fbffec617f3a",
+    "meta": {
+        "lastUpdated": "2024-02-22T10:28:46.124+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/MedicationRequest?_format=json"
+        },
+        {
+            "relation": "next",
+            "url": "{{BASE_URL}}fhir?_getpages=e57c10bc-a0f4-421f-a17a-fbffec617f3a&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationRequest/zib-medicationagreement-01",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "zib-medicationagreement-01",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Johan XXX_Helleman. Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1), 1bed45b9-8fdf-11ec-1339-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Vaste Huisarts 1 || Huisartsen || Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Medicatie</th><td>Metoclopramide zetpil 20mg</td></tr><tr><th>Gemaakt</th><td>10:54:23, 8 juni 2020</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Timing: <div>eenmalig per dag</div></div><div>Zo nodig: <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div><div>Dosering: 1 stuk - 2 stuk</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2024-02-21"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+                        "valueIdentifier": {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1",
+                            "value": "#MB_01i1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1",
+                        "value": "#MB_01h#MA_01"
+                    },
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "1bed45b9-8fdf-11ec-1339-020000000000"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Prescription (procedure)"
+                        }
+                    ],
+                    "text": "Medicatieafspraak"
+                },
+                "medicationReference": {
+                    "reference": "Medication/zib-Product-02",
+                    "display": "PARACETAMOL TABLET 500MG"
+                },
+                "subject": {
+                    "reference": "Patient/nl-core-patient-01",
+                    "display": "Johan XXX_Helleman"
+                },
+                "authoredOn": "2024-02-21T10:54:23+02:00",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/nl-core-practitionerrole-02",
+                                    "display": "Vaste Huisarts 1 || Huisartsen || Maatschap Vaste Huisarts"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/nl-core-practitioner-02",
+                        "display": "Vaste Huisarts 1"
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "Vanaf 22 februari 2024, gedurende 30 dagen, zo nodig maal per dag 1 à 2 stuks , maximaal 6 stuks per dag, oraal",
+                        "timing": {
+                            "repeat": {
+                                "frequencyMax": 6,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1137",
+                                    "display": "zo nodig"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "oraal"
+                                }
+                            ]
+                        },
+                        "doseRange": {
+                            "low": {
+                                "value": 1,
+                                "unit": "stuk",
+                                "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                                "code": "245"
+                            },
+                            "high": {
+                                "value": 2,
+                                "unit": "stuk",
+                                "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                                "code": "245"
+                            }
+                        },
+                        "maxDosePerPeriod": {
+                            "numerator": {
+                                "value": 6,
+                                "unit": "stuk",
+                                "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                                "code": "245"
+                            },
+                            "denominator": {
+                                "value": 1,
+                                "unit": "dag",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "d"
+                            }
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationRequest/zib-medicationagreement-02",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "zib-medicationagreement-01",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Paul XXX_Mesker. Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1), 1bed45b9-8fdf-11ec-1339-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Medisch specialisten, Orthopedie || Orthopedie - UMCG</span></caption><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Medicatie</th><td>Metoclopramide zetpil 20mg</td></tr><tr><th>Gemaakt</th><td>10:54:23, 21 februari 2024</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 22 februari 2024</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Timing: <div>eenmalig per dag</div></div><div>Zo nodig: <span title=\"bij koorts (1145 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div><div>Dosering: 1 stuk - 2 stuk</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-PeriodOfUse",
+                        "valuePeriod": {
+                            "start": "2024-02-10"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-MedicationTreatment",
+                        "valueIdentifier": {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1",
+                            "value": "#MB_01i1"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Duration",
+                        "valueDuration": {
+                            "value": 7,
+                            "unit": "dag",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "d"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Medication-AdditionalInformation",
+                        "valueCodableConcept": ""
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/nl-core-episodeofcare-01",
+                            "display": "Dirk de Vries"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1",
+                        "value": "#MB_01h#MA_01"
+                    },
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "1bed45b9-8fdf-11ec-1339-020000000000"
+                    }
+                ],
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16076005",
+                            "display": "Prescription (procedure)"
+                        }
+                    ],
+                    "text": "Medicatieafspraak"
+                },
+                "medicationReference": {
+                    "reference": "Medication/zib-Product-03",
+                    "display": "Metoclopramide zetpil 20mg"
+                },
+                "subject": {
+                    "reference": "Patient/nl-core-patient-02",
+                    "display": "Paul XXX_Mesker"
+                },
+                "authoredOn": "2024-02-10T08:54:23+02:00",
+                "requester": {
+                    "agent": {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/nl-core-practitionerrole-01",
+                                    "display": "Medisch specialisten, Orthopedie || Orthopedie - UMCG"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/nl-core-practitioner-01",
+                        "display": "de Vries"
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "Vanaf 12 februari 2024, gedurende 14 dagen, bij koorts per dag 1 stuks, maximaal 2 stuks per dag, rectaal",
+                        "timing": {
+                            "repeat": {
+                                "frequencyMax": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "asNeededCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek",
+                                    "code": "1145",
+                                    "display": "bij koorts"
+                                }
+                            ]
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.11",
+                                    "code": "12",
+                                    "display": "rectaal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        },
+                        "maxDosePerPeriod": {
+                            "numerator": {
+                                "value": 2,
+                                "unit": "stuk",
+                                "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                                "code": "245"
+                            },
+                            "denominator": {
+                                "value": 1,
+                                "unit": "dag",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "d"
+                            }
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

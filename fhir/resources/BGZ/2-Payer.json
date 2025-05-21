@@ -1,0 +1,616 @@
+{
+    "resourceType": "Bundle",
+    "id": "e6a315cb-e45b-4528-83ac-857ef8764638",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:32:54.853+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Coverage?_include=Coverage%3Apayor%3APatient&_include=Coverage%3Apayor%3AOrganization&beneficiary=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Coverage/792729a6-726e-45c3-b82d-f04fa4efd685",
+            "resource": {
+                "resourceType": "Coverage",
+                "id": "792729a6-726e-45c3-b82d-f04fa4efd685",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verzekering/garantstelling. Id: 2e8922cc-e3e4-11eb-9423-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Basis verzekerd (B - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Basis verzekerd</span></td></tr><tr><th>Periode</th><td>1 januari 2018 - 31 december 2018</td></tr><tr><th>abonnee</th><td>Johan XXX_Helleman</td></tr><tr><th>Verzekerdenummer</th><td>12345678</td></tr><tr><th>Betaler</th><td>Menzis Zorgverzekeraar N.V.</td></tr><tr><th>begunstigde</th><td>Johan XXX_Helleman</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2e8922cc-e3e4-11eb-9423-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+                            "code": "B",
+                            "display": "Basis verzekerd"
+                        }
+                    ]
+                },
+                "subscriber": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "subscriberId": "12345678",
+                "beneficiary": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "period": {
+                    "start": "2018-01-01",
+                    "end": "2018-12-31"
+                },
+                "payor": [
+                    {
+                        "reference": "Organization/1bfd9dc1-bd60-45ff-bab7-b2071681e938",
+                        "display": "Menzis Zorgverzekeraar N.V."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Coverage/def18cf1-b980-477e-b48a-b507618b7eb7",
+            "resource": {
+                "resourceType": "Coverage",
+                "id": "def18cf1-b980-477e-b48a-b507618b7eb7",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verzekering/garantstelling. Id: 2eaa8d7c-e3e4-11eb-1618-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>abonnee</th><td>Johan XXX_Helleman</td></tr><tr><th>Betaler</th><td>Johan XXX_Helleman                                          \n              <div><div>Bank naam: ING</div><div>Rekeningnummer: NL85INGB0001234567</div>Bank code: INGBNL2A                                          \n              </div></td></tr><tr><th>begunstigde</th><td>Johan XXX_Helleman</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2eaa8d7c-e3e4-11eb-1618-020000000000"
+                    }
+                ],
+                "subscriber": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "beneficiary": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "payor": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation",
+                                "extension": [
+                                    {
+                                        "url": "BankName",
+                                        "valueString": "ING"
+                                    },
+                                    {
+                                        "url": "AccountNumber",
+                                        "valueString": "NL85INGB0001234567"
+                                    },
+                                    {
+                                        "url": "Bankcode",
+                                        "valueString": "INGBNL2A"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                        "display": "Johan XXX_Helleman"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Patient/93cde269-ce35-4077-a39d-19296670e949",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "93cde269-ce35-4077-a39d-19296670e949",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 31dd08bc-e3e4-11eb-1031-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Johan XXX_Helleman (Johan), Man, 25 juli 1964,                         \n        <span title=\"Married (M - v3/MaritalStatus)\">Married</span></div><div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                         \n        <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail Privé)                  \n      </div><div>Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)</div><div><span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>,                         \n        <span title=\"Wife (WIFE - v3/RoleCode)\">Wife</span> Jannie J.P.M. van Putten-XXX_Helleman                        \n        <div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                               \n          <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail Privé), Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)                        \n        </div></div><div>Huisarts: van Partners                        \n        <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></div></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "31dd08bc-e3e4-11eb-1031-020000000000"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "text": "Johan XXX_Helleman",
+                        "family": "XXX_Helleman",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "XXX_Helleman"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Johan",
+                            "Johan",
+                            "J."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "CL"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "MC",
+                                            "display": "Mobiel telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "06-12345678",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "XXX_Helleman@hotmail.com",
+                        "use": "home"
+                    }
+                ],
+                "gender": "male",
+                "_gender": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                                        "code": "M",
+                                        "display": "Man"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "birthDate": "1964-07-25",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "PHYS",
+                                            "display": "Woon-/verblijfadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "home",
+                        "type": "physical",
+                        "line": [
+                            "Knolweg 1000"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Knolweg"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "1000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Stitswerd",
+                        "postalCode": "9999XA",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "multipleBirthBoolean": false,
+                "contact": [
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                                        "code": "1",
+                                        "display": "Eerste relatie/contactpersoon"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/RoleCode",
+                                        "code": "WIFE",
+                                        "display": "Wife"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                    "valueCode": "NL4"
+                                }
+                            ],
+                            "family": "van Putten-XXX_Helleman",
+                            "_family": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+                                        "valueString": "van"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                        "valueString": "Putten"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+                                        "valueString": "XXX_Helleman"
+                                    }
+                                ]
+                            },
+                            "given": [
+                                "Jannie",
+                                "J.P.M."
+                            ],
+                            "_given": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                            "valueCode": "BR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                            "valueCode": "IN"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/v3/AddressUse",
+                                                    "code": "MC",
+                                                    "display": "Mobiel telefoonnummer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "system": "phone",
+                                "value": "06-12345678",
+                                "use": "mobile"
+                            },
+                            {
+                                "system": "email",
+                                "value": "XXX_Helleman@hotmail.com",
+                                "use": "home"
+                            }
+                        ],
+                        "address": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/v3/AddressUse",
+                                                "code": "PHYS",
+                                                "display": "Woon-/verblijfadres"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "use": "home",
+                            "type": "physical",
+                            "line": [
+                                "Knolweg 1000"
+                            ],
+                            "_line": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                            "valueString": "Knolweg"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                            "valueString": "1000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "city": "Stitswerd",
+                            "postalCode": "9999XA",
+                            "country": "NLD",
+                            "_country": {
+                                "extension": [
+                                    {
+                                        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                    "code": "6030",
+                                                    "display": "Nederland"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/9f41a6fb-270b-4adf-accb-51efa1c3cd5e",
+                                    "display": "Huisartsen, niet nader gespecificeerd"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ab7f1bf0-6664-4322-bfa3-7d0ef76c1e1c",
+                        "display": "van Partners"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Organization/1bfd9dc1-bd60-45ff-bab7-b2071681e938",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1bfd9dc1-bd60-45ff-bab7-b2071681e938",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Organisatie. Id: 3332 (UZOVI)</caption><tbody><tr><th>Naam</th><td>Menzis Zorgverzekeraar N.V.</td></tr><tr><th>Contactgegevens</th><td><a href=\"tel:+31505233333\">+31505233333</a> (Vast telefoonnummer)                                    \n            </td></tr><tr><th>Adres</th><td>Postbus 34000, 7500KC Enschede, NLD (Post)</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+                        "value": "3332"
+                    }
+                ],
+                "name": "Menzis Zorgverzekeraar N.V.",
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31505233333",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "PST",
+                                            "display": "Postadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "type": "postal",
+                        "line": [
+                            "Postbus 34000"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Postbus"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "34000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Enschede",
+                        "postalCode": "7500KC",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

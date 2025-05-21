@@ -1,0 +1,28 @@
+{
+    "name": "nl-mgo-dva-mock-private",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "remoteUser": "app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "ms-python.mypy-type-checker"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.testing.pytestEnabled": true,
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "charliermarsh.ruff",
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.ruff": true,
+                        "source.organizeImports.ruff": true
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "resourceType": "Bundle",
+    "id": "5a5709e3-8265-4991-8a1c-13454d2de621",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:48:26.066+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/AllergyIntolerance?patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/AllergyIntolerance/1a92b81e-b240-4536-8505-d1d885e45e0c",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "1a92b81e-b240-4536-8505-d1d885e45e0c",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Allergie/intolerantie. Patiënt: Johan XXX_Helleman. Id: 2c8d2bbc-e3e4-11eb-1953-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Allergie voor substantie (bevinding) (419199007 - SNOMED CT)\">Allergie voor substantie (bevinding)</span>, Status: actief / bevestigd                        \n        </caption><tbody><tr><th>Code</th><td><span title=\"Bijengif (substantie) (288328004 - SNOMED CT)\">Bijengif (substantie)</span></td></tr><tr><th>Eerste symptomen</th><td>8 november 2008</td></tr><tr><th>Meest recente voorkomen</th><td>15 november 2009</td></tr><tr><th>Reactie</th><td><ul><li><div><span title=\"Ernstig (kwalificatiewaarde) (24484000 - SNOMED CT)\">Ernstig (kwalificatiewaarde)</span></div><div><span title=\"misselijkheid en braken (aandoening) (16932000 - SNOMED CT)\">misselijkheid en braken (aandoening)</span></div></li></ul></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2c8d2bbc-e3e4-11eb-1953-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "category": [
+                    "biologic"
+                ],
+                "_category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "419199007",
+                                            "display": "Allergie voor substantie (bevinding)"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "criticality": "high",
+                "_criticality": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "24484000",
+                                        "display": "Ernstig (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "288328004",
+                            "display": "Bijengif (substantie)"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "onsetDateTime": "2008-11-08",
+                "lastOccurrence": "2009-11-15",
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "16932000",
+                                        "display": "misselijkheid en braken (aandoening)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "severity": "severe",
+                        "_severity": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "24484000",
+                                                "display": "Ernstig (kwalificatiewaarde)"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

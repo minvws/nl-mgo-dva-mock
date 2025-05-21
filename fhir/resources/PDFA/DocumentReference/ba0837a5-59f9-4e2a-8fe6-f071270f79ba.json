@@ -1,0 +1,74 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "ba0837a5-59f9-4e2a-8fe6-f071270f79ba",
+    "meta": {
+        "extension": [
+            {
+                "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                "valueUri": "#6fc57697c4867cea"
+            }
+        ],
+        "versionId": "2",
+        "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ctable\u003e\u003ccaption\u003eDocumentReference. Subject: Eva XXX_Schulte. Set‑Id: urn:oid:1.2.276.0.7230010.3.1.2.1787205428.3024.1522314975.252898 (urn:ietf:rfc:3986), Id: 6789093343905 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: vervangen                              \n          \u003cspan style\u003d\"display: block;\"\u003eAuteur: De Hoed\u003c/span\u003e\u003c/caption\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eType\u003c/th\u003e\u003ctd\u003e\u003cspan title\u003d\"verwijsbrief (11051000146107 - SNOMED CT)\"\u003everwijsbrief\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eGeïndexeerd\u003c/th\u003e\u003ctd\u003e2023-07-01T00:00:00+01:00\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eOmschrijving\u003c/th\u003e\u003ctd\u003eVerwijsbrief Arts\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003e\u003cimg src\u003d\"Binary/4becdcc4-7ec6-4646-bc9a-1d2641673637\" alt\u003d\"null\" title\u003d\"Example PDF - Verwijsbrief Arts\"/\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+    },
+    "contained": [
+        {
+            "resourceType": "Practitioner",
+            "id": "d059a70d-dcd6-4f1c-861d-e5bee8895840",
+            "name": [
+                {
+                    "family": "De Hoed"
+                }
+            ]
+        }
+    ],
+    "masterIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:6e1d9fd5-df59-4dca-9b98-5d9dccfb8268"
+    },
+    "identifier": [
+        {
+            "system": "http://xis.org/fhir/NamingSystem/DocumentReferenceID",
+            "value": "6789093343905"
+        }
+    ],
+    "status": "superseded",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "11051000146107",
+                "display": "verwijsbrief"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+        "display": "Eva XXX_Schulte"
+    },
+    "indexed": "2023-07-01T00:00:00+01:00",
+    "author": [
+        {
+            "reference": "#d059a70d-dcd6-4f1c-861d-e5bee8895840",
+            "display": "De Hoed"
+        }
+    ],
+    "description": "Verwijsbrief Arts",
+    "content": [
+        {
+            "attachment": {
+                "contentType": "application/pdf",
+                "language": "nl",
+                "url": "Binary/4becdcc4-7ec6-4646-bc9a-1d2641673637",
+                "title": "Example PDF - Verwijsbrief Arts"
+            }
+        }
+    ]
+}

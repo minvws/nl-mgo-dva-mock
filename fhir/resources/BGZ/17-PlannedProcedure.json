@@ -1,0 +1,94 @@
+{
+    "resourceType": "Bundle",
+    "id": "da7522ca-17ce-4be5-b211-9dd3d417c67b",
+    "meta": {
+        "lastUpdated": "2024-04-15T07:13:25.678+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/ProcedureRequest?patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949&status=active"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/ProcedureRequest/d757fe3b-ec21-429a-a445-51991d3d8791",
+            "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "d757fe3b-ec21-429a-a445-51991d3d8791",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verrichtingaanvraag. Subject: Johan XXX_Helleman. Id: 3377ccfc-e3e4-11eb-1749-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief                              \n          <span style=\"display: block;\">Intentie: plan</span></caption><tbody><tr><td><span title=\"Biopsie van huid (verrichting) (240977001 - SNOMED CT)\">Biopsie van huid (verrichting)</span></td><td><div>Wanneer: Vanaf 12 maart 2022</div></td></tr><tr><th>Beoogde uitvoerende</th><td><div>Test Medisch Centrum</div></td></tr><tr><th>Reden</th><td>Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "3377ccfc-e3e4-11eb-1749-020000000000"
+                    }
+                ],
+                "status": "active",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                                        "code": "new",
+                                        "display": "Ordered"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "intent": "plan",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "240977001",
+                            "display": "Biopsie van huid (verrichting)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "occurrencePeriod": {
+                    "start": "2022-03-12"
+                },
+                "performer": {
+                    "reference": "Organization/3ced4938-a44d-44a9-8fe9-5a08594fbe52",
+                    "display": "Test Medisch Centrum"
+                },
+                "reasonReference": [
+                    {
+                        "reference": "Condition/a14e82b7-163e-411d-b378-cbbb34a2ea47",
+                        "display": "Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

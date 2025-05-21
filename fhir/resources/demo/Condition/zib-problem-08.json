@@ -1,0 +1,66 @@
+{
+    "resourceType": "Condition",
+    "id": "zib-problem-08",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 1d5affdb-8fdf-11ec-2686-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Syndroom van Korsakov (69482004 - SNOMED CT)\">Syndroom van Korsakov</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1d5affdb-8fdf-11ec-2686-020000000000"
+        }
+    ],
+    "clinicalStatus": "active",
+    "_clinicalStatus": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "55561003",
+                            "display": "Active"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "verificationStatus": "confirmed",
+    "_verificationStatus": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confimed present"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "69482004",
+                "display": "Syndroom van Korsakov"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    }
+}

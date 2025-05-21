@@ -1,0 +1,98 @@
+{
+    "resourceType": "Bundle",
+    "id": "534b1659-1b6a-46ce-973d-427ae3107269",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:34:29.662+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Consent/db0e91bf-a767-489c-9bca-36dcfbc10241",
+            "resource": {
+                "resourceType": "Consent",
+                "id": "db0e91bf-a767-489c-9bca-36dcfbc10241",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 2c2ac06c-e3e4-11eb-1819-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Levenstestament en wilsverklaring in dossier (gegevensobject) (11341000146107 - SNOMED CT)\">Levenstestament en wilsverklaring in dossier (gegevensobject)</span>,                               \n          <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief                              \n          <span style=\"display: block;\">Toestemminggevende partij: Jannie van Putten-XXX_Helleman</span></caption><tfoot><tr><td colspan=\"2\">Niet-reanimerenpenning</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>9 april 2018</td></tr><tr><th>Aandoening</th><td>ALS</td></tr><tr><th>Toestemminggevende partij</th><td><ul><li>Jannie van Putten-XXX_Helleman</li></ul></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective-Disorder",
+                        "valueReference": {
+                            "reference": "Condition/3c77bb22-795d-4e5e-815e-1db080fca69f",
+                            "display": "ALS"
+                        }
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/Comment",
+                        "valueString": "Niet-reanimerenpenning"
+                    }
+                ],
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "2c2ac06c-e3e4-11eb-1819-020000000000"
+                },
+                "status": "active",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "11341000146107",
+                                "display": "Levenstestament en wilsverklaring in dossier (gegevensobject)"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                                "code": "NR",
+                                "display": "Niet reanimeren verklaring"
+                            }
+                        ]
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "dateTime": "2018-04-09",
+                "consentingParty": [
+                    {
+                        "reference": "RelatedPerson/ffd69523-5f44-4479-948b-ec49e467c27b",
+                        "display": "Jannie van Putten-XXX_Helleman"
+                    }
+                ],
+                "policy": [
+                    {
+                        "uri": "http://wetten.overheid.nl/"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

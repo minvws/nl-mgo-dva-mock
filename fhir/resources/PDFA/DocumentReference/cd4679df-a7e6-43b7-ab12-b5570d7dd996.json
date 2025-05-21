@@ -1,0 +1,68 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "cd4679df-a7e6-43b7-ab12-b5570d7dd996",
+    "meta": {
+        "extension": [
+            {
+                "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                "valueUri": "#6fc57697c4867cea"
+            }
+        ],
+        "versionId": "2",
+        "lastUpdated": "2023-07-05T09:13:09.083+00:00",
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ctable\u003e\u003ccaption\u003eDocumentReference. Subject: Eva XXX_Schulte. Set‑Id: 678903434902 (http://xis.org/fhir/NamingSystem/DocumentReferenceID), Status: vervangen                              \n          \u003cspan style\u003d\"display: block;\"\u003eAuteur: De Hoed\u003c/span\u003e\u003c/caption\u003e\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eType\u003c/th\u003e\u003ctd\u003e\u003cspan title\u003d\"ontslagbrief (11071000146104 - SNOMED CT)\"\u003eontslagbrief\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eGeïndexeerd\u003c/th\u003e\u003ctd\u003e2023-07-02T00:00:00+01:00\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eOmschrijving\u003c/th\u003e\u003ctd\u003eKopie van ontslagbrief\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eContent\u003c/th\u003e\u003ctd\u003e\u003cimg src\u003d\"Binary/66af5660-a20c-4946-a928-fb429d3ae462\" alt\u003d\"null\" title\u003d\"Example PDF - Kopie van ontslagbrief\"/\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+    },
+    "contained": [
+        {
+            "resourceType": "Practitioner",
+            "id": "5aca7e83-588d-477f-bcee-9df98f676af4",
+            "name": [
+                {
+                    "family": "De Hoed"
+                }
+            ]
+        }
+    ],
+    "masterIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:1d6acae7-2fe5-4188-88d7-5490ddb4bac5"
+    },
+    "status": "superseded",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "11071000146104",
+                "display": "ontslagbrief"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/aae7b5aa-d796-4fba-b4d3-852d9043ee66",
+        "display": "Eva XXX_Schulte"
+    },
+    "indexed": "2023-07-02T00:00:00+01:00",
+    "author": [
+        {
+            "reference": "#5aca7e83-588d-477f-bcee-9df98f676af4",
+            "display": "De Hoed"
+        }
+    ],
+    "description": "Kopie van ontslagbrief",
+    "content": [
+        {
+            "attachment": {
+                "contentType": "application/pdf",
+                "language": "nl",
+                "url": "Binary/66af5660-a20c-4946-a928-fb429d3ae462",
+                "title": "Example PDF - Kopie van ontslagbrief"
+            }
+        }
+    ]
+}

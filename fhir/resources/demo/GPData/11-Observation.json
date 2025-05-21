@@ -1,0 +1,1754 @@
+{
+    "resourceType": "Bundle",
+    "id": "213b5b24-2e14-4ee6-83d6-32c561e26d2c",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:36.493+00:00"
+    },
+    "type": "searchset",
+    "total": 18,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?_include=Observation%3Arelated-target&_include=Observation%3Aspecimen&code=https%3A%2F%2Freferentiemodel.nhg.org%2Ftabellen%2Fnhg-tabel-45-diagnostische-bepalingen%7C&date=ge2017-01-01&patient=Patient%2Font-ver-gpdata-patient-kwalificatie1"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact14-fastingglucose",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact14-fastingglucose",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0017e0aa05245455"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:38.117+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c1975acb-041c-11ec-1725-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td colspan=\"2\">\n              <ul>\n                <li>HNP (thoracaal/lumbaal)</li>\n                <li>Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"2\">2024-03-18</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"glucose nuchter, art/cap (lab) (3208 - nhg-tabel-45-diagnostische-bepalingen)\">glucose nuchter, art/cap (lab)</span>\n            </td>\n            <td>5.4 mmol/L</td>\n            <td>\n              <div>\n                <span title=\"Normal Range (normal - referencerange-meaning)\">Normal Range</span> 3.5 mmol/L - 5.6 mmol/L</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "HNP (thoracaal/lumbaal)"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "c1975acb-041c-11ec-1725-020000000000"
+                    }
+                ],
+                "status": "definitief",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "Bloedonderzoek - glucose"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "3208",
+                            "display": "glucose nuchter, art/cap (lab)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact14",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-03-18",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 5.4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3.5,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        },
+                        "high": {
+                            "value": 5.6,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/referencerange-meaning",
+                                    "code": "normal",
+                                    "display": "Normal Range"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact01-pulseremarks",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact01-pulseremarks",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#61df9989d37313a2"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:38.773+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bb6ad96b-041c-11ec-1170-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Boezemfibrilleren/-fladderen</li>\n                <li>Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"polsopmerkingen (2126 - nhg-tabel-45-diagnostische-bepalingen)\">polsopmerkingen</span>\n            </td>\n            <td>linker pols</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                            "display": "Boezemfibrilleren/-fladderen"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bb6ad96b-041c-11ec-1170-020000000000"
+                    }
+                ],
+                "status": "definitief",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "2126",
+                            "display": "polsopmerkingen"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-03",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueString": "linker pols"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact01-bpdiastolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact01-bpdiastolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#eefda2976b22a048"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:42.291+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bad6fddb-041c-11ec-7544-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Boezemfibrilleren/-fladderen</li>\n                <li>Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"diastolische bloeddruk (1740 - nhg-tabel-45-diagnostische-bepalingen)\">diastolische bloeddruk</span>\n            </td>\n            <td>93 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                            "display": "Boezemfibrilleren/-fladderen"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bad6fddb-041c-11ec-7544-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1740",
+                            "display": "diastolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8462-4",
+                            "display": "Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-03",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 93,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact01-pulsefrequency",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact01-pulsefrequency",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#006f6b24eb290b75"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:47.873+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bb4f140b-041c-11ec-6152-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Boezemfibrilleren/-fladderen</li>\n                <li>Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"polsfrequentie (1875 - nhg-tabel-45-diagnostische-bepalingen)\">polsfrequentie</span>\n            </td>\n            <td>120 /min</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                            "display": "Boezemfibrilleren/-fladderen"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bb4f140b-041c-11ec-6152-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1875",
+                            "display": "polsfrequentie"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8893-0",
+                            "display": "Heart rate Peripheral artery by Palpation"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-03",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 120,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact03-pulsefrequency",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact03-pulsefrequency",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#d150f5a7f72cc31d"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:49.115+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bc96611b-041c-11ec-6784-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-06-12</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"polsfrequentie (1875 - nhg-tabel-45-diagnostische-bepalingen)\">polsfrequentie</span>\n            </td>\n            <td>104 /min</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bc96611b-041c-11ec-6784-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1875",
+                            "display": "polsfrequentie"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8893-0",
+                            "display": "Heart rate Peripheral artery by Palpation"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-06-12",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 104,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact12-temperature",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact12-temperature",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0d01f992d8e2d4b3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:55.778+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c1146f2b-041c-11ec-6196-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-04-17</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"structuur van sublinguale ruimte (122861001 - SNOMED CT)\">structuur van sublinguale ruimte</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n            </td>\n            <td>37.4 Cel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "c1146f2b-041c-11ec-6196-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1915",
+                            "display": "temperatuur patiënt (oraal gemeten)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Lichaamstemperatuur [temperatuur] in ^patiënt"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact12",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-04-17",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 37.4,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "122861001",
+                            "display": "structuur van sublinguale ruimte"
+                        }
+                    ],
+                    "text": "Oraal onder de tong"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact11-temperature",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact11-temperature",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6879c64f1293d07e"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:56.762+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c02924cb-041c-11ec-1413-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-03-08</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"structuur van sublinguale ruimte (122861001 - SNOMED CT)\">structuur van sublinguale ruimte</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n            </td>\n            <td>37.7 Cel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "c02924cb-041c-11ec-1413-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1915",
+                            "display": "temperatuur patiënt (oraal gemeten)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Lichaamstemperatuur [temperatuur] in ^patiënt"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-03-08",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 37.7,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "122861001",
+                            "display": "structuur van sublinguale ruimte"
+                        }
+                    ],
+                    "text": "Oraal onder de tong"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact02-bpdiastolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact02-bpdiastolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#db9ae0c479495205"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:58.843+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bbbc2dbb-041c-11ec-1593-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"diastolische bloeddruk (1740 - nhg-tabel-45-diagnostische-bepalingen)\">diastolische bloeddruk</span>\n            </td>\n            <td>87 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bbbc2dbb-041c-11ec-1593-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1740",
+                            "display": "diastolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8462-4",
+                            "display": "Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-23",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 87,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact03-bpdiastolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact03-bpdiastolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#f374c31ac1e64760"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:03.483+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bc2e025b-041c-11ec-1496-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-06-12</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"diastolische bloeddruk (1740 - nhg-tabel-45-diagnostische-bepalingen)\">diastolische bloeddruk</span>\n            </td>\n            <td>96 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bc2e025b-041c-11ec-1496-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1740",
+                            "display": "diastolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8462-4",
+                            "display": "Intravasculaire diastolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-06-12",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 96,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact10-temperature",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact10-temperature",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#4c5e444d2b82c2bf"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:03.785+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bf98085b-041c-11ec-1328-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-02-12</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"structuur van sublinguale ruimte (122861001 - SNOMED CT)\">structuur van sublinguale ruimte</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n            </td>\n            <td>37.3 Cel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bf98085b-041c-11ec-1328-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1915",
+                            "display": "temperatuur patiënt (oraal gemeten)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Lichaamstemperatuur [temperatuur] in ^patiënt"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact10",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-02-12",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 37.3,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "122861001",
+                            "display": "structuur van sublinguale ruimte"
+                        }
+                    ],
+                    "text": "Oraal onder de tong"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact03-bpsystolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact03-bpsystolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6d197176c98413dc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:04.990+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bc533d9b-041c-11ec-1998-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-06-12</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"systolische bloeddruk (1744 - nhg-tabel-45-diagnostische-bepalingen)\">systolische bloeddruk</span>\n            </td>\n            <td>188 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bc533d9b-041c-11ec-1998-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1744",
+                            "display": "systolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8480-6",
+                            "display": "Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-06-12",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 188,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact01-bpsystolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact01-bpsystolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#55fb84b8a50f48f7"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:09.013+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bafb75cb-041c-11ec-1770-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Boezemfibrilleren/-fladderen</li>\n                <li>Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"systolische bloeddruk (1744 - nhg-tabel-45-diagnostische-bepalingen)\">systolische bloeddruk</span>\n            </td>\n            <td>184 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                            "display": "Boezemfibrilleren/-fladderen"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bafb75cb-041c-11ec-1770-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1744",
+                            "display": "systolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8480-6",
+                            "display": "Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-03",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 184,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact02-bpsystolic",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact02-bpsystolic",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#10b4008d749205a3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:11.579+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bbd3ad5b-041c-11ec-2133-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"systolische bloeddruk (1744 - nhg-tabel-45-diagnostische-bepalingen)\">systolische bloeddruk</span>\n            </td>\n            <td>172 mmHg</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bbd3ad5b-041c-11ec-2133-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1744",
+                            "display": "systolische bloeddruk"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8480-6",
+                            "display": "Intravasculaire systolische bloeddruk [druk] in arterieel vaatstelsel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-23",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 172,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact11-throatculture",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact11-throatculture",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#312f576103eafcbe"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:13.088+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c04cd96b-041c-11ec-1076-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-03-08</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"kweek keel (1334 - nhg-tabel-45-diagnostische-bepalingen)\">kweek keel</span>\n            </td>\n            <td>\n              <span title=\"positief (32 - nhg-tabel-45-diagnostische-bepalingen#resultaten)\">positief</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "c04cd96b-041c-11ec-1076-020000000000"
+                    }
+                ],
+                "status": "definitief",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "Microbiologisch onderzoek - keel"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1334",
+                            "display": "kweek keel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-03-08",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
+                            "code": "32",
+                            "display": "positief"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact02-pulsefrequency",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact02-pulsefrequency",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#b39c8f1b52edf5cc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:15.348+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bc0ae9fb-041c-11ec-9523-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>Consult met Dokter Bernard</td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"polsfrequentie (1875 - nhg-tabel-45-diagnostische-bepalingen)\">polsfrequentie</span>\n            </td>\n            <td>84 /min</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bc0ae9fb-041c-11ec-9523-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1875",
+                            "display": "polsfrequentie"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8893-0",
+                            "display": "Heart rate Peripheral artery by Palpation"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-23",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 84,
+                    "unit": "/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact16-ct",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact16-ct",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#a0511dc336e7def5"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:18.942+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c26e80eb-041c-11ec-6227-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>HNP (thoracaal/lumbaal)</li>\n                <li>Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-04-12</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"CT-onderrug/lumbale wervelkolom (2283 - nhg-tabel-45-diagnostische-bepalingen)\">CT-onderrug/lumbale wervelkolom</span>\n            </td>\n            <td>Duidelijke uitstulping L02.</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                            "display": "HNP (thoracaal/lumbaal)"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "c26e80eb-041c-11ec-6227-020000000000"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "2283",
+                            "display": "CT-onderrug/lumbale wervelkolom"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Lichaamstemperatuur [temperatuur] in ^patiënt"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact16",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-04-12",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueString": "Duidelijke uitstulping L02."
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact01-pulserhythm",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact01-pulserhythm",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#71e83892a24fda02"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:19.543+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bb8b59bb-041c-11ec-1651-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Boezemfibrilleren/-fladderen</li>\n                <li>Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2023-05-03</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"polsritme (2102 - nhg-tabel-45-diagnostische-bepalingen)\">polsritme</span>\n            </td>\n            <td>\n              <span title=\"irregulair (202 - nhg-tabel-45-diagnostische-bepalingen#resultaten)\">irregulair</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                            "display": "Boezemfibrilleren/-fladderen"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bb8b59bb-041c-11ec-1651-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "2102",
+                            "display": "polsritme"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "effectiveDateTime": "2023-05-03",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
+                            "code": "202",
+                            "display": "irregulair"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact06-temperature",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-gpdata-observation-contact06-temperature",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#c90843ac29694d99"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:20.644+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: bdd9b68b-041c-11ec-8038-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-01-08</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"structuur van sublinguale ruimte (122861001 - SNOMED CT)\">structuur van sublinguale ruimte</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n            </td>\n            <td>37.4 Cel</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
+                        "valueReference": {
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                            "display": "Keelpijn"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bdd9b68b-041c-11ec-8038-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+                            "code": "1915",
+                            "display": "temperatuur patiënt (oraal gemeten)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Lichaamstemperatuur [temperatuur] in ^patiënt"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "context": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact06",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "effectiveDateTime": "2024-01-08",
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 37.4,
+                    "unit": "Cel",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "122861001",
+                            "display": "structuur van sublinguale ruimte"
+                        }
+                    ],
+                    "text": "Oraal onder de tong"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

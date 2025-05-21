@@ -1,0 +1,320 @@
+{
+    "resourceType": "Bundle",
+    "id": "6a829d7a-d3ca-41ab-b816-298e59ac92ae",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:32.646+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}Patient?_id\u003dPatient%2Font-ver-gpdata-patient-kwalificatie1\u0026_include\u003dPatient%3Ageneral-practitioner"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}Patient/ont-ver-gpdata-patient-kwalificatie1",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "ont-ver-gpdata-patient-kwalificatie1",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6c939348d4a85e4b"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2024-06-05T07:50:06.974+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cdiv\u003eId \u003ci\u003eafgeschermd (ontbrekend gegeven)\u003c/i\u003e (BSN), Jacqueline XXX_Cevat, Vrouw, 25 juli 1964\u003c/div\u003e\n      \u003cdiv\u003e\n        \u003ca href\u003d\"tel:+31190531770\"\u003e+31190531770\u003c/a\u003e (Vast telefoonnummer Privé), \u003ca href\u003d\"mailto:j_cevat950@HUISARTS.nl\"\u003ej_cevat950@HUISARTS.nl\u003c/a\u003e (E-mail Privé)\u003c/div\u003e\n      \u003cdiv\u003eKnolweg 1001, 9999XX Stitswerd, NLD (Bezoek)\u003c/div\u003e\n      \u003cdiv\u003eHuisarts: Dokter Bernard\u003c/div\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "masked"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Jacqueline XXX_Cevat",
+                        "family": "XXX_Cevat",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "XXX_Cevat"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Jacqueline",
+                            "J"
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31190531770",
+                        "use": "home"
+                    },
+                    {
+                        "system": "email",
+                        "value": "j_cevat950@HUISARTS.nl",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "_gender": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                                        "code": "F",
+                                        "display": "Vrouw"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "birthDate": "1964-07-25",
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "PHYS",
+                                            "display": "Woon-/verblijfadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "home",
+                        "type": "physical",
+                        "line": [
+                            "Knolweg 1001"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Knolweg"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "1001"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Stitswerd",
+                        "postalCode": "9999XX",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-gpdata-practitioner-kwalificatie1",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#23a95e6c61b7befd"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2024-06-05T07:50:05.872+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cdiv\u003eId 000001111 (UZI-NR-PERS), Dokter Bernard, Vrouw\u003c/div\u003e\n      \u003cdiv\u003e\n        \u003ca href\u003d\"mailto:dokterbernard@aesculaap.nl\"\u003edokterbernard@aesculaap.nl\u003c/a\u003e (E-mail Werk), \u003ca href\u003d\"tel:+31434073576\"\u003e+31434073576\u003c/a\u003e (Vast telefoonnummer Werk)\u003c/div\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+                        "value": "000001111"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Dokter Bernard",
+                        "family": "Dokter Bernard",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Dokter Bernard"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Vaste",
+                            "V."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "dokterbernard@aesculaap.nl",
+                        "use": "work"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31434073576",
+                        "use": "work"
+                    }
+                ],
+                "gender": "female",
+                "_gender": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                                        "code": "F",
+                                        "display": "Vrouw"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "resourceType": "Consent",
+    "id": "zib-treatmentdirective-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 1ecd5e13-8fdf-11ec-8335-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Treatment instructions (record artifact) (11291000146105 - SNOMED CT)\">Treatment instructions (record artifact)</span>, Status: actief</caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 - <span title=\"Patient (116154003 - SNOMED CT)\">Patient</span></td></tr><tr><th><span title=\"Cardiopulmonary resuscitation (procedure) (89666000 - SNOMED CT)\">Cardiopulmonary resuscitation (procedure)</span></th><td><span title=\"Behandeling niet toegestaan en/of wenselijk (NEE - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Behandeling niet toegestaan en/of wenselijk</span></td></tr><tr><th>Bron </th><td>Niet-reanimerenpenning<div>Mondelinge afspraak</div></td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Verification",
+            "extension": [
+                {
+                    "url": "Verified",
+                    "valueBoolean": true
+                },
+                {
+                    "url": "VerifiedWith",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "116154003",
+                                "display": "Patient"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "VerificationDate",
+                    "valueDateTime": "2018-04-09"
+                }
+            ]
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "89666000",
+                        "display": "Cardiopulmonary resuscitation (procedure)"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/consent-additionalSources",
+            "valueReference": {
+                "reference": "Consent/zib-advancedirective-03",
+                "display": "Mondelinge afspraak"
+            }
+        }
+    ],
+    "modifierExtension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4",
+                        "code": "NEE",
+                        "display": "Behandeling niet toegestaan en/of wenselijk"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+        "value": "1ecd5e13-8fdf-11ec-8335-020000000000"
+    },
+    "status": "active",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "11291000146105",
+                    "display": "Treatment instructions (record artifact)"
+                }
+            ]
+        }
+    ],
+    "patient": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "period": {
+        "start": "2018-04-09"
+    },
+    "sourceReference": {
+        "reference": "Consent/zib-advancedirective-02",
+        "display": "Niet-reanimerenpenning"
+    },
+    "policy": [
+        {
+            "uri": "http://wetten.overheid.nl/"
+        }
+    ]
+}

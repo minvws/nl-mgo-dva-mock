@@ -1,0 +1,22 @@
+{
+    "resourceType": "Device",
+    "id": "zib-medicaldeviceproduct-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Id: 1ba2b16b-8fdf-11ec-1278-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td>Rollator</td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1ba2b16b-8fdf-11ec-1278-020000000000"
+        }
+    ],
+    "type": {
+        "text": "Rollator"
+    }
+}

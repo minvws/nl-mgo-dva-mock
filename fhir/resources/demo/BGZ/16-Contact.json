@@ -1,0 +1,169 @@
+{
+    "resourceType": "Bundle",
+    "id": "4ca3b247-b87d-455f-b1cf-1036c21b50c7",
+    "meta": {
+        "lastUpdated": "2024-04-15T07:02:14.945+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Encounter?class=http%3A%2F%2Fhl7.org%2Ffhir%2Fv3%2FActCode%7CIMP%2Chttp%3A%2F%2Fhl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE%2Chttp%3A%2F%2Fhl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Encounter/afc5601e-dcbc-4173-ac2a-b9c046b40089",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "afc5601e-dcbc-4173-ac2a-b9c046b40089",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Contact. Subject: Johan XXX_Helleman. Id: bfb931e0-6555-4a93-ae56-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tbody><tr><th>Type contact</th><td><div><span title=\"inpatient encounter (IMP - v3/ActCode)\">inpatient encounter</span></div></td></tr><tr><th>Periode</th><td>15 augustus 2012</td></tr><tr><th>Probleem</th><td>Fractuur van onderste extremiteit (aandoening)</td></tr><tr><th>Participant</th><td><div>J.H.R. Peters                                                \n                <div>Zorgverlenerrol: SEH-arts</div></div></td></tr><tr><th>Zorgaanbieder</th><td>SEH - UMCG</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "bfb931e0-6555-4a93-ae56-020000000000"
+                    }
+                ],
+                "status": "finished",
+                "class": {
+                    "system": "http://hl7.org/fhir/v3/ActCode",
+                    "code": "IMP",
+                    "display": "inpatient encounter"
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "participant": [
+                    {
+                        "individual": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/375c8286-7c20-4460-8013-44e36547d911",
+                                        "display": "SEH-arts"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/0f27334e-5e48-43a2-9a24-69a1a3fd3408",
+                            "display": "J.H.R. Peters"
+                        }
+                    }
+                ],
+                "period": {
+                    "start": "2012-08-15",
+                    "end": "2012-08-15"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/c7ff42bf-b258-4111-9d6a-97a8fc6ffe98",
+                            "display": "Fractuur van onderste extremiteit (aandoening)"
+                        }
+                    }
+                ],
+                "serviceProvider": {
+                    "reference": "Organization/74cf0037-0256-42a5-8b97-af9b4bd0be42",
+                    "display": "SEH - UMCG"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Encounter/b8f7995d-1874-40eb-a60d-89d0fc0c01e6",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "b8f7995d-1874-40eb-a60d-89d0fc0c01e6",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Contact. Subject: Johan XXX_Helleman. Id: 2f8758ec-e3e4-11eb-1081-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tbody><tr><th>Type contact</th><td><div><span title=\"inpatient encounter (IMP - v3/ActCode)\">inpatient encounter</span></div></td></tr><tr><th>Periode</th><td>16 augustus 2012 - 19 augustus 2012</td></tr><tr><th>Probleem</th><td>Chirurgische reductie van fractuur (verrichting)</td></tr><tr><th>Participant</th><td><div>G.Z.M. de Wit                                                \n                <div>Zorgverlenerrol: Orthopedie</div></div></td></tr><tr><th>Zorgaanbieder</th><td>Orthopedie - UMCG</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2f8758ec-e3e4-11eb-1081-020000000000"
+                    }
+                ],
+                "status": "finished",
+                "class": {
+                    "system": "http://hl7.org/fhir/v3/ActCode",
+                    "code": "IMP",
+                    "display": "inpatient encounter"
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "participant": [
+                    {
+                        "individual": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/a1659ce5-8161-477a-9b69-7a3fdb3ca9e5",
+                                        "display": "Orthopedie"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/2f13adfe-3403-448b-b2f8-c64bf8317919",
+                            "display": "G.Z.M. de Wit"
+                        }
+                    }
+                ],
+                "period": {
+                    "start": "2012-08-16",
+                    "end": "2012-08-19"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Procedure/c384f08d-da56-4e03-8cfa-20715d316927",
+                            "display": "Chirurgische reductie van fractuur (verrichting)"
+                        }
+                    }
+                ],
+                "serviceProvider": {
+                    "reference": "Organization/e330e265-0f43-4b50-a32d-3909c36cff15",
+                    "display": "Orthopedie - UMCG"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

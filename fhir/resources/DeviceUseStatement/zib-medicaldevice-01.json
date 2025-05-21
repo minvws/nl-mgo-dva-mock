@@ -1,0 +1,81 @@
+{
+    "resourceType": "DeviceUseStatement",
+    "id": "zib-medicaldevice-01",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 1b7c5449-8fdf-11ec-2143-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Gehoorapparaat</td></tr><tr><th>Deel van lichaam</th><td><span title=\"Ear Structure (117590005 - SNOMED CT)\">Ear Structure</span><span title=\"Right (24028007 - SNOMED CT)\">Right</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 2007</td></tr><tr><th>Indicatie</th><td><div>Presbyacusis</div></td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+            "valueReference": {
+                "reference": "Organization/nl-core-organization-03",
+                "display": "Test Medisch Centrum"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1b7c5449-8fdf-11ec-2143-020000000000"
+        }
+    ],
+    "status": "active",
+    "subject": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "whenUsed": {
+        "start": "2007"
+    },
+    "device": {
+        "reference": "Device/zib-MedicalDeviceProduct-03",
+        "display": "Gehoorapparaat"
+    },
+    "indication": [
+        {
+            "extension": [
+                {
+                    "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+                    "valueReference": {
+                        "reference": "Condition/zib-problem-04",
+                        "display": "Presbyacusis"
+                    }
+                }
+            ]
+        }
+    ],
+    "bodySite": {
+        "extension": [
+            {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "24028007",
+                            "display": "Right"
+                        }
+                    ]
+                }
+            }
+        ],
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "117590005",
+                "display": "Ear Structure"
+            }
+        ]
+    },
+    "note": [
+        {
+            "text": "Apparaat niet zichtbaar (diep in de gehooringang)"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "resourceType": "Specimen",
+    "id": "zib-laboratorytestresult-specimen-02",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Paul XXX_Mesker. Id: c3f04249-3463-4804-a1ba-3cbb2a70314d (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Blood (substance) (87612001 - SNOMED CT)\">Blood (substance)</span></td></tr><tr><th>Inzameling</th><td>08:08:00, 23 mei 2012</td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "c3f04249-3463-4804-a1ba-3cbb2a70314d"
+        }
+    ],
+    "status": "available",
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "87612001",
+                "display": "Blood (substance)"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/nl-core-patient-02",
+        "display": "Paul XXX_Mesker"
+    },
+    "collection": {
+        "collectedDateTime": "2014-01-21T14:14:14+01:00",
+        "quantity": {
+            "value": 5,
+            "unit": "mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+        },
+        "method": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "55034008",
+                    "display": "Ward laboratory procedure, screening"
+                }
+            ]
+        },
+        "bodySite": {
+            "extension": [
+                {
+                    "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "24028007",
+                                "display": "Right"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "368208006",
+                    "display": "Left upper arm structure"
+                }
+            ]
+        }
+    }
+}

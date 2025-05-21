@@ -1,0 +1,495 @@
+{
+    "/48/fhir/Patient": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "_include=Patient:general-practitioner"
+                ],
+                "resource_path": "BGZ/1-PatientData.json"
+            }
+        ]
+    },
+    "/48/fhir/Coverage": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "_include=Coverage:payor:Patient",
+                    "_include=Coverage:payor:Organization"
+                ],
+                "resource_path": "BGZ/2-Payer.json"
+            }
+        ]
+    },
+    "/48/fhir/Consent": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|11291000146105"
+                ],
+                "resource_path": "BGZ/3-1-TreatmentDirectives.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|11341000146107"
+                ],
+                "resource_path": "BGZ/3-2-Advancedirectives.json"
+            }
+        ]
+    },
+    "/48/fhir/Observation/$lastn": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|118228005,http://snomed.info/sct|384821006"
+                ],
+                "resource_path": "BGZ/5-FunctionalOrMentalStatus.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://snomed.info/sct|365508006"
+                ],
+                "resource_path": "BGZ/7-1-LivingSituation.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://loinc.org|85354-9"
+                ],
+                "resource_path": "BGZ/13-1-Bloodpressure.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://loinc.org|29463-7"
+                ],
+                "resource_path": "BGZ/13-2-Bodyweight.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9"
+                ],
+                "resource_path": "BGZ/13-3-Bodyheight.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|275711006",
+                    "_include=Observation:related-target",
+                    "_include=Observation:specimen"
+                ],
+                "resource_path": "BGZ/14-Result.json"
+            }
+        ]
+    },
+    "/48/fhir/Condition": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "BGZ/6-Concern.json"
+            }
+        ]
+    },
+    "/48/fhir/Observation": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://snomed.info/sct|228366006"
+                ],
+                "resource_path": "BGZ/7-2-DrugUse.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://snomed.info/sct|228273003"
+                ],
+                "resource_path": "BGZ/7-3-AlcoholUse.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=http://snomed.info/sct|365980008"
+                ],
+                "resource_path": "BGZ/7-4-TobaccoUse.json"
+            }
+        ]
+    },
+    "/48/fhir/NutritionOrder": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "BGZ/7-5-NutritionAdvice.json"
+            }
+        ]
+    },
+    "/48/fhir/Flag": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "BGZ/8-Alert.json"
+            }
+        ]
+    },
+    "/48/fhir/AllergyIntolerance": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "BGZ/9-AllergyIntolerance.json"
+            }
+        ]
+    },
+    "/48/fhir/MedicationStatement": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6",
+                    "_include=MedicationStatement:medication"
+                ],
+                "resource_path": "BGZ/10-1-MedicationUse.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|16076005",
+                    "_include=MedicationStatement:medication"
+                ],
+                "resource_path": "BGZ/10-2-MedicationAgreement.json"
+            },
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|422037009",
+                    "_include=MedicationDispense:medication"
+                ],
+                "resource_path": "BGZ/10-3-AdministrationAgreement.json"
+            }
+        ]
+    },
+    "/48/fhir/MedicationRequest": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|16076005",
+                    "_include=MedicationRequest:medication"
+                ],
+                "resource_path": "BGZ/10-2-MedicationAgreement.json"
+            }
+        ]
+    },
+    "/48/fhir/MedicationDispense": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|422037009",
+                    "_include=MedicationDispense:medication"
+                ],
+                "resource_path": "BGZ/10-3-AdministrationAgreement.json"
+            }
+        ]
+    },
+    "/48/fhir/DeviceUseStatement": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "_include=DeviceUseStatement:device"
+                ],
+                "resource_path": "BGZ/11-MedicalDevice.json"
+            }
+        ]
+    },
+    "/48/fhir/Immunization": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "status=completed"
+                ],
+                "resource_path": "BGZ/12-Vaccination.json"
+            }
+        ]
+    },
+    "/48/fhir/Procedure": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=http://snomed.info/sct|387713003"
+                ],
+                "resource_path": "BGZ/15-Procedure.json"
+            }
+        ]
+    },
+    "/48/fhir/Encounter": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "class=http://hl7.org/fhir/v3/ActCode|IMP,http://hl7.org/fhir/v3/ActCode|ACUTE,http://hl7.org/fhir/v3/ActCode|NONAC"
+                ],
+                "resource_path": "BGZ/16-Contact.json"
+            }
+        ]
+    },
+    "/48/fhir/ProcedureRequest": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "status=active"
+                ],
+                "resource_path": "BGZ/17-PlannedProcedure.json"
+            }
+        ]
+    },
+    "/48/fhir/ImmunizationRecommendation": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "BGZ/17-PlannedImmunization.json"
+            }
+        ]
+    },
+    "/48/fhir/DeviceRequest": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "status=active",
+                    "_include=DeviceRequest:device"
+                ],
+                "resource_path": "BGZ/17-PlannedDeviceRequest.json"
+            }
+        ]
+    },
+    "/48/fhir/Appointment": {
+        "data_service": "BGZ",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "status=booked,pending,proposed"
+                ],
+                "resource_path": "BGZ/17-PlannedAppointment.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/1-DocumentReference.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/pdfa-binary1": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/pdfa-binary1.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/pdfa-binary2": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/pdfa-binary2.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentManifest": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/2-DocumentManifest.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/ba0837a5-59f9-4e2a-8fe6-f071270f79ba": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/ba0837a5-59f9-4e2a-8fe6-f071270f79ba.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/cd4679df-a7e6-43b7-ab12-b5570d7dd996": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/cd4679df-a7e6-43b7-ab12-b5570d7dd996.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/4c3da74f-c4e3-4444-9198-44df88872424": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/4c3da74f-c4e3-4444-9198-44df88872424.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/4becdcc4-7ec6-4646-bc9a-1d2641673637": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/4becdcc4-7ec6-4646-bc9a-1d2641673637.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/66af5660-a20c-4946-a928-fb429d3ae462": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/66af5660-a20c-4946-a928-fb429d3ae462.json"
+            }
+        ]
+    },
+    "/49/fhir/Patient": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "_include=Patient:general-practitioner"
+                ],
+                "resource_path": "GPData/01-Patient.json"
+            }
+        ]
+    },
+    "/49/fhir/EpisodeOfCare": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "GPData/04-EpisodeOfCare.json"
+            }
+        ]
+    },
+    "/49/fhir/MedicationRequest": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "periodofuse=ge{{TODAY}}",
+                    "category=http://snomed.info/sct|16076005",
+                    "_include=MedicationRequest:medication"
+                ],
+                "resource_path": "GPData/08-MedicationRequest.json"
+            }
+        ]
+    },
+    "/49/fhir/AllergyIntolerance": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "category=medication"
+                ],
+                "resource_path": "GPData/09-AllergyIntolerance.json"
+            }
+        ]
+    },
+    "/49/fhir/Observation": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "code=https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen|",
+                    "_include=Observation:related-target",
+                    "_include=Observation:specimen"
+                ],
+                "resource_path": "GPData/11-Observation.json"
+            }
+        ]
+    },
+    "/49/fhir/Composition": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [
+                    "type=http://loinc.org|67781-5"
+                ],
+                "resource_path": "GPData/12-Composition.json"
+            }
+        ]
+    },
+    "/49/fhir/Encounter": {
+        "data_service": "GPData",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "GPData/13-Encounter.json"
+            }
+        ]
+    },
+    "/63/fhir/Immunization": {
+        "data_service": "Vaccination-Immunization",
+        "matches": [
+            {
+                "fhir_version": "4.0",
+                "required_params": [],
+                "resource_path": "Vaccination-Immunization/1-Immunization.json"
+            }
+        ]
+    }
+}

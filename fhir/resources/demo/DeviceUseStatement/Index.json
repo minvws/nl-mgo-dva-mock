@@ -1,0 +1,151 @@
+{
+    "resourceType": "Bundle",
+    "id": "4365c505-c125-42b7-a225-5e486f14f99e",
+    "meta": {
+        "lastUpdated": "2024-01-22T23:23:05.000+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/DeviceUseStatement?_format=json"
+        },
+        {
+            "relation": "next",
+            "url": "{{BASE_URL}}fhir?_getpages=4365c505-c125-42b7-a225-5e486f14f99e&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/zib-medicaldevice-01",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "zib-medicaldevice-01",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 1b7c5449-8fdf-11ec-2143-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Gehoorapparaat</td></tr><tr><th>Deel van lichaam</th><td><span title=\"Ear Structure (117590005 - SNOMED CT)\">Ear Structure</span><span title=\"Right (24028007 - SNOMED CT)\">Right</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 2007</td></tr><tr><th>Indicatie</th><td><div>Presbyacusis</div></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+                        "valueReference": {
+                            "reference": "Organization/nl-core-organization-03",
+                            "display": "Test Medisch Centrum"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "1b7c5449-8fdf-11ec-2143-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/nl-core-patient-01",
+                    "display": "Johan XXX_Helleman"
+                },
+                "whenUsed": {
+                    "start": "2007"
+                },
+                "device": {
+                    "reference": "Device/zib-MedicalDeviceProduct-03",
+                    "display": "Gehoorapparaat"
+                },
+                "indication": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+                                "valueReference": {
+                                    "reference": "Condition/zib-problem-04",
+                                    "display": "Presbyacusis"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "bodySite": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "24028007",
+                                        "display": "Right"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "117590005",
+                            "display": "Ear Structure"
+                        }
+                    ]
+                },
+                "note": [
+                    {
+                        "text": "Apparaat niet zichtbaar (diep in de gehooringang)"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/zib-medicaldevice-02",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "zib-medicaldevice-02",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: I. Jongeneel-de Haas. Id: 1b88e083-8fdf-11ec-1325-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Apparaat/Systeem</th><td>Rollator</td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3",
+                        "valueReference": {
+                            "reference": "Observation/zib-mobility-01",
+                            "display": "Ability to mobilise"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "1b88e083-8fdf-11ec-1325-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/nl-core-patient-03",
+                    "display": "I. Jongeneel-de Haas"
+                },
+                "device": {
+                    "reference": "Device/zib-medicaldeviceproduct-02",
+                    "display": "Rollator"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

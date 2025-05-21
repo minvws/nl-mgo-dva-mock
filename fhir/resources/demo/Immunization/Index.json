@@ -1,0 +1,153 @@
+{
+    "resourceType": "Bundle",
+    "id": "8003d039-bc02-4d19-8635-105f2035881d",
+    "meta": {
+        "lastUpdated": "2024-02-27T00:00:00.000+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Immunization?_format=json"
+        },
+        {
+            "relation": "next",
+            "url": "{{BASE_URL}}fhir?_getpages=8003d039-bc02-4d19-8635-105f2035881d&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Immunization/zib-vaccination-01",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "zib-vaccination-01",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan XXX_Helleman. Id: 1ef6763b-8fdf-11ec-2005-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Guatemala</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (9 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>Henk de Vries<div>Zorgverlenerrol: Medisch specialisten, orthopedie</div></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "1ef6763b-8fdf-11ec-2005-020000000000"
+                    }
+                ],
+                "status": "completed",
+                "notGiven": false,
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "J06BB11",
+                            "display": "hepatitis A immunoglobulin"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/nl-core-patient-01",
+                    "display": "Johan XXX_Helleman"
+                },
+                "date": "2009-02-01",
+                "primarySource": false,
+                "practitioner": [
+                    {
+                        "actor": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/nl-core-practitionerrole-01",
+                                        "display": "Medisch specialisten, orthopedie"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/nl-core-practitioner-01",
+                            "display": "Henk de Vries"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Niet wegens Rijksvaccinatieprogramma: bezoek aan Guatemala"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Immunization/zib-vaccination-02",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "zib-vaccination-02",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan XXX_Helleman. Id: 8fea3446-97dd-4c76-a5d0-9eb2c2d962c8 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Indonesië</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (9 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>Henk de Vries<div>Zorgverlenerrol: Medisch specialisten, orthopedie</div></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8fea3446-97dd-4c76-a5d0-9eb2c2d962c8"
+                    }
+                ],
+                "status": "completed",
+                "notGiven": false,
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "J06BB02",
+                            "display": "tetanus immunoglobulin"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/nl-core-patient-01",
+                    "display": "Johan XXX_Helleman"
+                },
+                "encounter": {
+                    "reference": "Encounter/zib-encounter-04",
+                    "display": "Poliklinisch"
+                },
+                "date": "1997-03-19",
+                "primarySource": false,
+                "practitioner": [
+                    {
+                        "actor": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/nl-core-practitionerrole-03",
+                                        "display": "Medisch specialisten, dermatologie"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/nl-core-practitioner-03",
+                            "display": "G.Z.M. de Wit"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Niet wegens Rijksvaccinatieprogramma: bezoek aan Indonesië"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

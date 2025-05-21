@@ -1,0 +1,37 @@
+{
+    "resourceType": "NutritionOrder",
+    "id": "zib-nutritionadvice-01",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Voedingsadvies. Patiënt: Johan XXX_Helleman. Id: 1c2bf38b-8fdf-11ec-1435-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Aanvraagdatum</th><td>1 januari 2018</td></tr><tr><td colspan=\"2\"><table><caption>Orale voeding</caption><thead><tr><th>Type</th><th>Vloeistofconsistentie</th></tr></thead><tbody><tr><td>Energie verrijkt</td><td>Dikvloeibaar</td></tr></tbody></table></td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "1c2bf38b-8fdf-11ec-1435-020000000000"
+        }
+    ],
+    "status": "active",
+    "patient": {
+        "reference": "Patient/nl-core-patient-01",
+        "display": "Johan XXX_Helleman"
+    },
+    "dateTime": "2018-01-01",
+    "oralDiet": {
+        "type": [
+            {
+                "text": "Energie verrijkt"
+            }
+        ],
+        "fluidConsistencyType": [
+            {
+                "text": "Dikvloeibaar"
+            }
+        ]
+    }
+}

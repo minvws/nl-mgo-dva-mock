@@ -1,0 +1,3 @@
+RESPONSE_CONTENT_TYPE_HEADER = "application/fhir+json"
+MEDMIJ_REQUEST_ID_HEADER = "MedMij-Request-ID"
+WWW_AUTHENTICATE_HEADER = "WWW-Authenticate"

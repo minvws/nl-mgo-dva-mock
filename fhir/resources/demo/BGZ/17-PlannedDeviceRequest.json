@@ -1,0 +1,144 @@
+{
+    "resourceType": "Bundle",
+    "id": "066519a6-e0e3-46a9-93e6-2c11344053f2",
+    "meta": {
+        "lastUpdated": "2024-04-15T07:16:59.227+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/DeviceRequest?_include=DeviceRequest%3Adevice&patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949&status=active"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceRequest/76b5f8ba-1cb9-4f4b-b485-d75a5fa10032",
+            "resource": {
+                "resourceType": "DeviceRequest",
+                "id": "76b5f8ba-1cb9-4f4b-b485-d75a5fa10032",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceRequest"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DeviceRequest. Subject: Johan XXX_Helleman. Id: 2f3b5bcc-e3e4-11eb-1741-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief                              \n          <span style=\"display: block;\">Intentie: aanvraag</span></caption><tbody><tr><th>Code</th><td>Hearing aid</td></tr><tr><th>Wanneer</th><td>2022</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2f3b5bcc-e3e4-11eb-1741-020000000000"
+                    }
+                ],
+                "status": "active",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "385644000",
+                                        "display": "Aangevraagd"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "intent": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/request-intent",
+                            "code": "order",
+                            "display": "Order"
+                        }
+                    ]
+                },
+                "codeReference": {
+                    "reference": "Device/319fdb50-766b-43ac-b82f-1990db1153c5",
+                    "display": "Hearing aid"
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "occurrenceDateTime": "2022"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Device/319fdb50-766b-43ac-b82f-1990db1153c5",
+            "resource": {
+                "resourceType": "Device",
+                "id": "319fdb50-766b-43ac-b82f-1990db1153c5",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan XXX_Helleman. Id: 0123456789</caption><tbody><tr><th>Type</th><td><span title=\"hoortoestel (fysiek object) (6012004 - SNOMED CT)\">hoortoestel (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}220131{21}0123456789</td></tr><tr><th>Verloopdatum</th><td>31 januari 2022</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/identifier-type",
+                                    "code": "SNO",
+                                    "display": "Serial Number"
+                                }
+                            ]
+                        },
+                        "value": "0123456789"
+                    }
+                ],
+                "udi": {
+                    "deviceIdentifier": "05050474530799",
+                    "carrierHRF": "{01}05050474530799{17}220131{21}0123456789"
+                },
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "6012004",
+                            "display": "hoortoestel (fysiek object)"
+                        }
+                    ]
+                },
+                "expirationDate": "2022-01-31",
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

@@ -1,0 +1,2193 @@
+{
+    "resourceType": "Bundle",
+    "id": "ee160c70-591e-4c8f-89df-247002f63328",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:37.357+00:00"
+    },
+    "type": "searchset",
+    "total": 18,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Composition?patient\u003dPatient%2Font-ver-gpdata-patient-kwalificatie1\u0026type\u003dhttp%3A%2F%2Floinc.org%7C67781-5"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact06",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact06",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#9b50cef0c7c2c408"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:40.419+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-01-08\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b59b933c-041c-11ec-6604-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-01-08\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Keelpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b59b933c-041c-11ec-6604-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact06",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "date": "2024-01-08",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-01-08",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R21.01",
+                                            "display": "Keelpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKeelpijn eci.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact06-e",
+                                "display": "Keelpijn eci."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eAfwachten, zn. Pcm, tijdens feest paracod.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact06-p",
+                                "display": "Afwachten, zn. Pcm, tijdens feest paracod."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact02",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#cb1bab936e66e4cc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:42.943+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-05-23\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5492d7c-041c-11ec-1194-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-05-23\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5492d7c-041c-11ec-1194-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "date": "2023-05-23",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-05-23",
+                "section": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eNa vakantie nogmaals.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact02-p",
+                                "display": "Na vakantie nogmaals."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact14",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact14",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7d3672c95b1bd5d8"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:46.599+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-03-18\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b6489c1c-041c-11ec-1792-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-03-18\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b6489c1c-041c-11ec-1792-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact14",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-03-18",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-03-18",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L03",
+                                            "display": "Lage-rugpijn zonder uitstraling [ex. L86]"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eLage rugpijn\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact14-e",
+                                "display": "Lage rugpijn"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eCesar of Mensendieck. Verwijzing aangemaakt\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact14-p",
+                                "display": "Cesar of Mensendieck. Verwijzing aangemaakt"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact04",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact04",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#913d26238759a7d3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:49.421+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-02-07\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b572876c-041c-11ec-2319-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-02-07\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b572876c-041c-11ec-2319-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact04",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-02-07",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-02-07",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L03",
+                                            "display": "Lage-rugpijn zonder uitstraling [ex. L86]"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003elage rugpijn\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact04-e",
+                                "display": "lage rugpijn"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact15",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact15",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7a6b2f49d648f68f"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:52.532+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-04-07\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b65e1fec-041c-11ec-1080-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-04-07\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b65e1fec-041c-11ec-1080-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact15",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-04-07",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-04-07",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L86.01",
+                                            "display": "HNP (thoracaal/lumbaal)"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eHNP\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact15-e",
+                                "display": "HNP"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eScan laten maken, afspraak gepland.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact15-p",
+                                "display": "Scan laten maken, afspraak gepland."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact09",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact09",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#8a66d7018807915d"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:53.418+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-12-19\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5da49ec-041c-11ec-7009-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-12-19\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Tinea Pedis met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5da49ec-041c-11ec-7009-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact09",
+                    "display": "Consult voor Tinea Pedis met Dokter Bernard"
+                },
+                "date": "2023-12-19",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-12-19",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "S74.01",
+                                            "display": "Tinea pedis"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eMycose.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact09-e",
+                                "display": "Mycose."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-s7401",
+                                "display": "Condition Tinea pedis"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eHeeft nog canesten via drogist; 2x daags gebruiken.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact09-p",
+                                "display": "Heeft nog canesten via drogist; 2x daags gebruiken."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-s7401",
+                                "display": "Condition Tinea pedis"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact17",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact17",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#4dd670cab3ae6096"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:55.488+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-05-22\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b68ca9fc-041c-11ec-1599-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-05-22\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b68ca9fc-041c-11ec-1599-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact17",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-05-22",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-05-22",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L86.01",
+                                            "display": "HNP (thoracaal/lumbaal)"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eHNP\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact17-e",
+                                "display": "HNP"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eNogmaals verwijzing Cesar\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact17-p",
+                                "display": "Nogmaals verwijzing Cesar"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact13",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact13",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#f87130310518e04f"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:57.369+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-05-27\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b63254fc-041c-11ec-6066-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-05-27\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Keelpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b63254fc-041c-11ec-6066-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact13",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "date": "2024-05-27",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-05-27",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R21.01",
+                                            "display": "Keelpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKeelpijn eci.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact13-e",
+                                "display": "Keelpijn eci."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact07",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact07",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#77ea4e52c4250290"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:00.102+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-03-03\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5b053bc-041c-11ec-1117-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-03-03\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Maagpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5b053bc-041c-11ec-1117-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact07",
+                    "display": "Consult voor Maagpijn met Dokter Bernard"
+                },
+                "date": "2024-03-03",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-03-03",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "D02",
+                                            "display": "Maagpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eMaag/duodenum problemen?\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact07-e",
+                                "display": "Maag/duodenum problemen?"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-d02",
+                                "display": "Condition Maagpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact10",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact10",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#4ee9ca130f7702cb"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:00.968+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-02-12\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5f042ec-041c-11ec-1507-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-02-12\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Keelpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5f042ec-041c-11ec-1507-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact10",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "date": "2024-02-12",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-02-12",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R21.01",
+                                            "display": "Keelpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKeelpijn eci.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact10-e",
+                                "display": "Keelpijn eci."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eAfwachten, zn. Medicatie is nog beschikbaar\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact10-p",
+                                "display": "Afwachten, zn. Medicatie is nog beschikbaar"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact11",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact11",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6c322407484349ba"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:01.808+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-03-08\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b606b11c-041c-11ec-9179-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-03-08\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Keelpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b606b11c-041c-11ec-9179-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "date": "2024-03-08",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-03-08",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R21.01",
+                                            "display": "Keelpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKeelpijn eci.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact11-e",
+                                "display": "Keelpijn eci."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKweek van aanslag keel\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact11-p",
+                                "display": "Kweek van aanslag keel"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contactmmk",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contactmmk",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#3c78321ea52a63aa"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:02.914+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-12-29\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b6a33f3c-041c-11ec-9781-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-12-29\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Astma met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b6a33f3c-041c-11ec-9781-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contactmmk",
+                    "display": "Consult voor Astma met Dokter Bernard"
+                },
+                "date": "2023-12-29",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-12-29",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R96",
+                                            "display": "Astma"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eastma\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contactmmk-e",
+                                "display": "astma"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r96",
+                                "display": "Condition Astma"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eSalbutamol half uur voor het sporten.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contactmmk-p",
+                                "display": "Salbutamol half uur voor het sporten."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r96",
+                                "display": "Condition Astma"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact08",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact08",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#42cc588fcee0184f"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:05.312+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-12-14\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5c4c61c-041c-11ec-1432-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-12-14\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Lokale zwelling/papel/knobbel huid/subcutis met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5c4c61c-041c-11ec-1432-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact08",
+                    "display": "Consult voor Lokale zwelling/papel/knobbel huid/subcutis met Dokter Bernard"
+                },
+                "date": "2023-12-14",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-12-14",
+                "section": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eEcho.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact08-p",
+                                "display": "Echo."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/gpdata-episodeofcare-icpc-s04",
+                                "display": "Condition Lokale zwelling/papel"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact01",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7bc21c5b1721da34"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:05.867+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-05-03\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b534940c-041c-11ec-2061-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-05-03\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Boezemfibrilleren/-fladderen met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b534940c-041c-11ec-2061-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
+                    "display": "Consult voor Boezemfibrilleren/-fladderen met Dokter Bernard"
+                },
+                "date": "2023-05-03",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-05-03",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "K78",
+                                            "display": "Boezemfibrilleren/-fladderen"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eRitmestoornis.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact01-e",
+                                "display": "Ritmestoornis."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                                "display": "Condition Boezemfibrilleren/ -fladderen"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eNaar SEH.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact01-p",
+                                "display": "Naar SEH."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-k78",
+                                "display": "Condition Boezemfibrilleren/ -fladderen"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact16",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact16",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#e49380af23eeb0d4"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:18.054+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-04-12\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b675edac-041c-11ec-1269-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-04-12\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b675edac-041c-11ec-1269-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact16",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-04-12",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-04-12",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L86.01",
+                                            "display": "HNP (thoracaal/lumbaal)"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eHNP\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact16-e",
+                                "display": "HNP"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003ePatiënt geïnformeerd, ziet het nog even aan.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact16-p",
+                                "display": "Patiënt geïnformeerd, ziet het nog even aan."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact12",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact12",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#639e606f3e059280"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:19.829+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-04-17\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b61c0ddc-041c-11ec-1102-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-04-17\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor Keelpijn met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b61c0ddc-041c-11ec-1102-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact12",
+                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                },
+                "date": "2024-04-17",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-04-17",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "R21.01",
+                                            "display": "Keelpijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eKeelpijn eci.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact12-e",
+                                "display": "Keelpijn eci."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eBezoek brengen aan de tandarts, wellicht zit er daar iets.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact12-p",
+                                "display": "Bezoek brengen aan de tandarts, wellicht zit er daar iets."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
+                                "display": "Condition Keelpijn"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact03",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact03",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#e7427a1651836edc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:20.370+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2023-06-12\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b55dedfc-041c-11ec-8426-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2023-06-12\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b55dedfc-041c-11ec-8426-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
+                    "display": "Consult met Dokter Bernard"
+                },
+                "date": "2023-06-12",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2023-06-12",
+                "section": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eOver paar weken RR thuis.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact03-p",
+                                "display": "Over paar weken RR thuis."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Composition/ont-ver-gp-EncounterReport-gpdata-encounter-contact05",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "ont-ver-gp-EncounterReport-gpdata-encounter-contact05",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#11b6bedcdd86eb9c"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:22:22.148+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003cb\u003eContactverslag dd. 2024-02-27\u003c/b\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eSamengestelde informatie. Subject: Jacqueline XXX_Cevat. Id: b5876efc-041c-11ec-2100-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief\u003cspan style\u003d\"display: block;\"\u003eAuteur: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eType\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"Summarization of encounter note Narrative (67781-5 - LOINC)\"\u003eSummarization of encounter note Narrative\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eGemaakt\u003c/th\u003e\n            \u003ctd\u003e2024-02-27\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eContact\u003c/th\u003e\n            \u003ctd\u003eConsult voor HNP (thoracaal/lumbaal) met Dokter Bernard\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "b5876efc-041c-11ec-2100-020000000000"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "67781-5",
+                            "display": "Summarization of encounter note Narrative"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Jacqueline XXX_Cevat"
+                },
+                "encounter": {
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact05",
+                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                },
+                "date": "2024-02-27",
+                "author": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                    "display": "Dokter Bernard"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                        "display": "Dokter Bernard"
+                    }
+                ],
+                "title": "Contactverslag dd. 2024-02-27",
+                "section": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/sid/icpc-1-nl",
+                                            "code": "L03",
+                                            "display": "Lage-rugpijn zonder uitstraling [ex. L86]"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "E",
+                                    "display": "Evaluatie"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eLage rugpijn\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact05-e",
+                                "display": "Lage rugpijn"
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+                                    "code": "P",
+                                    "display": "Plan"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eCesar of Mensendieck.\u003c/div\u003e"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Observation/ont-ver-gpdata-observation-contact05-p",
+                                "display": "Cesar of Mensendieck."
+                            },
+                            {
+                                "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-l8601",
+                                "display": "Condition HNP (thoracaal/lumbaal)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

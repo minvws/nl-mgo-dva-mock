@@ -1,0 +1,521 @@
+{
+    "resourceType": "Bundle",
+    "id": "86b3650f-84a3-4396-baae-7265194b6021",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:36:42.480+00:00"
+    },
+    "type": "searchset",
+    "total": 6,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Condition?patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/3c77bb22-795d-4e5e-815e-1db080fca69f",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "3c77bb22-795d-4e5e-815e-1db080fca69f",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2d74f3ac-e3e4-11eb-7881-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Code</th><td><span title=\"Amyotrofe laterale sclerose (G12.2 - ICD-10-CM)\">Amyotrofe laterale sclerose</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2d74f3ac-e3e4-11eb-7881-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "55561003",
+                                        "display": "Actueel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "G12.2",
+                            "display": "Amyotrofe laterale sclerose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/5b5c0994-d284-42be-a813-f575e3ae3bc4",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "5b5c0994-d284-42be-a813-f575e3ae3bc4",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2d9d8a4c-e3e4-11eb-1723-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"interpretatie van diagnose (waarneembare entiteit) (282291009 - SNOMED CT)\">interpretatie van diagnose (waarneembare entiteit)</span>, Status: inactief / onbekend                        \n        </caption><tfoot><tr><td colspan=\"2\">Gevallen op kunstijsbaan.</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Fractuur van pols (aandoening) (31641000146105 - SNOMED CT)\">Fractuur van pols (aandoening)</span></td></tr><tr><th>Eerste symptomen</th><td>2001</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2d9d8a4c-e3e4-11eb-1723-020000000000"
+                    }
+                ],
+                "clinicalStatus": "inactive",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "73425007",
+                                        "display": "Inactief (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "unknown",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/NullFlavor",
+                                        "code": "UNK",
+                                        "display": "Unknown"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "282291009",
+                                "display": "interpretatie van diagnose (waarneembare entiteit)"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "31641000146105",
+                            "display": "Fractuur van pols (aandoening)"
+                        }
+                    ]
+                },
+                "bodySite": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "24028007",
+                                            "display": "Rechts"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "361289009",
+                                "display": "Gehele polsregio (lichaamsstructuur)"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "onsetDateTime": "2001",
+                "note": [
+                    {
+                        "text": "Gevallen op kunstijsbaan."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/c953ca04-89b1-4ddf-8af1-d9c41f0f9c8d",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "c953ca04-89b1-4ddf-8af1-d9c41f0f9c8d",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2dd0f65c-e3e4-11eb-3803-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"presbyacusis (aandoening) (49526009 - SNOMED CT)\">presbyacusis (aandoening)</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2dd0f65c-e3e4-11eb-3803-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "55561003",
+                                        "display": "Actueel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "49526009",
+                            "display": "presbyacusis (aandoening)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/8794209f-9468-4c06-a2d2-ba10dc7d6325",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "8794209f-9468-4c06-a2d2-ba10dc7d6325",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2e0b8e5c-e3e4-11eb-1411-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tfoot><tr><td colspan=\"2\">Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie.</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Artropathie (aandoening) (399269003 - SNOMED CT)\">Artropathie (aandoening)</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2e0b8e5c-e3e4-11eb-1411-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "55561003",
+                                        "display": "Actueel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "399269003",
+                            "display": "Artropathie (aandoening)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "note": [
+                    {
+                        "text": "Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/c7ff42bf-b258-4111-9d6a-97a8fc6ffe98",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "c7ff42bf-b258-4111-9d6a-97a8fc6ffe98",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2e38dfec-e3e4-11eb-5680-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Fractuur van onderste extremiteit (aandoening) (46866001 - SNOMED CT)\">Fractuur van onderste extremiteit (aandoening)</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2e38dfec-e3e4-11eb-5680-020000000000"
+                    }
+                ],
+                "clinicalStatus": "resolved",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "73425007",
+                                        "display": "inactief (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "46866001",
+                            "display": "Fractuur van onderste extremiteit (aandoening)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/a14e82b7-163e-411d-b378-cbbb34a2ea47",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "a14e82b7-163e-411d-b378-cbbb34a2ea47",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 2e64aadc-e3e4-11eb-7041-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost</caption><tbody><tr><th>Code</th><td><span title=\"Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie) (21119008 - SNOMED CT)\">Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie)</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "2e64aadc-e3e4-11eb-7041-020000000000"
+                    }
+                ],
+                "clinicalStatus": "resolved",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "73425007",
+                                        "display": "inactief (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "21119008",
+                            "display": "Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie)"
+                        }
+                    ]
+                },
+                "bodySite": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "60819002",
+                                "display": "Structuur van bucca (lichaamsstructuur)"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

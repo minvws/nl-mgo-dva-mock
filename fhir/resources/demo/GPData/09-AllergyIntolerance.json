@@ -1,0 +1,181 @@
+{
+    "resourceType": "Bundle",
+    "id": "cae6014e-e5ce-4b61-a1f4-108d939c722c",
+    "meta": {
+        "lastUpdated": "2024-06-11T12:25:35.626+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/AllergyIntolerance?category\u003dmedication\u0026patient\u003dPatient%2Font-ver-gpdata-patient-kwalificatie1"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/AllergyIntolerance/ont-ver-gp-allergyintolerance-prednisolon",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "ont-ver-gp-allergyintolerance-prednisolon",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#2c63b05ff8af5b1b"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2024-06-06T12:21:39.104+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\n      \u003ctable\u003e\n        \u003ccaption\u003eAllergie/intolerantie. Patiënt: Jacqueline XXX_Cevat. Id: b51ffa9c-041c-11ec-1287-020000000000 (https://example.org/nictiz/basic-components/identification-number), Categorie: \u003cspan title\u003d\"Medicijn (419511003 - SNOMED CT)\"\u003eMedicijn\u003c/span\u003e, Status: inactief / bevestigd\u003cspan style\u003d\"display: block;\"\u003eIngevoerd door: Dokter Bernard\u003c/span\u003e\n        \u003c/caption\u003e\n        \u003ctfoot\u003e\n          \u003ctr\u003e\n            \u003ctd colspan\u003d\"2\"\u003eGeldt alleen voor dit merk\u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tfoot\u003e\n        \u003ctbody\u003e\n          \u003ctr\u003e\n            \u003cth\u003eCode\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cspan title\u003d\"PREDNISOLON CAPSULE 65MG FNA MR (1112821 - G-Standaard HPK)\"\u003ePREDNISOLON CAPSULE 65MG FNA MR\u003c/span\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eEerste symptomen\u003c/th\u003e\n            \u003ctd\u003e2024-04-17\u003c/td\u003e\n          \u003c/tr\u003e\n          \u003ctr\u003e\n            \u003cth\u003eReactie\u003c/th\u003e\n            \u003ctd\u003e\n              \u003cul\u003e\n                \u003cli\u003e\n                  \u003cdiv\u003e2024-04-17T17:45:00+02:00 \u003cspan title\u003d\"Ernstig (24484000 - SNOMED CT)\"\u003eErnstig\u003c/span\u003e\n                  \u003c/div\u003e\n                  \u003cdiv\u003e\n                    \u003cspan title\u003d\"Toxische epidermale necrolyse (23067006 - SNOMED CT)\"\u003eToxische epidermale necrolyse\u003c/span\u003e\n                  \u003c/div\u003e\n                  \u003cdiv\u003eBlaren op grote delen van de huid\u003c/div\u003e\n                \u003c/li\u003e\n              \u003c/ul\u003e\n            \u003c/td\u003e\n          \u003c/tr\u003e\n        \u003c/tbody\u003e\n      \u003c/table\u003e\n    \u003c/div\u003e"
+                },
+                "identifier": [
+                    {
+                        "system": "https://example.org/nictiz/basic-components/identification-number",
+                        "value": "b51ffa9c-041c-11ec-1287-020000000000"
+                    }
+                ],
+                "clinicalStatus": "inactive",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                                        "code": "obsolete",
+                                        "display": "Obsolete"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "category": [
+                    "medication"
+                ],
+                "_category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "419511003",
+                                            "display": "Medicijn"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "criticality": "high",
+                "_criticality": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "6736007",
+                                        "display": "Matig"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.7",
+                            "code": "1112821",
+                            "display": "PREDNISOLON CAPSULE 65MG FNA MR"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
+                    "display": "Johan XXX_Helleman"
+                },
+                "onsetDateTime": "2024-04-17",
+                "recorder": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                            "valueReference": {
+                                "reference": "PractitionerRole/ont-ver-gpdata-practitionerrole-kwalificatie1",
+                                "display": "Dokter Bernard"
+                            }
+                        }
+                    ],
+                    "reference": "Practitioner/ont-ver-gpdata-practitioner-kwalificatie1",
+                    "display": "Dokter Bernard"
+                },
+                "note": [
+                    {
+                        "text": "Geldt alleen voor dit merk"
+                    }
+                ],
+                "reaction": [
+                    {
+                        "substance": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.1.750",
+                                    "code": "4170",
+                                    "display": "Prednisolon"
+                                }
+                            ]
+                        },
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "23067006",
+                                        "display": "Toxische epidermale necrolyse"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "Blaren op grote delen van de huid",
+                        "onset": "2024-04-17T17:45:00+02:00",
+                        "severity": "severe",
+                        "_severity": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "24484000",
+                                                "display": "Ernstig"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "resourceType": "Consent",
+    "id": "zib-advancedirective-03",
+    "meta": {
+        "profile": [
+            "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Paul XXX_Mesker. Id: 18c1f7b3-8fdf-11ec-1027-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Mondelinge afspraak (MON - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Mondelinge afspraak</span>, Status: actief</caption><tfoot><tr><td colspan=\"2\">Mondelinge afspraak</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>9 april 2018</td></tr></tbody></table></div>"
+    },
+    "extension": [
+        {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/Comment",
+            "valueString": "Mondelinge afspraak"
+        }
+    ],
+    "identifier": {
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+        "value": "18c1f7b3-8fdf-11ec-1027-020000000000"
+    },
+    "status": "active",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "11341000146107",
+                    "display": "Living will and advance directive record (record artifact)"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                    "code": "MON",
+                    "display": "Mondelinge afspraak"
+                }
+            ]
+        }
+    ],
+    "patient": {
+        "reference": "Patient/nl-core-patient-02",
+        "display": "Paul XXX_Mesker"
+    },
+    "dateTime": "2018-04-09",
+    "policy": [
+        {
+            "uri": "http://wetten.overheid.nl/"
+        }
+    ]
+}

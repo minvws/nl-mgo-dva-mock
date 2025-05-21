@@ -1,0 +1,31 @@
+{
+    "resourceType": "Organization",
+    "id": "nl-core-organization-01",
+    "meta": {
+        "profile": [
+            "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Organisatie. Id: 162abc65-8fdf-11ec-1585-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Naam</th><td>Maatschap Vaste Huisarts</td></tr><tr><th>Type</th><td><span title=\"Huisartspraktijk (zelfstandig of groepspraktijk) (Z3 - organization-type)\">Huisartspraktijk (zelfstandig of groepspraktijk)</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+            "value": "162abc65-8fdf-11ec-1585-020000000000"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
+                    "code": "Z3",
+                    "display": "Huisartspraktijk (zelfstandig of groepspraktijk)"
+                }
+            ]
+        }
+    ],
+    "name": "Maatschap Vaste Huisarts"
+}

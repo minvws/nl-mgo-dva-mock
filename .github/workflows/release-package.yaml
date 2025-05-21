@@ -1,0 +1,42 @@
+name: Release package
+
+on:
+    push:
+        tags:
+            - v*
+
+jobs:
+    build-sources:
+        runs-on: ubuntu-22.04
+        strategy:
+            matrix:
+                python_version: ["3.11"]
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 1  
+
+            - name: Extract version from tag
+              run: echo "RELEASE_VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+              
+            - name: Setup environment
+              run: ./scripts/setup_env.sh "${{ matrix.python_version }}"
+
+            - name: Create release package
+              run: |
+                ./scripts/build_package.sh \
+                  --service "mock" \
+                  --version "${{ env.RELEASE_VERSION }}" \
+                  --git-ref "${GITHUB_SHA}" \
+                  --python "${{ matrix.python_version }}" \
+                  --excludes "source.tar.gz,poetry.lock,pyproject.toml,.[^/]*,*.md,app.conf,app.conf.test,Makefile,Dockerfile,sonar-project.properties,tests,certs,secrets,docker,scripts" \
+                  --output "dva-mock_${{ env.RELEASE_VERSION }}.tar.gz" 
+
+            - name: Upload release package
+              uses: actions/upload-artifact@v4
+              with:
+                  name: dva-mock_${{ env.RELEASE_VERSION }}
+                  path: ./dva-mock_${{ env.RELEASE_VERSION }}.tar.gz
+                  if-no-files-found: error

@@ -1,0 +1,68 @@
+{
+    "resourceType": "Bundle",
+    "id": "f3dea969-bcfe-476b-b7ee-3e61029802fa",
+    "meta": {
+        "lastUpdated": "2024-04-15T06:47:30.151+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/NutritionOrder?patient=Patient%2F93cde269-ce35-4077-a39d-19296670e949"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/NutritionOrder/8aa48ccb-63fb-4f6b-bf75-8be4e6331172",
+            "resource": {
+                "resourceType": "NutritionOrder",
+                "id": "8aa48ccb-63fb-4f6b-bf75-8be4e6331172",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Voedingsadvies. Patiënt: Johan XXX_Helleman. Id: 31bab3ac-e3e4-11eb-2051-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Aanvraagdatum</th><td>1 januari 2018</td></tr><tr><td colspan=\"2\"><table><caption>Orale voeding</caption><thead><tr><th>Type</th><th>Vloeistofconsistentie</th></tr></thead><tbody><tr><td>Energie verrijkt</td><td>Dikvloeibaar</td></tr></tbody></table></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "31bab3ac-e3e4-11eb-2051-020000000000"
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan XXX_Helleman"
+                },
+                "dateTime": "2018-01-01",
+                "oralDiet": {
+                    "type": [
+                        {
+                            "text": "Energie verrijkt"
+                        }
+                    ],
+                    "fluidConsistencyType": [
+                        {
+                            "text": "Dikvloeibaar"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}
