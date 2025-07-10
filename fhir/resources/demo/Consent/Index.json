@@ -25,7 +25,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 18ab6c9b-8fdf-11ec-1686-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: Janni van Putten-van der Giessen</span></caption><tfoot><tr><td colspan=\"2\">Niet-reanimerenpenning</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>9 april 2018</td></tr><tr><th>Aandoening</th><td>Amyotrofe laterale sclerose</td></tr><tr><th>Toestemminggevende partij</th><td><ul><li>Janni van Putten-van der Giessen</li></ul></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan Helleman. Id: 18ab6c9b-8fdf-11ec-1686-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: Janni van Putten-van der Giessen</span></caption><tfoot><tr><td colspan=\"2\">Niet-reanimerenpenning</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>9 april 2018</td></tr><tr><th>Aandoening</th><td>Amyotrofe laterale sclerose</td></tr><tr><th>Toestemminggevende partij</th><td><ul><li>Janni van Putten-van der Giessen</li></ul></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -67,7 +67,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "dateTime": "2018-04-09",
                 "consentingParty": [
@@ -95,7 +95,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 18b69251-8fdf-11ec-7008-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: J.P.M. van Putten-van der Giessen</span></caption><tfoot><tr><td colspan=\"2\">Niet-reanimerenpenning</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>15 augustus 2011</td></tr><tr><th>Aandoening</th><td>ALS</td></tr><tr><th>Toestemminggevende partij</th><td><ul><li>J.P.M. van Putten-van der Giessen</li></ul></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan Helleman. Id: 18b69251-8fdf-11ec-7008-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: J.P.M. van Putten-van der Giessen</span></caption><tfoot><tr><td colspan=\"2\">Niet-reanimerenpenning</td></tr></tfoot><tbody><tr><th>Gemaakt</th><td>15 augustus 2011</td></tr><tr><th>Aandoening</th><td>ALS</td></tr><tr><th>Toestemminggevende partij</th><td><ul><li>J.P.M. van Putten-van der Giessen</li></ul></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -137,7 +137,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "dateTime": "2011-08-15",
                 "consentingParty": [
@@ -222,7 +222,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 1ebf6227-8fdf-11ec-1682-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Treatment instructions (record artifact) (11291000146105 - SNOMED CT)\">Treatment instructions (record artifact)</span>, Status: actief</caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 - <span title=\"Patient (116154003 - SNOMED CT)\">Patient</span></td></tr><tr><th><span title=\"Artificial respiration (procedure) (40617009 - SNOMED CT)\">Artificial respiration (procedure)</span></th><td><span title=\"Ja, maar met beperkingen (JA_MAAR - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Ja, maar met beperkingen</span></td></tr><tr><th>Niet toegestaan tenzij</th><td><div><b>Behandelrestrictie</b><div>Eerst overleg met echtgenote</div></div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan Helleman. Id: 1ebf6227-8fdf-11ec-1682-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Treatment instructions (record artifact) (11291000146105 - SNOMED CT)\">Treatment instructions (record artifact)</span>, Status: actief</caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 - <span title=\"Patient (116154003 - SNOMED CT)\">Patient</span></td></tr><tr><th><span title=\"Artificial respiration (procedure) (40617009 - SNOMED CT)\">Artificial respiration (procedure)</span></th><td><span title=\"Ja, maar met beperkingen (JA_MAAR - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Ja, maar met beperkingen</span></td></tr><tr><th>Niet toegestaan tenzij</th><td><div><b>Behandelrestrictie</b><div>Eerst overleg met echtgenote</div></div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -295,7 +295,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "period": {
                     "start": "2018-04-09"
@@ -330,7 +330,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan XXX_Helleman. Id: 1ecd5e13-8fdf-11ec-8335-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Treatment instructions (record artifact) (11291000146105 - SNOMED CT)\">Treatment instructions (record artifact)</span>, Status: actief</caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 - <span title=\"Patient (116154003 - SNOMED CT)\">Patient</span></td></tr><tr><th><span title=\"Cardiopulmonary resuscitation (procedure) (89666000 - SNOMED CT)\">Cardiopulmonary resuscitation (procedure)</span></th><td><span title=\"Behandeling niet toegestaan en/of wenselijk (NEE - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Behandeling niet toegestaan en/of wenselijk</span></td></tr><tr><th>Bron </th><td>Niet-reanimerenpenning<div>Mondelinge afspraak</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toestemming. Patiënt: Johan Helleman. Id: 1ecd5e13-8fdf-11ec-8335-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Treatment instructions (record artifact) (11291000146105 - SNOMED CT)\">Treatment instructions (record artifact)</span>, Status: actief</caption><tbody><tr><th>Geldigheidsperiode</th><td>Vanaf 9 april 2018</td></tr><tr><th>Geverifieerd</th><td>ja - 9 april 2018 - <span title=\"Patient (116154003 - SNOMED CT)\">Patient</span></td></tr><tr><th><span title=\"Cardiopulmonary resuscitation (procedure) (89666000 - SNOMED CT)\">Cardiopulmonary resuscitation (procedure)</span></th><td><span title=\"Behandeling niet toegestaan en/of wenselijk (NEE - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Behandeling niet toegestaan en/of wenselijk</span></td></tr><tr><th>Bron </th><td>Niet-reanimerenpenning<div>Mondelinge afspraak</div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -410,7 +410,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "period": {
                     "start": "2018-04-09"

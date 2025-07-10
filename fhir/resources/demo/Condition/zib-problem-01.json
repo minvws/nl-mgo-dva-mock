@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 1cf9a051-8fdf-11ec-3080-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Code</th><td><span title=\"Amyotrofe laterale sclerose (G12.2 - sid/icd-10-nl)\">Amyotrofe laterale sclerose</span></td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 1cf9a051-8fdf-11ec-3080-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Code</th><td><span title=\"Amyotrofe laterale sclerose (G12.2 - sid/icd-10-nl)\">Amyotrofe laterale sclerose</span></td></tr></tbody></table></div>"
     },
     "identifier": [
         {
@@ -44,6 +44,6 @@
     },
     "subject": {
         "reference": "Patient/nl-core-patient-01",
-        "display": "Johan XXX_Helleman"
+        "display": "Johan Helleman"
     }
 }

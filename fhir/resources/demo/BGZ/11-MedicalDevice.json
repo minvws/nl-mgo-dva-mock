@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 312bba1c-e3e4-11eb-3049-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Gehoorapparaat</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van oor (lichaamsstructuur) (117590005 - SNOMED CT)\">structuur van oor (lichaamsstructuur)</span><span title=\"Rechts (24028007 - SNOMED CT)\">Rechts</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 2007</td></tr><tr><th>Indicatie</th><td><div>Presbyacusis</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan Helleman. Id: 312bba1c-e3e4-11eb-3049-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Gehoorapparaat</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van oor (lichaamsstructuur) (117590005 - SNOMED CT)\">structuur van oor (lichaamsstructuur)</span><span title=\"Rechts (24028007 - SNOMED CT)\">Rechts</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 2007</td></tr><tr><th>Indicatie</th><td><div>Presbyacusis</div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -53,7 +53,7 @@
                 "status": "active",
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "whenUsed": {
                     "start": "2007"
@@ -128,7 +128,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan XXX_Helleman. Id: 314d72ec-e3e4-11eb-3256-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Implantant, Get 2Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Knee joint prosthesis, device (physical object)</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van knieregio (lichaamsstructuur) (72696002 - SNOMED CT)\">structuur van knieregio (lichaamsstructuur)</span><span title=\"Links (7771000 - SNOMED CT)\">Links</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 5 juni 2012</td></tr><tr><th>Indicatie</th><td><div>Artropathie (aandoening)</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Beschrijving apparaatgebruik. Subject: Johan Helleman. Id: 314d72ec-e3e4-11eb-3256-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tfoot><tr><td colspan=\"2\">Implantant, Get 2Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Apparaat/Systeem</th><td>Knee joint prosthesis, device (physical object)</td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van knieregio (lichaamsstructuur) (72696002 - SNOMED CT)\">structuur van knieregio (lichaamsstructuur)</span><span title=\"Links (7771000 - SNOMED CT)\">Links</span></td></tr><tr><th>Gebruiksperiode</th><td>Vanaf 5 juni 2012</td></tr><tr><th>Indicatie</th><td><div>Artropathie (aandoening)</div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -148,7 +148,7 @@
                 "status": "active",
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "whenUsed": {
                     "start": "2012-06-05"
@@ -265,7 +265,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan XXX_Helleman. Id: 1148130801</caption><tfoot><tr><td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Type</th><td><span title=\"Gewrichtsprothese van knie (fysiek object) (109228008 - SNOMED CT)\">Gewrichtsprothese van knie (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td></tr><tr><th>Verloopdatum</th><td>31 januari 2016</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan Helleman. Id: 1148130801</caption><tfoot><tr><td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td></tr></tfoot><tbody><tr><th>Type</th><td><span title=\"Gewrichtsprothese van knie (fysiek object) (109228008 - SNOMED CT)\">Gewrichtsprothese van knie (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td></tr><tr><th>Verloopdatum</th><td>31 januari 2016</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -297,7 +297,7 @@
                 "expirationDate": "2016-01-31",
                 "patient": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "note": [
                     {

@@ -108,7 +108,7 @@
                 },
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "onsetDateTime": "2024-04-17",
                 "recorder": {

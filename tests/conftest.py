@@ -1,6 +1,7 @@
 from typing import Generator
 
 import pytest
+from faker import Faker
 from fastapi.testclient import TestClient
 
 from app.main import create_app
@@ -17,3 +18,8 @@ def test_client() -> Generator[TestClient, None, None]:
     configure_bindings()
     yield TestClient(create_app())
     clear_bindings()
+
+
+@pytest.fixture()
+def faker() -> Faker:
+    return Faker()

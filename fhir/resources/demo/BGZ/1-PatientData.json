@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 31dd08bc-e3e4-11eb-1031-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Johan XXX_Helleman (Johan), Man, 25 juli 1964,                         \n        <span title=\"Married (M - v3/MaritalStatus)\">Married</span></div><div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                         \n        <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail Privé)                  \n      </div><div>Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)</div><div><span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>,                         \n        <span title=\"Wife (WIFE - v3/RoleCode)\">Wife</span> Jannie J.P.M. van Putten-XXX_Helleman                        \n        <div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                               \n          <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail Privé), Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)                        \n        </div></div><div>Huisarts: van Partners                        \n        <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></div></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 31dd08bc-e3e4-11eb-1031-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Johan Helleman (Johan), Man, 25 juli 1964,                         \n        <span title=\"Married (M - v3/MaritalStatus)\">Married</span></div><div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                         \n        <a href=\"mailto:j.helleman@hotmail.com\">j.helleman@hotmail.com</a> (E-mail Privé)                  \n      </div><div>Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)</div><div><span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>,                         \n        <span title=\"Wife (WIFE - v3/RoleCode)\">Wife</span> Jannie J.P.M. van Putten-Helleman                        \n        <div><a href=\"tel:06-12345678\">06-12345678</a> (Mobiel),                               \n          <a href=\"mailto:j.helleman@hotmail.com\">j.helleman@hotmail.com</a> (E-mail Privé), Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)                        \n        </div></div><div>Huisarts: van Partners                        \n        <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></div></div>"
                 },
                 "identifier": [
                     {
@@ -50,13 +50,13 @@
                                 "valueCode": "NL1"
                             }
                         ],
-                        "text": "Johan XXX_Helleman",
-                        "family": "XXX_Helleman",
+                        "text": "Johan Helleman",
+                        "family": "Helleman",
                         "_family": {
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                                    "valueString": "XXX_Helleman"
+                                    "valueString": "Helleman"
                                 }
                             ]
                         },
@@ -115,7 +115,7 @@
                     },
                     {
                         "system": "email",
-                        "value": "XXX_Helleman@hotmail.com",
+                        "value": "j.helleman@hotmail.com",
                         "use": "home"
                     }
                 ],
@@ -233,7 +233,7 @@
                                     "valueCode": "NL4"
                                 }
                             ],
-                            "family": "van Putten-XXX_Helleman",
+                            "family": "van Putten-Helleman",
                             "_family": {
                                 "extension": [
                                     {
@@ -246,7 +246,7 @@
                                     },
                                     {
                                         "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
-                                        "valueString": "XXX_Helleman"
+                                        "valueString": "Helleman"
                                     }
                                 ]
                             },
@@ -295,7 +295,7 @@
                             },
                             {
                                 "system": "email",
-                                "value": "XXX_Helleman@hotmail.com",
+                                "value": "j.helleman@hotmail.com",
                                 "use": "home"
                             }
                         ],

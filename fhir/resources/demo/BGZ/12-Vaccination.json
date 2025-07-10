@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan XXX_Helleman. Id: 34c92c2c-e3e4-11eb-7116-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Guatemala.</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (5 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>van Partners                                          \n              <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan Helleman. Id: 34c92c2c-e3e4-11eb-7116-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Guatemala.</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (5 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>van Partners                                          \n              <div>Zorgverlenerrol: Huisartsen, niet nader gespecificeerd</div></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -54,7 +54,7 @@
                 },
                 "patient": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "date": "1999-03-05",
                 "primarySource": false,

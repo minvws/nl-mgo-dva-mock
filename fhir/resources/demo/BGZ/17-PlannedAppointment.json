@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Afspraak. Id: 112233 (http://example-ehr.nl/NamingSystem/appointmentId), Status: geboekt</caption><tbody><tr><th>Specialisme</th><td><span title=\"Orthopedie (0305 - AGB-medisch specialisme)\">Orthopedie</span></td></tr><tr><th>Type</th><td><span title=\"Ambulatory (AMB - v3/ActCode)\">Ambulatory</span></td></tr><tr><th>Omschrijving</th><td>Fysiotherapie Controle afspraak</td></tr><tr><th>Timing</th><td>11:30 - 11:40 op 12 juli 2022</td></tr><tr><th>Deelnemers</th><td><ul><li>geaccepteerd - Johan XXX_Helleman</li><li>geaccepteerd - G.Z.M. de Wit                                                      \n                  <div>Zorgverlenerrol: Orthopedie</div></li><li>geaccepteerd - Test Medisch Centrum, West vleugel</li></ul></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Afspraak. Id: 112233 (http://example-ehr.nl/NamingSystem/appointmentId), Status: geboekt</caption><tbody><tr><th>Specialisme</th><td><span title=\"Orthopedie (0305 - AGB-medisch specialisme)\">Orthopedie</span></td></tr><tr><th>Type</th><td><span title=\"Ambulatory (AMB - v3/ActCode)\">Ambulatory</span></td></tr><tr><th>Omschrijving</th><td>Fysiotherapie Controle afspraak</td></tr><tr><th>Timing</th><td>11:30 - 11:40 op 12 juli 2022</td></tr><tr><th>Deelnemers</th><td><ul><li>geaccepteerd - Johan Helleman</li><li>geaccepteerd - G.Z.M. de Wit                                                      \n                  <div>Zorgverlenerrol: Orthopedie</div></li><li>geaccepteerd - Test Medisch Centrum, West vleugel</li></ul></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -85,7 +85,7 @@
                     {
                         "actor": {
                             "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                            "display": "Johan XXX_Helleman"
+                            "display": "Johan Helleman"
                         },
                         "status": "accepted"
                     },

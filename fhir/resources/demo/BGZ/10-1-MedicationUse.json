@@ -5,7 +5,7 @@
         "lastUpdated": "2024-04-15T06:52:57.148+00:00"
     },
     "type": "searchset",
-    "total": 1,
+    "total": 4,
     "link": [
         {
             "relation": "self",
@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>MedicationStatement. Subject: Johan XXX_Helleman. Id: 123457000000 (http://example-implementer.com/fhir/MedicationUseID), Categorie:                               \n          <span title=\"Medicatiegebruik (6 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.3)\">Medicatiegebruik</span>, Status: actief                        \n        </caption><tbody><tr><th>Voorschrijver</th><td>Huisartsen, niet nader gespecificeerd</td></tr><tr><th>Medicatie</th><td>Zestril tablet 10mg</td></tr><tr><th>Datum/tijd</th><td>Vanaf 28 juni 2018, 3 week</td></tr><tr><th>Informant</th><td>16 augustus 2018 - Johan XXX_Helleman</td></tr><tr><th>Dosering</th><td><div>Volgnummer: 1</div><div>Tekst: 1 maal per dag 1 tablet, oraal</div><div>Timing:                                                 \n                <div>eenmalig per dag</div></div><div>Toedieningsweg:                                                 \n                <span title=\"Oraal (9 - G-Standaard thesaurus subtabel 0007)\">Oraal</span></div><div>Dosering: 1 stuk</div></td></tr><tr><th>Medicatie gebruikt</th><td>ja</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>MedicationStatement. Subject: Johan Helleman. Id: 123457000000 (http://example-implementer.com/fhir/MedicationUseID), Categorie:                               \n          <span title=\"Medicatiegebruik (6 - 2.16.840.1.113883.2.4.3.11.60.20.77.5.3)\">Medicatiegebruik</span>, Status: actief                        \n        </caption><tbody><tr><th>Voorschrijver</th><td>Huisartsen, niet nader gespecificeerd</td></tr><tr><th>Medicatie</th><td>Zestril tablet 10mg</td></tr><tr><th>Datum/tijd</th><td>Vanaf 28 juni 2018, 3 week</td></tr><tr><th>Informant</th><td>16 augustus 2018 - Johan Helleman</td></tr><tr><th>Dosering</th><td><div>Volgnummer: 1</div><div>Tekst: 1 maal per dag 1 tablet, oraal</div><div>Timing:                                                 \n                <div>eenmalig per dag</div></div><div>Toedieningsweg:                                                 \n                <span title=\"Oraal (9 - G-Standaard thesaurus subtabel 0007)\">Oraal</span></div><div>Dosering: 1 stuk</div></td></tr><tr><th>Medicatie gebruikt</th><td>ja</td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -85,11 +85,11 @@
                 "dateAsserted": "2018-08-16",
                 "informationSource": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "taken": "y",
                 "dosage": [
@@ -123,6 +123,267 @@
             },
             "search": {
                 "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationStatement/b0e7005d-8a15-4de0-aa85-7f91cb08cb95",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "b0e7005d-8a15-4de0-aa85-7f91cb08cb95",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-06-26T10:00:00+00:00"
+                },
+                "status": "in gebruik",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3",
+                            "code": "6",
+                            "display": "Medicatiegebruik"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/8bfa8c3d-c599-4e8e-99f5-908f248362f6",
+                    "display": "Metformine tablet 500 mg"
+                },
+                "effectivePeriod": {
+                    "start": "2025-06-26"
+                },
+                "dateAsserted": "2025-06-26",
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "informationSource": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-AsAgreedIndicator",
+                        "valueBoolean": true
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Prescriber",
+                        "valueReference": {
+                            "reference": "PractitionerRole/1a249336-3fe7-488f-bc88-44bc8e1ad2aa",
+                            "display": "Huisartspraktijk Heideroosje"
+                        }
+                    }
+                ],
+                "taken": "y",
+                "dosage": [
+                    {
+                        "sequence": 1,
+                        "text": "3 maal per dag 1 tablet, oraal",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "Oraal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "text": "Diabetes type 2"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationStatement/96e63413-91ac-468a-a7fe-f5c2e3ac220f",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "96e63413-91ac-468a-a7fe-f5c2e3ac220f",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-06-26T10:00:00+00:00"
+                },
+                "status": "in gebruik",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3",
+                            "code": "6",
+                            "display": "Medicatiegebruik"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/a299bf05-44a0-4620-be94-43daa0a9f3e3",
+                    "display": "Omeprazol capsule 20 mg"
+                },
+                "effectivePeriod": {
+                    "start": "2025-06-26"
+                },
+                "dateAsserted": "2025-06-26",
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "informationSource": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-AsAgreedIndicator",
+                        "valueBoolean": true
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Prescriber",
+                        "valueReference": {
+                            "reference": "PractitionerRole/1a249336-3fe7-488f-bc88-44bc8e1ad2aa",
+                            "display": "Huisartspraktijk Heideroosje"
+                        }
+                    }
+                ],
+                "taken": "y",
+                "dosage": [
+                    {
+                        "sequence": 1,
+                        "text": "1 maal per dag 1 tablet, oraal",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "Oraal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "text": "Maagklachten"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/MedicationStatement/267ca43a-96b5-48b5-bb1d-5489f16d4f9c",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "267ca43a-96b5-48b5-bb1d-5489f16d4f9c",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-06-26T10:00:00+00:00"
+                },
+                "status": "in gebruik",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3",
+                            "code": "6",
+                            "display": "Medicatiegebruik"
+                        }
+                    ]
+                },
+                "medicationReference": {
+                    "reference": "Medication/fff056b8-9c5b-4026-a6ce-bd6ae5b05442",
+                    "display": "Pravastatine tablet 40 mg"
+                },
+                "effectivePeriod": {
+                    "start": "2025-06-26"
+                },
+                "dateAsserted": "2025-06-26",
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "informationSource": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-AsAgreedIndicator",
+                        "valueBoolean": true
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Prescriber",
+                        "valueReference": {
+                            "reference": "PractitionerRole/1a249336-3fe7-488f-bc88-44bc8e1ad2aa",
+                            "display": "Huisartspraktijk Heideroosje"
+                        }
+                    }
+                ],
+                "taken": "y",
+                "dosage": [
+                    {
+                        "sequence": 1,
+                        "text": "1 maal per dag 1 tablet, oraal",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.9",
+                                    "code": "9",
+                                    "display": "Oraal"
+                                }
+                            ]
+                        },
+                        "doseQuantity": {
+                            "value": 1,
+                            "unit": "stuk",
+                            "system": "urn:oid:2.16.840.1.113883.2.4.4.1.900.2",
+                            "code": "245"
+                        }
+                    }
+                ],
+                "reasonCode": [
+                    {
+                        "text": "Verhoogd cholesterol"
+                    }
+                ]
             }
         },
         {

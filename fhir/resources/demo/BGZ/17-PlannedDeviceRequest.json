@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DeviceRequest. Subject: Johan XXX_Helleman. Id: 2f3b5bcc-e3e4-11eb-1741-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief                              \n          <span style=\"display: block;\">Intentie: aanvraag</span></caption><tbody><tr><th>Code</th><td>Hearing aid</td></tr><tr><th>Wanneer</th><td>2022</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>DeviceRequest. Subject: Johan Helleman. Id: 2f3b5bcc-e3e4-11eb-1741-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief                              \n          <span style=\"display: block;\">Intentie: aanvraag</span></caption><tbody><tr><th>Code</th><td>Hearing aid</td></tr><tr><th>Wanneer</th><td>2022</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -73,7 +73,7 @@
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "occurrenceDateTime": "2022"
             },
@@ -101,7 +101,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan XXX_Helleman. Id: 0123456789</caption><tbody><tr><th>Type</th><td><span title=\"hoortoestel (fysiek object) (6012004 - SNOMED CT)\">hoortoestel (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}220131{21}0123456789</td></tr><tr><th>Verloopdatum</th><td>31 januari 2022</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Apparaat/Systeem. Patiënt: Johan Helleman. Id: 0123456789</caption><tbody><tr><th>Type</th><td><span title=\"hoortoestel (fysiek object) (6012004 - SNOMED CT)\">hoortoestel (fysiek object)</span></td></tr><tr><th>UDI</th><td>UDI barcode: {01}05050474530799{17}220131{21}0123456789</td></tr><tr><th>Verloopdatum</th><td>31 januari 2022</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -133,7 +133,7 @@
                 "expirationDate": "2022-01-31",
                 "patient": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 }
             },
             "search": {

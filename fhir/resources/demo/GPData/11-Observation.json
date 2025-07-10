@@ -14,10 +14,10 @@
     ],
     "entry": [
         {
-            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact14-fastingglucose",
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact99901-glucose",
             "resource": {
                 "resourceType": "Observation",
-                "id": "ont-ver-gpdata-observation-contact14-fastingglucose",
+                "id": "ont-ver-gpdata-observation-contact99901-glucose",
                 "meta": {
                     "extension": [
                         {
@@ -33,21 +33,21 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c1975acb-041c-11ec-1725-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td colspan=\"2\">\n              <ul>\n                <li>HNP (thoracaal/lumbaal)</li>\n                <li>Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"2\">2024-03-18</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"glucose nuchter, art/cap (lab) (3208 - nhg-tabel-45-diagnostische-bepalingen)\">glucose nuchter, art/cap (lab)</span>\n            </td>\n            <td>5.4 mmol/L</td>\n            <td>\n              <div>\n                <span title=\"Normal Range (normal - referencerange-meaning)\">Normal Range</span> 3.5 mmol/L - 5.6 mmol/L</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c1975acb-041c-11ec-1725-02000000002 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td colspan=\"2\">\n              <ul>\n                <li>HNP (thoracaal/lumbaal)</li>\n                <li>Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"2\">2024-03-18</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"glucose nuchter, art/cap (lab) (3208 - nhg-tabel-45-diagnostische-bepalingen)\">glucose nuchter, art/cap (lab)</span>\n            </td>\n            <td>5.4 mmol/L</td>\n            <td>\n              <div>\n                <span title=\"Normal Range (normal - referencerange-meaning)\">Normal Range</span> 3.5 mmol/L - 5.6 mmol/L</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
                 },
                 "extension": [
                     {
                         "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
                         "valueReference": {
-                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
-                            "display": "HNP (thoracaal/lumbaal)"
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101-99901",
+                            "display": "Glucose nuchter (venueus, lab)"
                         }
                     }
                 ],
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "c1975acb-041c-11ec-1725-020000000000"
+                        "value": "c1975acb-041c-11ec-1725-02000000002"
                     }
                 ],
                 "status": "definitief",
@@ -73,13 +73,13 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
-                    "reference": "Encounter/ont-ver-gpdata-encounter-contact14",
-                    "display": "Consult voor HNP (thoracaal/lumbaal) met Dokter Bernard"
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact99901",
+                    "display": "Glucose nuchter (venueus, lab)"
                 },
-                "effectiveDateTime": "2024-03-18",
+                "effectiveDateTime": "2024-03-19",
                 "performer": [
                     {
                         "extension": [
@@ -96,19 +96,19 @@
                     }
                 ],
                 "valueQuantity": {
-                    "value": 5.4,
+                    "value": 6.7,
                     "system": "http://unitsofmeasure.org",
                     "code": "mmol/L"
                 },
                 "referenceRange": [
                     {
                         "low": {
-                            "value": 3.5,
+                            "value": 4.0,
                             "system": "http://unitsofmeasure.org",
                             "code": "mmol/L"
                         },
                         "high": {
-                            "value": 5.6,
+                            "value": 6.1,
                             "system": "http://unitsofmeasure.org",
                             "code": "mmol/L"
                         },
@@ -116,8 +116,8 @@
                             "coding": [
                                 {
                                     "system": "http://hl7.org/fhir/referencerange-meaning",
-                                    "code": "normal",
-                                    "display": "Normal Range"
+                                    "code": "above",
+                                    "display": "Above high normal"
                                 }
                             ]
                         }
@@ -188,7 +188,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -281,7 +281,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -379,7 +379,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -468,7 +468,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
@@ -566,7 +566,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact12",
@@ -674,7 +674,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
@@ -773,7 +773,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
@@ -862,7 +862,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
@@ -960,7 +960,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact10",
@@ -1059,7 +1059,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
@@ -1157,7 +1157,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -1246,7 +1246,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
@@ -1280,10 +1280,10 @@
             }
         },
         {
-            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact11-throatculture",
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-gpdata-observation-contact99902-throatculture",
             "resource": {
                 "resourceType": "Observation",
-                "id": "ont-ver-gpdata-observation-contact11-throatculture",
+                "id": "ont-ver-gpdata-observation-contact99902-throatculture",
                 "meta": {
                     "extension": [
                         {
@@ -1299,21 +1299,21 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c04cd96b-041c-11ec-1076-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-03-08</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"kweek keel (1334 - nhg-tabel-45-diagnostische-bepalingen)\">kweek keel</span>\n            </td>\n            <td>\n              <span title=\"positief (32 - nhg-tabel-45-diagnostische-bepalingen#resultaten)\">positief</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Jacqueline XXX_Cevat. Id: c04cd96b-041c-11ec-1076-020000099902 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Dokter Bernard</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Context</th>\n            <td>\n              <ul>\n                <li>Keelpijn</li>\n                <li>Consult voor Keelpijn met Dokter Bernard</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-03-08</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"kweek keel (1334 - nhg-tabel-45-diagnostische-bepalingen)\">kweek keel</span>\n            </td>\n            <td>\n              <span title=\"positief (32 - nhg-tabel-45-diagnostische-bepalingen#resultaten)\">positief</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
                 },
                 "extension": [
                     {
                         "url": "http://nictiz.nl/fhir/StructureDefinition/extension-context-nl-core-episodeofcare",
                         "valueReference": {
-                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101",
-                            "display": "Keelpijn"
+                            "reference": "EpisodeOfCare/ont-ver-gpdata-episodeofcare-icpc-r2101-99902",
+                            "display": "Cholesterol totaal"
                         }
                     }
                 ],
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "c04cd96b-041c-11ec-1076-020000000000"
+                        "value": "c04cd96b-041c-11ec-1076-020000099902"
                     }
                 ],
                 "status": "definitief",
@@ -1322,8 +1322,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "49581000146104",
-                                "display": "Microbiologisch onderzoek - keel"
+                                "code": "113079009",
+                                "display": "LDL‑cholesterol meten"
                             }
                         ]
                     }
@@ -1333,19 +1333,19 @@
                         {
                             "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
                             "code": "1334",
-                            "display": "kweek keel"
+                            "display": "Cholesterol totaal"
                         }
                     ]
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
-                    "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
-                    "display": "Consult voor Keelpijn met Dokter Bernard"
+                    "reference": "Encounter/ont-ver-gpdata-encounter-contact99902",
+                    "display": "Cholesterol totaal"
                 },
-                "effectiveDateTime": "2024-03-08",
+                "effectiveDateTime": "2024-03-09",
                 "performer": [
                     {
                         "extension": [
@@ -1361,15 +1361,34 @@
                         "display": "Dokter Bernard"
                     }
                 ],
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
-                            "code": "32",
-                            "display": "positief"
+                "valueQuantity": {
+                    "value": 4.0,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3.5,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        },
+                        "high": {
+                            "value": 5.0,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/referencerange-meaning",
+                                    "code": "normal",
+                                    "display": "Normal range"
+                                }
+                            ]
                         }
-                    ]
-                }
+                    }
+                ]
             },
             "search": {
                 "mode": "match"
@@ -1431,7 +1450,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
@@ -1518,7 +1537,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact16",
@@ -1606,7 +1625,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -1707,7 +1726,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "context": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact06",

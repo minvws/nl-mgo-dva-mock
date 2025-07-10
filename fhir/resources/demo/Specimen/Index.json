@@ -29,7 +29,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Johan XXX_Helleman. Id: 1b3b213b-8fdf-11ec-5198-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Blood (substance) (87612001 - SNOMED CT)\">Blood (substance)</span></td></tr><tr><th>Inzameling</th><td>08:08:00, 23 mei 2012</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Johan Helleman. Id: 1b3b213b-8fdf-11ec-5198-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Blood (substance) (87612001 - SNOMED CT)\">Blood (substance)</span></td></tr><tr><th>Inzameling</th><td>08:08:00, 23 mei 2012</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -48,7 +48,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "collection": {
                     "collectedDateTime": "2012-05-23T08:08:00+01:00"

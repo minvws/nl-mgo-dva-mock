@@ -1,5 +1,8 @@
 - ### NEXT FUTURE RELEASE
 
+- ### [0.10.0] 2025-06-27
+  No changes required
+
 - ### [0.9.0] 2025-03-10
   No changes required
 

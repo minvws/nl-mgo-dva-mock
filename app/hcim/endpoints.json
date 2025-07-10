@@ -378,6 +378,46 @@
             }
         ]
     },
+    "/51/fhir/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e78cd": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e78cd.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e780b": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e780b.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e785b": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e785b.json"
+            }
+        ]
+    },
+    "/51/fhir/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e7850": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/DocumentReference/06c6e783-3dc1-4236-84b1-3fb1d12e7850.json"
+            }
+        ]
+    },
     "/51/fhir/Binary/4becdcc4-7ec6-4646-bc9a-1d2641673637": {
         "data_service": "PDFA",
         "matches": [
@@ -395,6 +435,46 @@
                 "fhir_version": "3.0",
                 "required_params": [],
                 "resource_path": "PDFA/Binary/66af5660-a20c-4946-a928-fb429d3ae462.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e78cd": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e78cd.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e780b": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e780b.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e785b": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e785b.json"
+            }
+        ]
+    },
+    "/51/fhir/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e7850": {
+        "data_service": "PDFA",
+        "matches": [
+            {
+                "fhir_version": "3.0",
+                "required_params": [],
+                "resource_path": "PDFA/Binary/06c6e783-3dc1-4236-84b1-3fb1d12e7850.json"
             }
         ]
     },

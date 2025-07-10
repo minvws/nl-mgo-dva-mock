@@ -51,7 +51,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact06",
@@ -183,7 +183,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact02",
@@ -272,7 +272,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact14",
@@ -404,7 +404,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact04",
@@ -511,7 +511,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact15",
@@ -643,7 +643,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact09",
@@ -775,7 +775,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact17",
@@ -907,7 +907,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact13",
@@ -1014,7 +1014,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact07",
@@ -1121,7 +1121,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact10",
@@ -1253,7 +1253,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact11",
@@ -1385,7 +1385,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contactmmk",
@@ -1517,7 +1517,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact08",
@@ -1610,7 +1610,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact01",
@@ -1742,7 +1742,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact16",
@@ -1874,7 +1874,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact12",
@@ -2006,7 +2006,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact03",
@@ -2095,7 +2095,7 @@
                 },
                 "subject": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "encounter": {
                     "reference": "Encounter/ont-ver-gpdata-encounter-contact05",

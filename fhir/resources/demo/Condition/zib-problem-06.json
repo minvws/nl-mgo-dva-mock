@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan XXX_Helleman. Id: 1d3f0727-8fdf-11ec-3215-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost</caption><tbody><tr><th>Code</th><td><span title=\"Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality) (21119008 - SNOMED CT)\">Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)</span></td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 1d3f0727-8fdf-11ec-3215-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost</caption><tbody><tr><th>Code</th><td><span title=\"Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality) (21119008 - SNOMED CT)\">Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)</span></td></tr></tbody></table></div>"
     },
     "identifier": [
         {
@@ -55,6 +55,6 @@
     ],
     "subject": {
         "reference": "Patient/nl-core-patient-01",
-        "display": "Johan XXX_Helleman"
+        "display": "Johan Helleman"
     }
 }

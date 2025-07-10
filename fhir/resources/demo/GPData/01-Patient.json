@@ -50,13 +50,13 @@
                 ],
                 "name": [
                     {
-                        "text": "Johan XXX_Helleman",
-                        "family": "XXX_Helleman",
+                        "text": "Johan Helleman",
+                        "family": "Helleman",
                         "_family": {
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                                    "valueString": "XXX_Helleman"
+                                    "valueString": "Helleman"
                                 }
                             ]
                         },
@@ -115,7 +115,7 @@
                     },
                     {
                         "system": "email",
-                        "value": "XXX_Helleman@hotmail.com",
+                        "value": "j.helleman@hotmail.com",
                         "use": "home"
                     }
                 ],

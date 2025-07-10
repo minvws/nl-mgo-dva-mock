@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan XXX_Helleman. Id: 13610554 (http://example-implementer.com/fhir/MedicationRequest-ID), Categorie:                               \n          <span title=\"instrueren door zorgverlener over toediening van medicatie (verrichting) (422037009 - SNOMED CT)\">instrueren door zorgverlener over toediening van medicatie (verrichting)</span>, Status: voltooid                              \n          <span style=\"display: block;\">Uitvoerende: Apotheek de Gulle Gaper</span></caption><tbody><tr><th>Gemaakt</th><td>12:25:00, 1 juni 2018</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td><ul><li>Vanaf 00:00:00, 27 juni 2018</li><li>30 dag</li></ul></td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 1-6-2018, gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal</div><div>Timing:                                                 \n                <div>30 day, eenmalig per dag</div></div><div>Zo nodig:                                                 \n                <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg:                                                 \n                <span title=\"Rectaal (12 - G-Standaard thesaurus subtabel 0007)\">Rectaal</span></div><div>Dosering: 1 stuk</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan Helleman. Id: 13610554 (http://example-implementer.com/fhir/MedicationRequest-ID), Categorie:                               \n          <span title=\"instrueren door zorgverlener over toediening van medicatie (verrichting) (422037009 - SNOMED CT)\">instrueren door zorgverlener over toediening van medicatie (verrichting)</span>, Status: voltooid                              \n          <span style=\"display: block;\">Uitvoerende: Apotheek de Gulle Gaper</span></caption><tbody><tr><th>Gemaakt</th><td>12:25:00, 1 juni 2018</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td><ul><li>Vanaf 00:00:00, 27 juni 2018</li><li>30 dag</li></ul></td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 1-6-2018, gedurende 30 dagen, zo nodig 1 maal per dag 1 stuk, rectaal</div><div>Timing:                                                 \n                <div>30 day, eenmalig per dag</div></div><div>Zo nodig:                                                 \n                <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg:                                                 \n                <span title=\"Rectaal (12 - G-Standaard thesaurus subtabel 0007)\">Rectaal</span></div><div>Dosering: 1 stuk</div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -78,7 +78,7 @@
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "performer": [
                     {

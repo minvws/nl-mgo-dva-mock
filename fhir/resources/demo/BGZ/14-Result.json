@@ -5,7 +5,7 @@
         "lastUpdated": "2024-04-15T07:01:10.177+00:00"
     },
     "type": "searchset",
-    "total": 1,
+    "total": 3,
     "link": [
         {
             "relation": "self",
@@ -14,10 +14,10 @@
     ],
     "entry": [
         {
-            "fullUrl": "{{BASE_URL}}fhir/Observation/65c1dfb7-a68c-4ccc-9851-ca94c5f647d7",
+            "fullUrl": "{{BASE_URL}}fhir/Observation/65c1dfb7-a68c-4ccc-9851-ca94c5f99903",
             "resource": {
                 "resourceType": "Observation",
-                "id": "65c1dfb7-a68c-4ccc-9851-ca94c5f647d7",
+                "id": "65c1dfb7-a68c-4ccc-9851-ca94c5f99903",
                 "meta": {
                     "extension": [
                         {
@@ -33,12 +33,12 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 30be524c-e3e4-11eb-3878-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Bevinding betreffende laboratoriumonderzoek (bevinding) (49581000146104 - SNOMED CT)\">Bevinding betreffende laboratoriumonderzoek (bevinding)</span>,                               \n          <span title=\"serumtest (verrichting) (275711006 - SNOMED CT)\">serumtest (verrichting)</span>, Status: definitief                        \n        </caption><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">12:00:00, 23 mei 2012</td></tr><tr><th>Specimen</th><td colspan=\"3\">Blood (substance)</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Chloride [mol/volume] in bloed (2069-3 - LOINC)\">Chloride [mol/volume] in bloed</span></td><td>109 mmol/l</td><td><span title=\"High (H - v2/0078)\">High</span></td><td><div>99 mmol/l - 108 mmol/l</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 30be524c-e3e4-11eb-3878-020000099903 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Bevinding betreffende laboratoriumonderzoek (bevinding) (49581000146104 - SNOMED CT)\">Bevinding betreffende laboratoriumonderzoek (bevinding)</span>,                               \n          <span title=\"serumtest (verrichting) (275711006 - SNOMED CT)\">serumtest (verrichting)</span>, Status: definitief                        \n        </caption><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">12:00:00, 23 mei 2012</td></tr><tr><th>Specimen</th><td colspan=\"3\">Blood (substance)</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Chloride [mol/volume] in bloed (2069-3 - LOINC)\">Chloride [mol/volume] in bloed</span></td><td>109 mmol/l</td><td><span title=\"High (H - v2/0078)\">High</span></td><td><div>99 mmol/l - 108 mmol/l</div></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "30be524c-e3e4-11eb-3878-020000000000"
+                        "value": "30be524c-e3e4-11eb-3878-020000099903"
                     }
                 ],
                 "status": "definitief",
@@ -62,9 +62,9 @@
                     {
                         "coding": [
                             {
-                                "system": "http://snomed.info/sct",
-                                "code": "49581000146104",
-                                "display": "Bloedonderzoek - Chloride"
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
                             }
                         ]
                     },
@@ -72,8 +72,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "275711006",
-                                "display": "serumtest (verrichting)"
+                                "code": "43492007",
+                                "display": "Groep B streptokokken"
                             }
                         ]
                     }
@@ -81,60 +81,120 @@
                 "code": {
                     "coding": [
                         {
-                            "system": "http://loinc.org",
-                            "code": "2069-3",
-                            "display": "Chloride [mol/volume] in bloed"
+                            "system": "http://snomed.info/sct",
+                            "code": "4045340",
+                            "display": "Kweek hemolytische steptokokken groep B"
                         }
                     ]
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectiveDateTime": "2012-05-23T12:00:00+02:00",
-                "valueQuantity": {
-                    "value": 109,
-                    "unit": "mmol/l",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mmol/L"
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
+                            "code": "31",
+                            "display": "negatief"
+                        }
+                    ]
                 },
                 "interpretation": {
                     "coding": [
                         {
-                            "system": "http://hl7.org/fhir/v2/0078",
-                            "code": "H",
-                            "display": "High"
-                        },
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "281302008",
-                            "display": "boven referentiebereik (kwalificatiewaarde)"
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Geen hemolytische streptokokken groep B aangetroffen."
                         }
                     ]
                 },
                 "specimen": {
-                    "reference": "Specimen/c827e92c-6967-4d9a-8598-93c5977c8e2f",
-                    "display": "Bloed"
-                },
-                "referenceRange": [
-                    {
-                        "low": {
-                            "value": 99,
-                            "unit": "mmol/l",
-                            "system": "http://unitsofmeasure.org",
-                            "code": "mmol/L"
-                        },
-                        "high": {
-                            "value": 108,
-                            "unit": "mmol/l",
-                            "system": "http://unitsofmeasure.org",
-                            "code": "mmol/L"
-                        }
-                    }
-                ]
+                    "reference": "Specimen/c827e92c-6967-4d9a-8598-93c597799904",
+                    "display": "Keeluitstrijk"
+                }
             },
             "search": {
                 "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/abc12345-covid-corona-obs",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "abc12345-covid-corona-obs",
+                "meta": {
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-06-26T10:00:00+00:00"
+                },
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+                                        "code": "final",
+                                        "display": "definitief"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "945031000000109",
+                            "display": "Detectie van humaan coronavirus RNA (procedure)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "effectiveDateTime": "2025-06-25T15:30:00+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
+                            "code": "32",
+                            "display": "positief"
+                        }
+                    ]
+                },
+                "interpretation": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "POS",
+                            "display": "Humaan coronavirus RNA aangetoond"
+                        }
+                    ]
+                },
+                "specimen": {
+                    "reference": "Specimen/spec123-corona-keel",
+                    "display": "Keeluitstrijk"
+                }
             }
         },
         {
@@ -157,7 +217,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Johan XXX_Helleman. Id: 34499bec-e3e4-11eb-1223-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Bloed (substantie) (87612001 - SNOMED CT)\">Bloed (substantie)</span></td></tr><tr><th>Inzameling</th><td>08:08:00, 23 mei 2012</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Specimen. Subject: Johan Helleman. Id: 34499bec-e3e4-11eb-1223-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Type</th><td><span title=\"Bloed (substantie) (87612001 - SNOMED CT)\">Bloed (substantie)</span></td></tr><tr><th>Inzameling</th><td>08:08:00, 23 mei 2012</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -176,7 +236,7 @@
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "collection": {
                     "collectedDateTime": "2012-05-23T08:08:00+02:00"

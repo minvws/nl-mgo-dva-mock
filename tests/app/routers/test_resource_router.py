@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 
 import pytest
@@ -76,7 +75,7 @@ def test_handle_request_with_valid_hcim_response(mocker: MockerFixture) -> None:
 
     mock_open = mocker.patch("builtins.open")
     mock_file = mock_open.return_value.__enter__.return_value
-    mock_file.read.return_value = json.dumps({"id": "123", "resourceType": "Patient"})
+    mock_file.read.return_value = '{"id": "123", "resourceType": "Patient"}'
 
     request = mocker.MagicMock(spec=Request)
     request.headers = mocker.Mock()
@@ -101,7 +100,7 @@ def test_handle_request_with_valid_hcim_response(mocker: MockerFixture) -> None:
     )
 
     mock_open.assert_called_once_with(resource_path)
-    assert json.loads(response.body) == {"id": "123", "resourceType": "Patient"}
+    assert response.body == b'{"id":"123","resourceType":"Patient"}'
     assert response.status_code == 200
 
 
@@ -136,7 +135,7 @@ def test_handle_request_hcim_response_none_but_id_returns_response(
         accept_header="application/fhir+json; fhirVersion=3.0",
     )
 
-    assert json.loads(response.body) == {"id": "123", "resourceType": "Patient"}
+    assert response.body == b'{"id":"123","resourceType":"Patient"}'
     assert response.status_code == 200
 
 

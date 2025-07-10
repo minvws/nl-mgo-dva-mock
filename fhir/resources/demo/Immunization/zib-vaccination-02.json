@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan XXX_Helleman. Id: 8fea3446-97dd-4c76-a5d0-9eb2c2d962c8 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Indonesië</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (9 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>Henk de Vries<div>Zorgverlenerrol: Medisch specialisten, orthopedie</div></td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatie. Patiënt: Johan Helleman. Id: 8fea3446-97dd-4c76-a5d0-9eb2c2d962c8 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: voltooid</caption><tfoot><tr><td colspan=\"2\">Bezoek aan Indonesië</td></tr></tfoot><tbody><tr><th><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></th><td><div>Toegediend: ja (9 maart 1999)</div><div>Gemeld door uitvoerende: nee</div></td></tr><tr><th>Zorgverlener</th><td>Henk de Vries<div>Zorgverlenerrol: Medisch specialisten, orthopedie</div></td></tr></tbody></table></div>"
     },
     "identifier": [
         {
@@ -29,7 +29,7 @@
     },
     "patient": {
         "reference": "Patient/nl-core-patient-01",
-        "display": "Johan XXX_Helleman"
+        "display": "Johan Helleman"
     },
     "encounter": {
         "reference": "Encounter/zib-encounter-04",

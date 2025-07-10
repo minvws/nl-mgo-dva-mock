@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Attentievlag. Subject: Johan XXX_Helleman. Id: 2fadf3bc-e3e4-11eb-2885-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Alert [type] in ^patiënt (74018-3 - LOINC)\">Alert [type] in ^patiënt</span>, Status: actief                        \n        </caption><tbody><tr><th>Categorie</th><td><span title=\"Alert [type] in ^patiënt (74018-3 - LOINC)\">Alert [type] in ^patiënt</span></td></tr><tr><th>Code</th><td><span title=\"drager van meticillineresistente Staphylococcus aureus (bevinding) (432415000 - SNOMED CT)\">drager van meticillineresistente Staphylococcus aureus (bevinding)</span></td></tr><tr><th>Periode</th><td>Vanaf 1 juni 2010</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Attentievlag. Subject: Johan Helleman. Id: 2fadf3bc-e3e4-11eb-2885-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"Alert [type] in ^patiënt (74018-3 - LOINC)\">Alert [type] in ^patiënt</span>, Status: actief                        \n        </caption><tbody><tr><th>Categorie</th><td><span title=\"Alert [type] in ^patiënt (74018-3 - LOINC)\">Alert [type] in ^patiënt</span></td></tr><tr><th>Code</th><td><span title=\"drager van meticillineresistente Staphylococcus aureus (bevinding) (432415000 - SNOMED CT)\">drager van meticillineresistente Staphylococcus aureus (bevinding)</span></td></tr><tr><th>Periode</th><td>Vanaf 1 juni 2010</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -62,7 +62,7 @@
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "period": {
                     "start": "2010-06-01"

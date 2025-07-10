@@ -29,7 +29,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Johan XXX_Helleman. Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1), 1bed45b9-8fdf-11ec-1339-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Vaste Huisarts 1 || Huisartsen || Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Medicatie</th><td>Metoclopramide zetpil 20mg</td></tr><tr><th>Gemaakt</th><td>10:54:23, 8 juni 2020</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Timing: <div>eenmalig per dag</div></div><div>Zo nodig: <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div><div>Dosering: 1 stuk - 2 stuk</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Medicatieafspraak. Subject: Johan Helleman. Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1), 1bed45b9-8fdf-11ec-1339-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, <span style=\"display: block;\">Intentie: aanvraag</span><span style=\"display: block;\">Aangevraagd door: Vaste Huisarts 1 || Huisartsen || Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Medicatie</th><td>Metoclopramide zetpil 20mg</td></tr><tr><th>Gemaakt</th><td>10:54:23, 8 juni 2020</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Timing: <div>eenmalig per dag</div></div><div>Zo nodig: <span title=\"zo nodig (1137 - nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek)\">zo nodig</span></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div><div>Dosering: 1 stuk - 2 stuk</div></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -73,7 +73,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "authoredOn": "2024-02-21T10:54:23+02:00",
                 "requester": {

@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan XXX_Helleman. Id: 1546339-f6753t65r (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.422037009.1), 189ef867-8fdf-11ec-6427-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Provider medication administration instructions (procedure) (422037009 - SNOMED CT)\">Provider medication administration instructions (procedure)</span><span style=\"display: block;\">Uitvoerende: Apotheek De Gulle Gaper</span></caption><tfoot><tr><td colspan=\"2\">Tekstuele toelichting bij deze toedieningsafspraak</td></tr></tfoot><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Gemaakt</th><td>10:54:12, 8 juni 2020</td></tr><tr><th>Gebaseerd op</th><td>relatie naar medicatieafspraak: #MB_01h#MA_01 || 2.16.840.1.113883.2.4.3.11.999.77.16076005.1 (Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1))</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 8 jun 2020, 1 maal per dag, rectaal</div><div>Timing: <div>eenmalig per dag</div></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div></td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Toedieningsafspraak. Subject: Johan Helleman. Id: 1546339-f6753t65r (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.422037009.1), 189ef867-8fdf-11ec-6427-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Provider medication administration instructions (procedure) (422037009 - SNOMED CT)\">Provider medication administration instructions (procedure)</span><span style=\"display: block;\">Uitvoerende: Apotheek De Gulle Gaper</span></caption><tfoot><tr><td colspan=\"2\">Tekstuele toelichting bij deze toedieningsafspraak</td></tr></tfoot><tbody><tr><th>Medicamenteuze behandel-id</th><td>#MB_01h (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.1.1)</td></tr><tr><th>Gemaakt</th><td>10:54:12, 8 juni 2020</td></tr><tr><th>Gebaseerd op</th><td>relatie naar medicatieafspraak: #MB_01h#MA_01 || 2.16.840.1.113883.2.4.3.11.999.77.16076005.1 (Id: #MB_01h#MA_01 (urn:oid:2.16.840.1.113883.2.4.3.11.999.77.16076005.1))</td></tr><tr><th>Medicatie</th><td>PRIMPERAN ZETPIL 20MG</td></tr><tr><th>Gebruiksduur</th><td>Vanaf 8 juni 2020</td></tr><tr><th>Doseerinstructie</th><td><div>Volgnummer: 1</div><div>Tekst: Vanaf 8 jun 2020, 1 maal per dag, rectaal</div><div>Timing: <div>eenmalig per dag</div></div><div>Toedieningsweg: <span title=\"rectaal (12 - G-Standaard thesaurus subtabel 0007)\">rectaal</span></div></td></tr></tbody></table></div>"
     },
     "extension": [
         {
@@ -76,7 +76,7 @@
     },
     "subject": {
         "reference": "Patient/nl-core-patient-01",
-        "display": "Johan XXX_Helleman"
+        "display": "Johan Helleman"
     },
     "performer": [
         {

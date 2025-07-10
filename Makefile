@@ -23,7 +23,7 @@ type-check: ## Check for typing errors
 	$(RUN_PREFIX) mypy
 
 spelling-check: ## Check spelling mistakes
-	$(RUN_PREFIX) codespell .
+	$(RUN_PREFIX) codespell --ignore-words=.codespell_ignore .
 
 spelling-fix: ## Fix spelling mistakes
 	$(RUN_PREFIX) codespell . --write-changes --interactive=3

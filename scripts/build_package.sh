@@ -104,12 +104,11 @@ mkdir -p "${WORK_DIR}"
 # Copy service files from the specified service directory
 cp -r "${SERVICE_DIR}"/* "${WORK_DIR}/"
 
-if [ -f "${WORK_DIR}/version.json" ]; then
-    echo "Updating version.json..."
-    jq --arg release_version "${RELEASE_VERSION}" --arg git_ref "${GIT_REF}" \
-        '.release_version = $release_version | .git_ref = $git_ref' "${WORK_DIR}/version.json" > "${WORK_DIR}/version_new.json"
-    mv "${WORK_DIR}/version_new.json" "${WORK_DIR}/version.json"
-fi
+echo "Writing version.json..."
+echo '{
+    "version": "'${RELEASE_VERSION}'",
+    "git_ref": "'${GIT_REF}'"
+}' > "${WORK_DIR}/version.json"
 
 echo "Creating archive ${OUTPUT_FILE}..."
 # Create an empty file to avoid tar errors

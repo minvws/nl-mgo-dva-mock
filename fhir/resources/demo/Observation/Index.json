@@ -29,7 +29,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 191e51d9-8fdf-11ec-1102-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>08:53:00, 1 februari 2013</td></tr><tr><th>Methode</th><td><span title=\"Non-invasive (22762002 - SNOMED CT)\">Non-invasive</span></td></tr><tr><th>Deel van lichaam</th><td><span title=\"Left upper arm structure (368208006 - SNOMED CT)\">Left upper arm structure</span></td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span></td><td /></tr><tr><td><span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span></td><td><span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span></td></tr><tr><td><span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span></td><td><span title=\"Sitting position (33586001 - SNOMED CT)\">Sitting position</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 191e51d9-8fdf-11ec-1102-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>08:53:00, 1 februari 2013</td></tr><tr><th>Methode</th><td><span title=\"Non-invasive (22762002 - SNOMED CT)\">Non-invasive</span></td></tr><tr><th>Deel van lichaam</th><td><span title=\"Left upper arm structure (368208006 - SNOMED CT)\">Left upper arm structure</span></td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span></td><td /></tr><tr><td><span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span></td><td><span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span></td></tr><tr><td><span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span></td><td><span title=\"Sitting position (33586001 - SNOMED CT)\">Sitting position</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -60,7 +60,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectiveDateTime": "2013-02-01T08:53:00+01:00",
                 "performer": [
@@ -189,7 +189,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 191e51d9-8fdf-11ec-1102-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>08:53:00, 1 februari 2013</td></tr><tr><th>Methode</th><td><span title=\"Non-invasive (22762002 - SNOMED CT)\">Non-invasive</span></td></tr><tr><th>Deel van lichaam</th><td><span title=\"Left upper arm structure (368208006 - SNOMED CT)\">Left upper arm structure</span></td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span></td><td /></tr><tr><td><span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span></td><td><span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span></td></tr><tr><td><span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span></td><td><span title=\"Sitting position (33586001 - SNOMED CT)\">Sitting position</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 191e51d9-8fdf-11ec-1102-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>08:53:00, 1 februari 2013</td></tr><tr><th>Methode</th><td><span title=\"Non-invasive (22762002 - SNOMED CT)\">Non-invasive</span></td></tr><tr><th>Deel van lichaam</th><td><span title=\"Left upper arm structure (368208006 - SNOMED CT)\">Left upper arm structure</span></td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span></td><td /></tr><tr><td><span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood pressure</span></td><td>108 mmHg</td></tr><tr><td><span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood pressure device Cuff size</span></td><td><span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span></td></tr><tr><td><span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span></td><td><span title=\"Sitting position (33586001 - SNOMED CT)\">Sitting position</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -349,7 +349,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -385,7 +385,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectiveDateTime": "2013-02-08",
                 "performer": [
@@ -427,7 +427,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -505,7 +505,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 194206c9-8fdf-11ec-1006-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>3 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body weight (29463-7 - LOINC)\">Body weight</span></td><td>72 kg</td></tr><tr><td><span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing worn during measure</span></td><td><span title=\"Minimal dressed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Minimal dressed</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 194206c9-8fdf-11ec-1006-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>3 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body weight (29463-7 - LOINC)\">Body weight</span></td><td>72 kg</td></tr><tr><td><span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing worn during measure</span></td><td><span title=\"Minimal dressed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Minimal dressed</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -536,7 +536,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectiveDateTime": "2013-02-03",
                 "performer": [
@@ -599,7 +599,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 194206c9-8fdf-11ec-1006-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>3 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body weight (29463-7 - LOINC)\">Body weight</span></td><td>72 kg</td></tr><tr><td><span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing worn during measure</span></td><td><span title=\"Minimal dressed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Minimal dressed</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 194206c9-8fdf-11ec-1006-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tbody><tr><th>Bepalingdatum/tijd</th><td>3 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body weight (29463-7 - LOINC)\">Body weight</span></td><td>72 kg</td></tr><tr><td><span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing worn during measure</span></td><td><span title=\"Minimal dressed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Minimal dressed</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -693,7 +693,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 19a199c7-8fdf-11ec-9837-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tfoot><tr><td colspan=\"2\">Op feestjes en in uitgaanscircuit.</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>1981 - 1983</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding relating to drug misuse behavior (finding) (228366006 - SNOMED CT)\">Finding relating to drug misuse behavior (finding)</span></td><td><span title=\"Misused drugs in past (finding) (44870007 - SNOMED CT)\">Misused drugs in past (finding)</span></td></tr><tr><td><span title=\"Drug or medicament (substance) (410942007 - SNOMED CT)\">Drug or medicament (substance)</span></td><td><span title=\"Amphetamine (703842006 - SNOMED CT)\">Amphetamine</span></td></tr><tr><td><span title=\"Route of administration (attribute) (410675002 - SNOMED CT)\">Route of administration (attribute)</span></td><td><span title=\"NASAAL (6 - G-Standaard thesaurus subtabel 0007)\">NASAAL</span></td></tr><tr><td><span title=\"Frequency of drug misuse (observable entity) (228390007 - SNOMED CT)\">Frequency of drug misuse (observable entity)</span></td><td>3 times a year</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 19a199c7-8fdf-11ec-9837-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tfoot><tr><td colspan=\"2\">Op feestjes en in uitgaanscircuit.</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>1981 - 1983</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding relating to drug misuse behavior (finding) (228366006 - SNOMED CT)\">Finding relating to drug misuse behavior (finding)</span></td><td><span title=\"Misused drugs in past (finding) (44870007 - SNOMED CT)\">Misused drugs in past (finding)</span></td></tr><tr><td><span title=\"Drug or medicament (substance) (410942007 - SNOMED CT)\">Drug or medicament (substance)</span></td><td><span title=\"Amphetamine (703842006 - SNOMED CT)\">Amphetamine</span></td></tr><tr><td><span title=\"Route of administration (attribute) (410675002 - SNOMED CT)\">Route of administration (attribute)</span></td><td><span title=\"NASAAL (6 - G-Standaard thesaurus subtabel 0007)\">NASAAL</span></td></tr><tr><td><span title=\"Frequency of drug misuse (observable entity) (228390007 - SNOMED CT)\">Frequency of drug misuse (observable entity)</span></td><td>3 times a year</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -713,7 +713,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectivePeriod": {
                     "start": "1981",
@@ -800,7 +800,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 1b2d4dbd-8fdf-11ec-8670-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, <span title=\"Serum chemistry test (275711006 - SNOMED CT)\">Serum chemistry test</span>, Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">12:00:00, 23 mei 2012</td></tr><tr><th>Specimen</th><td colspan=\"3\">Blood (substance)</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Chloride [Moles/volume] in Blood (2069-3 - LOINC)\">Chloride [Moles/volume] in Blood</span></td><td>109 mmol/l</td><td><span title=\"Hoog (H - v2/0078)\">Hoog</span></td><td><div>99 mmol/l - 108 mmol/l</div></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 1b2d4dbd-8fdf-11ec-8670-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, <span title=\"Serum chemistry test (275711006 - SNOMED CT)\">Serum chemistry test</span>, Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td colspan=\"3\">12:00:00, 23 mei 2012</td></tr><tr><th>Specimen</th><td colspan=\"3\">Blood (substance)</td></tr><tr><th>Code</th><th>Waarde</th><th>Interpretatie</th><th>Referentiewaarden</th></tr><tr><td><span title=\"Chloride [Moles/volume] in Blood (2069-3 - LOINC)\">Chloride [Moles/volume] in Blood</span></td><td>109 mmol/l</td><td><span title=\"Hoog (H - v2/0078)\">Hoog</span></td><td><div>99 mmol/l - 108 mmol/l</div></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -840,7 +840,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectiveDateTime": "2012-05-23T12:00:00+02:00",
                 "valueQuantity": {
@@ -1014,7 +1014,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 1eb10781-8fdf-11ec-7373-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td>1980 - 1983</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding of tobacco use and exposure (finding) (365980008 - SNOMED CT)\">Finding of tobacco use and exposure (finding)</span></td><td><span title=\"Ex-smoker (finding) (8517006 - SNOMED CT)\">Ex-smoker (finding)</span></td></tr><tr><td><span title=\"Type of tobacco used (observable entity) (53661000146106 - SNOMED CT)\">Type of tobacco used (observable entity)</span></td><td><span title=\"Cigarette smoker (finding) (65568007 - SNOMED CT)\">Cigarette smoker (finding)</span></td></tr><tr><td><span title=\"Tobacco smoking consumption (observable entity) (266918002 - SNOMED CT)\">Tobacco smoking consumption (observable entity)</span></td><td>2 packs per week</td></tr><tr><td><span title=\"Cigarette pack-years (observable entity) (401201003 - SNOMED CT)\">Cigarette pack-years (observable entity)</span></td><td>1 PackYears</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 1eb10781-8fdf-11ec-7373-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td>1980 - 1983</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding of tobacco use and exposure (finding) (365980008 - SNOMED CT)\">Finding of tobacco use and exposure (finding)</span></td><td><span title=\"Ex-smoker (finding) (8517006 - SNOMED CT)\">Ex-smoker (finding)</span></td></tr><tr><td><span title=\"Type of tobacco used (observable entity) (53661000146106 - SNOMED CT)\">Type of tobacco used (observable entity)</span></td><td><span title=\"Cigarette smoker (finding) (65568007 - SNOMED CT)\">Cigarette smoker (finding)</span></td></tr><tr><td><span title=\"Tobacco smoking consumption (observable entity) (266918002 - SNOMED CT)\">Tobacco smoking consumption (observable entity)</span></td><td>2 packs per week</td></tr><tr><td><span title=\"Cigarette pack-years (observable entity) (401201003 - SNOMED CT)\">Cigarette pack-years (observable entity)</span></td><td>1 PackYears</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -1034,7 +1034,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectivePeriod": {
                     "start": "1980",
@@ -1122,7 +1122,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 18cc8831-8fdf-11ec-2010-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td>Vanaf 1980</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding relating to alcohol drinking behavior (finding) (228273003 - SNOMED CT)\">Finding relating to alcohol drinking behavior (finding)</span></td><td><span title=\"Current drinker of alcohol (219006 - SNOMED CT)\">Current drinker of alcohol</span></td></tr><tr><td><span title=\"Alcohol intake (observable entity) (160573003 - SNOMED CT)\">Alcohol intake (observable entity)</span></td><td>4 glasses per week</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 18cc8831-8fdf-11ec-2010-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Bepalingdatum/tijd</th><td>Vanaf 1980</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding relating to alcohol drinking behavior (finding) (228273003 - SNOMED CT)\">Finding relating to alcohol drinking behavior (finding)</span></td><td><span title=\"Current drinker of alcohol (219006 - SNOMED CT)\">Current drinker of alcohol</span></td></tr><tr><td><span title=\"Alcohol intake (observable entity) (160573003 - SNOMED CT)\">Alcohol intake (observable entity)</span></td><td>4 glasses per week</td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -1142,7 +1142,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "effectivePeriod": {
                     "start": "1980"
@@ -1189,7 +1189,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 1b6fe23b-8fdf-11ec-1802-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances (finding)</span></td><td><span title=\"Eengezinswoning (EENGEZW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Eengezinswoning</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 1b6fe23b-8fdf-11ec-1802-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption><tbody><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances (finding)</span></td><td><span title=\"Eengezinswoning (EENGEZW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Eengezinswoning</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
@@ -1209,7 +1209,7 @@
                 },
                 "subject": {
                     "reference": "Patient/nl-core-patient-01",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "valueCodeableConcept": {
                     "coding": [

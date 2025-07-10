@@ -1,7 +1,8 @@
 {
     "name": "nl-mgo-dva-mock-private",
     "build": {
-        "dockerfile": "../Dockerfile"
+        "dockerfile": "../docker/Dockerfile",
+        "context": "../"
     },
     "remoteUser": "app",
     "customizations": {

@@ -33,7 +33,7 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatieschema. Patiënt: Johan XXX_Helleman. Id: 350dfd5c-e3e4-11eb-7940-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Gemaakt: 2022. Status:                                           \n              <span title=\"Due (due - immunization-recommendation-status)\">Due</span><div><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></div></th><td><div>2022 -                                                 \n                <span title=\"Recommended (recommended - immunization-recommendation-date-criterion)\">Recommended</span></div></td></tr><tr><th>Eerdere vaccinatie</th><td>hepatitis A immunoglobulin</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Vaccinatieschema. Patiënt: Johan Helleman. Id: 350dfd5c-e3e4-11eb-7940-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption><tbody><tr><th>Gemaakt: 2022. Status:                                           \n              <span title=\"Due (due - immunization-recommendation-status)\">Due</span><div><span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span></div></th><td><div>2022 -                                                 \n                <span title=\"Recommended (recommended - immunization-recommendation-date-criterion)\">Recommended</span></div></td></tr><tr><th>Eerdere vaccinatie</th><td>hepatitis A immunoglobulin</td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -57,7 +57,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "recommendation": [
                     {

@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 999911120 (BSN), Id 1683aefb-8fdf-11ec-1800-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Johan XXX_Helleman (Johan), Man, 25 juli 1964, <span title=\"Married (M - v3/MaritalStatus)\">Married</span></div><div><a href=\"tel:06-12345645\">06-12345645</a> (Tel Privé), <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail Privé)</div><div>Knolweg 1000, 9999XA Stitswerd, NLD (officieel Privé (hoofd))</div><div><span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>, <span title=\"Wife (WIFE - v3/RoleCode)\">Wife</span> Jannie van Putten XXX_Helleman (Jannie)<div><a href=\"tel:+31611234567\">+31611234567</a> (Tel Werk), <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a> (E-mail Werk), Knolweg 1000, 9999XA Stitswerd, Nederland (Bezoek)</div></div><div>Huisarts: Maatschap Vaste Huisarts</div></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 999911120 (BSN), Id 1683aefb-8fdf-11ec-1800-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Johan Helleman (Johan), Man, 25 juli 1964, <span title=\"Married (M - v3/MaritalStatus)\">Married</span></div><div><a href=\"tel:06-12345645\">06-12345645</a> (Tel Privé), <a href=\"mailto:j.helleman@hotmail.com\">j.helleman@hotmail.com</a> (E-mail Privé)</div><div>Knolweg 1000, 9999XA Stitswerd, NLD (officieel Privé (hoofd))</div><div><span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>, <span title=\"Wife (WIFE - v3/RoleCode)\">Wife</span> Jannie van Putten Helleman (Jannie)<div><a href=\"tel:+31611234567\">+31611234567</a> (Tel Werk), <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a> (E-mail Werk), Knolweg 1000, 9999XA Stitswerd, Nederland (Bezoek)</div></div><div>Huisarts: Maatschap Vaste Huisarts</div></div>"
     },
     "identifier": [
         {
@@ -30,13 +30,13 @@
                     "valueCode": "NL4"
                 }
             ],
-            "text": "Johan XXX_Helleman",
-            "family": "XXX_Helleman",
+            "text": "Johan Helleman",
+            "family": "Helleman",
             "_family": {
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                        "valueString": "XXX_Helleman"
+                        "valueString": "Helleman"
                     }
                 ]
             },
@@ -77,7 +77,7 @@
         },
         {
             "system": "email",
-            "value": "XXX_Helleman@hotmail.com",
+            "value": "j.helleman@hotmail.com",
             "use": "home"
         }
     ],
@@ -198,8 +198,8 @@
                         "valueCode": "NL4"
                     }
                 ],
-                "text": "Jannie van Putten XXX_Helleman",
-                "family": "van Putten XXX_Helleman",
+                "text": "Jannie van Putten Helleman",
+                "family": "van Putten Helleman",
                 "_family": {
                     "extension": [
                         {
@@ -212,7 +212,7 @@
                         },
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
-                            "valueString": "XXX_Helleman"
+                            "valueString": "Helleman"
                         }
                     ]
                 },

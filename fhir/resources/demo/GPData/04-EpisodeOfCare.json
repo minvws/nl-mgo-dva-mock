@@ -77,7 +77,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -155,7 +155,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -233,7 +233,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -303,7 +303,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -385,7 +385,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -467,7 +467,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",
@@ -550,7 +550,7 @@
                 ],
                 "patient": {
                     "reference": "Patient/ont-ver-gpdata-patient-kwalificatie1",
-                    "display": "Johan XXX_Helleman"
+                    "display": "Johan Helleman"
                 },
                 "managingOrganization": {
                     "reference": "Organization/ont-ver-gpdata-organization-kwalificatie1",

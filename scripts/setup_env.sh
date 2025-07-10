@@ -11,7 +11,7 @@ export PATH=$HOME/.local/bin:$PATH
 echo "Setting up environment with Python version: ${PYTHON_VERSION}"
 
 sudo apt-get update
-sudo apt-get install -y curl jq python${PYTHON_VERSION} pipx
+sudo apt-get install -y curl python${PYTHON_VERSION} pipx
 sudo apt-get clean
 pipx install poetry==1.8.*
 

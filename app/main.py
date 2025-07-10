@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .config.models import AppConfig
 from .authentication.routers import router as auth_mock_router
 from .bindings import configure_bindings
+from .config.models import AppConfig
 from .constants import APP_NAME
 from .routers.resource_router import router as resource_router
 from .telemetry.jaeger_provider import setup_jaeger
@@ -24,7 +24,7 @@ def create_app() -> FastAPI:
 
     app = FastAPI(
         title=APP_NAME,
-        version=version_info.release_version,
+        version=version_info.version,
         docs_url=None,
         redoc_url=None,
     )

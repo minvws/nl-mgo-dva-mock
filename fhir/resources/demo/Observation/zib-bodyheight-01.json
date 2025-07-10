@@ -8,7 +8,7 @@
     },
     "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan XXX_Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Observatie/bepaling. Subject: Johan Helleman. Id: 192a097f-8fdf-11ec-1258-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>, Status: definitief<span style=\"display: block;\">Uitvoerende: Vaste Huisarts 1 - Maatschap Vaste Huisarts</span></caption><tfoot><tr><td colspan=\"2\">met schoenen aan</td></tr></tfoot><tbody><tr><th>Bepalingdatum/tijd</th><td>8 februari 2013</td></tr><tr><th>Code</th><th>Waarde</th></tr><tr><td><span title=\"Body height (8302-2 - LOINC)\">Body height</span></td><td>183 cm</td></tr></tbody></table></div>"
     },
     "identifier": [
         {
@@ -44,7 +44,7 @@
     },
     "subject": {
         "reference": "Patient/nl-core-patient-01",
-        "display": "Johan XXX_Helleman"
+        "display": "Johan Helleman"
     },
     "effectiveDateTime": "2013-02-08",
     "performer": [
