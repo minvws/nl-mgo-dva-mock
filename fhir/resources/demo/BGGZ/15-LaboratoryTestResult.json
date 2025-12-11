@@ -1,0 +1,404 @@
+{
+    "resourceType": "Bundle",
+    "id": "09fa9599-aff0-4090-b3be-a4eecb49c224",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:54.213+00:00"
+    },
+    "type": "searchset",
+    "total": 3,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation/$lastn?_include=Observation%3Arelated-target&_include=Observation%3Aspecimen&category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-laboratorytestresult-Hematocriet",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-laboratorytestresult-Hematocriet",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#cd188a4f870b52c3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:29.760+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX-Bals. Id: 7301ea6b-0421-11ec-1594-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"2\">2024-08-22T22:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Specimen</th>\n            <td colspan=\"2\">Materiaal: bloed</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hematocriet [volumefractie] in bloed (20570-8 - LOINC)\">Hematocriet [volumefractie] in bloed</span>\n            </td>\n            <td>45 %</td>\n            <td>\n              <div>39 % - 51 %</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "7301ea6b-0421-11ec-1594-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "20570-8",
+                            "display": "Hematocriet [volumefractie] in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "effectiveDateTime": "2024-08-22T22:00:00+01:00",
+                "valueQuantity": {
+                    "value": 45,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "specimen": {
+                    "reference": "Specimen/ont-ver-ggz-specimen-Bloed",
+                    "display": "Materiaal: bloed"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 39,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        },
+                        "high": {
+                            "value": 51,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-laboratorytestresult-HemoHemaPanel",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-laboratorytestresult-HemoHemaPanel",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#e750e92766acc029"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:26.364+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX-Bals. Id: 733afbcb-0421-11ec-1543-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-22T22:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Specimen</th>\n            <td>Materiaal: bloed</td>\n          </tr>\n          <tr>\n            <th>Gerelateerd</th>\n            <td>\n              <ul>\n                <li>has-member - Hemaglobine</li>\n                <li>has-member - Hematocriet</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hemoglobine &amp; hematocriet panel in bloed (24360-0 - LOINC)\">Hemoglobine &amp; hematocriet panel in bloed</span>\n            </td>\n            <td/>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "733afbcb-0421-11ec-1543-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24360-0",
+                            "display": "Hemoglobine & hematocriet panel in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "effectiveDateTime": "2024-08-22T22:00:00+01:00",
+                "specimen": {
+                    "reference": "Specimen/ont-ver-ggz-specimen-Bloed",
+                    "display": "Materiaal: bloed"
+                },
+                "related": [
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-laboratorytestresult-Hemoglobine",
+                            "display": "Hemaglobine"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-laboratorytestresult-Hematocriet",
+                            "display": "Hematocriet"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-laboratorytestresult-Hemoglobine",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-laboratorytestresult-Hemoglobine",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#3111f14f539cf91d"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:21.325+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX-Bals. Id: 731d3a9b-0421-11ec-2047-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"3\">2024-08-22T22:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Specimen</th>\n            <td colspan=\"3\">Materiaal: bloed</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Interpretatie</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hemoglobine [massa/volume] in bloed (718-7 - LOINC)\">Hemoglobine [massa/volume] in bloed</span>\n            </td>\n            <td>11.5 mmol/l</td>\n            <td>\n              <span title=\"Low (L - v2/0078)\">Low</span>\n            </td>\n            <td>\n              <div>12 mmol/l - 16 mmol/l</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "731d3a9b-0421-11ec-2047-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "718-7",
+                            "display": "Hemoglobine [massa/volume] in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "effectiveDateTime": "2024-08-22T22:00:00+01:00",
+                "valueQuantity": {
+                    "value": 11.5,
+                    "unit": "mmol/l",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                },
+                "interpretation": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v2/0078",
+                            "code": "L",
+                            "display": "Low"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281300000",
+                            "display": "Onder referentiewaarde"
+                        }
+                    ]
+                },
+                "specimen": {
+                    "reference": "Specimen/ont-ver-ggz-specimen-Bloed",
+                    "display": "Materiaal: bloed"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 12,
+                            "unit": "mmol/l",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        },
+                        "high": {
+                            "value": 16,
+                            "unit": "mmol/l",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Specimen/ont-ver-ggz-specimen-Bloed",
+            "resource": {
+                "resourceType": "Specimen",
+                "id": "ont-ver-ggz-specimen-Bloed",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#747510757828eab7"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:25.242+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Specimen. Subject: Adam XXX-Bals. Id: 75a1e9ab-0421-11ec-1281-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"Bloed (monster) (119297000 - SNOMED CT)\">Bloed (monster)</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Inzameling</th>\n            <td>2024-08-22T20:00:00+01:00</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "75a1e9ab-0421-11ec-1281-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "119297000",
+                            "display": "Bloed (monster)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "collection": {
+                    "collectedDateTime": "2024-08-22T20:00:00+01:00"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

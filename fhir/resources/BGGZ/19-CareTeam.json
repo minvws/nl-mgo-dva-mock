@@ -1,0 +1,515 @@
+{
+    "resourceType": "Bundle",
+    "id": "f7dce437-e44d-4e72-8568-412347ad18c6",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:55.439+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/CareTeam?_include=CareTeam%3Aparticipant&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CareTeam/ont-ver-ggz-careteam-Zorgsetting",
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "ont-ver-ggz-careteam-Zorgsetting",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#58cfe5ceaf590410"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:16.647+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-careteam"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgteam. Subject: Adam XXX-Bals. Id: 70b22e0c-0421-11ec-1427-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <ul>\n                <li>\n                  <span title=\"Verwijzer (REF - v3/ParticipationType)\">Verwijzer</span>Dr. Vaste Huisarts 1<div>Zorgverlenerrol: Dr. Vaste Huisarts uit Maatschap Vaste Huisarts</div> (uit naam van: Maatschap Vaste Huisarts)</li>\n                <li>\n                  <span title=\"Behandelaar (ATND - v3/ParticipationType)\">Behandelaar</span>Dr. Behandelend Psycholoog uit Zelfstandig Psycholoog (uit naam van: Zelfstandig Psycholoog)</li>\n                <li>\n                  <span title=\"Hoofdbehandelaar (RESP - v3/ParticipationType)\">Hoofdbehandelaar</span>Dr. Behandelend Psychiater uit Behandelend Ziekenhuis (uit naam van: Behandelend Ziekenhuis)</li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "70b22e0c-0421-11ec-1427-020000000000"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "participant": [
+                    {
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                    "code": "REF",
+                                    "display": "Verwijzer"
+                                }
+                            ]
+                        },
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-ggz-nl-core-practitionerrole-Vaste-Huisarts-1",
+                                        "display": "Dr. Vaste Huisarts uit Maatschap Vaste Huisarts"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+                            "display": "Dr. Vaste Huisarts 1"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-ggz-nl-core-organization-Huisartspraktijk",
+                            "display": "Maatschap Vaste Huisarts"
+                        }
+                    },
+                    {
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                    "code": "ATND",
+                                    "display": "Behandelaar"
+                                }
+                            ]
+                        },
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-ggz-nl-core-practitionerrole-Behandelend-Psycholoog",
+                                        "display": "Dr. Behandelend Psycholoog uit Zelfstandig Psycholoog"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-ggz-nl-core-practitioner-Behandelend-Psycholoog",
+                            "display": "Dr. Behandelend Psycholoog"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-ggz-nl-core-organization-Zelfstandig-Psycholoog",
+                            "display": "Zelfstandig Psycholoog"
+                        }
+                    },
+                    {
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                    "code": "RESP",
+                                    "display": "Hoofdbehandelaar"
+                                }
+                            ]
+                        },
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-ggz-nl-core-practitionerrole-Behandelend-Psychiater",
+                                        "display": "Dr. Behandelend Psychiater uit Behandelend Ziekenhuis"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-ggz-nl-core-practitioner-Behandelend-Psychiater",
+                            "display": "Dr. Behandelend Psychiater"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-ggz-nl-core-organization-Ziekenhuis",
+                            "display": "Behandelend Ziekenhuis"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-ggz-nl-core-practitioner-Behandelend-Psycholoog",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-ggz-nl-core-practitioner-Behandelend-Psycholoog",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#edba5b300e511fe3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:20.035+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 7449377c-0421-11ec-8696-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <span title=\"Naamsamenstelling: Eigennaam\">Behandelend Psycholoog</span>\n      </div>\n      <div>\n        <a href=\"tel:+31432345678\">+31432345678</a> (Vast telefoonnummer Werk), <a href=\"mailto:psycholoog@psycholoog.nl\">psycholoog@psycholoog.nl</a> (E-mail Werk)</div>\n      <div>Valkendael 55, 6245HK Maastricht, NLD (WP)</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "7449377c-0421-11ec-8696-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "family": "Behandelend Psycholoog"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31432345678",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "psycholoog@psycholoog.nl",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "WP",
+                                            "display": "Werkadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "work",
+                        "line": [
+                            "Valkendael 55"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Valkendael"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "55"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Maastricht",
+                        "postalCode": "6245HK",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-ggz-nl-core-practitioner-Behandelend-Psychiater",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-ggz-nl-core-practitioner-Behandelend-Psychiater",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#9dfe86001a455cd8"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:31.669+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 742d992c-0421-11ec-8750-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <span title=\"Naamsamenstelling: Eigennaam\">Behandelend Psychiater</span>\n      </div>\n      <div>\n        <a href=\"tel:+31433456789\">+31433456789</a> (Vast telefoonnummer Werk), <a href=\"mailto:psychiatrie@ziekenhuis.nl\">psychiatrie@ziekenhuis.nl</a> (E-mail Werk)</div>\n      <div>Valkendael 50, 6245HK Maastricht, NLD (WP)</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "742d992c-0421-11ec-8750-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "family": "Behandelend Psychiater"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31433456789",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "psychiatrie@ziekenhuis.nl",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "WP",
+                                            "display": "Werkadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "work",
+                        "line": [
+                            "Valkendael 50"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Valkendael"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "50"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Maastricht",
+                        "postalCode": "6245HK",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#5ae4d80258fc87bf"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:17.600+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 747cca9c-0421-11ec-6800-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <span title=\"Naamsamenstelling: Eigennaam\">Vaste Huisarts 1</span>\n      </div>\n      <div>\n        <a href=\"tel:+31434073576\">+31434073576</a> (Vast telefoonnummer Werk), <a href=\"mailto:huisarts@huisarts.nl\">huisarts@huisarts.nl</a> (E-mail Werk)</div>\n      <div>Valkendael 45, 6245HK Maastricht, NLD (WP)</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "747cca9c-0421-11ec-6800-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "family": "Vaste Huisarts 1"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31434073576",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "huisarts@huisarts.nl",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "WP",
+                                            "display": "Werkadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "work",
+                        "line": [
+                            "Valkendael 45"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Valkendael"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "45"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Maastricht",
+                        "postalCode": "6245HK",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

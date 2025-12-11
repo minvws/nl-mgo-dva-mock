@@ -1,0 +1,687 @@
+{
+    "resourceType": "Bundle",
+    "id": "d0ebc16e-64d9-4b07-b6e7-102eb086c824",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:49.361+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Patient?_id=Patient%2Font-ver-XXX-Bals&_include=Patient%3Ageneral-practitioner"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Patient/ont-ver-XXX-Bals",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "ont-ver-XXX-Bals",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#affe1cc0fc5b05c3"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:17.269+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id <i>afgeschermd (ontbrekend gegeven)</i> (BSN), <span title=\"Naamsamenstelling: Eigennaam\">Adam XXX_Bals</span> (Adam), Man, 2 augustus 1964, Geen meerling, <span title=\"Married (M - v3/MaritalStatus)\">Married</span>\n      </div>\n      <div>Juridische status: <b>\n          <span title=\"In bewaringstelling (ibs) (5 - 2.16.840.1.113883.2.4.3.11.22.232)\">In bewaringstelling (ibs)</span>\n        </b>\n      </div>\n      <div>\n        <a href=\"tel:06-12345678\">06-12345678</a> (,  mobile), <a href=\"mailto:XXX_Bals@hotmail.com\">XXX_Bals@hotmail.com</a> (E-mail Privé)</div>\n      <div>Knolweg 1000, 9999XA Stitswerd, NLD (Bezoek)</div>\n      <div>\n        <span title=\"Echtgenote (WIFE - v3/RoleCode)\">Echtgenote</span>, <span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>\n        <span title=\"Naamsamenstelling: Eigennaam gevolgd door partnernaam\">Wilma W Lanen-XXX_Bals</span> (Wilma)<div>\n          <a href=\"tel:06-12345678\">06-12345678</a> (,  mobile), <a href=\"mailto:XXX_Lanen@hotmail.com\">XXX_Lanen@hotmail.com</a> (E-mail), Knolweg 1000, 9999XA Stitswerd, NLD (officieel Bezoek)</div>\n      </div>\n      <ul>\n        <li>\n          <span title=\"Dutch (Netherlands) (nl-NL - urn:ietf:bcp:47)\">Dutch (Netherlands)</span> (voorkeur)<div>Excellent: Received spoken, Excellent: Expressed spoken, Excellent: Received written</div>\n        </li>\n        <li>\n          <span title=\"English (en - urn:ietf:bcp:47)\">English</span>\n          <div>Good: Received spoken, Fair: Expressed spoken, Good: Received written</div>\n        </li>\n      </ul>\n      <div>Huisarts: Dr. Vaste Huisarts 1 uit Maatschap Vaste Huisarts</div>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-patient-legalstatus",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.232",
+                                    "code": "5",
+                                    "display": "In bewaringstelling (ibs)"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+                        "_value": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "masked"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "text": "Adam XXX_Bals",
+                        "family": "XXX_Bals",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "XXX_Bals"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Adam",
+                            "A",
+                            "Adam"
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "CL"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "MC",
+                                            "display": "Mobiel telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "06-12345678",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "XXX_Bals@hotmail.com",
+                        "use": "home"
+                    }
+                ],
+                "gender": "male",
+                "_gender": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+                                        "code": "M",
+                                        "display": "Man"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "birthDate": "1964-08-02",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "PHYS",
+                                            "display": "Woon-/verblijfadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "home",
+                        "type": "physical",
+                        "line": [
+                            "Knolweg 1000"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Knolweg"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "1000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Stitswerd",
+                        "postalCode": "9999XA",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v3/MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "multipleBirthBoolean": false,
+                "contact": [
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/RoleCode",
+                                        "code": "WIFE",
+                                        "display": "Echtgenote"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+                                        "code": "1",
+                                        "display": "Eerste relatie/contactpersoon"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                    "valueCode": "NL4"
+                                }
+                            ],
+                            "family": "Lanen-XXX_Bals",
+                            "_family": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                        "valueString": "Lanen"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+                                        "valueString": "XXX_Bals"
+                                    }
+                                ]
+                            },
+                            "given": [
+                                "Wilma",
+                                "Wilma",
+                                "W"
+                            ],
+                            "_given": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                            "valueCode": "BR"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                            "valueCode": "CL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                            "valueCode": "IN"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/v3/AddressUse",
+                                                    "code": "MC",
+                                                    "display": "Mobiel telefoonnummer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "system": "phone",
+                                "value": "06-12345678",
+                                "use": "mobile"
+                            },
+                            {
+                                "system": "email",
+                                "value": "XXX_Lanen@hotmail.com"
+                            }
+                        ],
+                        "address": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/v3/AddressUse",
+                                                "code": "PHYS",
+                                                "display": "Woon-/verblijfadres"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "url": "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+                                    "valueBoolean": true
+                                }
+                            ],
+                            "use": "home",
+                            "line": [
+                                "Knolweg 1000"
+                            ],
+                            "_line": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                            "valueString": "Knolweg"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                            "valueString": "1000"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "city": "Stitswerd",
+                            "postalCode": "9999XA",
+                            "country": "NLD",
+                            "_country": {
+                                "extension": [
+                                    {
+                                        "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                    "code": "6030",
+                                                    "display": "Nederland"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "communication": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "E",
+                                            "display": "Excellent"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "RSP",
+                                            "display": "Received spoken"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "E",
+                                            "display": "Excellent"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "ESP",
+                                            "display": "Expressed spoken"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "E",
+                                            "display": "Excellent"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "RWR",
+                                            "display": "Received written"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "nl-NL",
+                                    "display": "Dutch (Netherlands)"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "G",
+                                            "display": "Good"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "RSP",
+                                            "display": "Received spoken"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "F",
+                                            "display": "Fair"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "ESP",
+                                            "display": "Expressed spoken"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+                                "extension": [
+                                    {
+                                        "url": "level",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityProficiency",
+                                            "code": "G",
+                                            "display": "Good"
+                                        }
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCoding": {
+                                            "system": "http://hl7.org/fhir/v3/LanguageAbilityMode",
+                                            "code": "RWR",
+                                            "display": "Received written"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en",
+                                    "display": "English"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/ont-ver-ggz-nl-core-practitionerrole-Vaste-Huisarts-1",
+                                    "display": "Dr. Vaste Huisarts 1 uit Maatschap Vaste Huisarts"
+                                }
+                            }
+                        ],
+                        "reference": "Practitioner/ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+                        "display": "Vaste Huisarts 1"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-ggz-nl-core-practitioner-Vaste-Huisarts-1",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#5ae4d80258fc87bf"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:17.600+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 747cca9c-0421-11ec-6800-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <span title=\"Naamsamenstelling: Eigennaam\">Vaste Huisarts 1</span>\n      </div>\n      <div>\n        <a href=\"tel:+31434073576\">+31434073576</a> (Vast telefoonnummer Werk), <a href=\"mailto:huisarts@huisarts.nl\">huisarts@huisarts.nl</a> (E-mail Werk)</div>\n      <div>Valkendael 45, 6245HK Maastricht, NLD (WP)</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "747cca9c-0421-11ec-6800-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "family": "Vaste Huisarts 1"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31434073576",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "huisarts@huisarts.nl",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/v3/AddressUse",
+                                            "code": "WP",
+                                            "display": "Werkadres"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "use": "work",
+                        "line": [
+                            "Valkendael 45"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "Valkendael"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "45"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Maastricht",
+                        "postalCode": "6245HK",
+                        "country": "NLD",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

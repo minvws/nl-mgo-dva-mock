@@ -1,0 +1,133 @@
+{
+    "resourceType": "Bundle",
+    "id": "c3e2875f-8bcc-4999-8e45-5b03806ea6ad",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:52.132+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-tobaccouse-Rookt-sigaretten",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-tobaccouse-Rookt-sigaretten",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#3a708d142d6d4251"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:32.245+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 75ed237c-0421-11ec-2083-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">Echtgenote rookt ook</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>Vanaf 1985-02-18</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding) (365980008 - SNOMED CT)\">Bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)</span>\n            </td>\n            <td>\n              <span title=\"Rookt dagelijks (449868002 - SNOMED CT)\">Rookt dagelijks</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"type tabak gebruikt (53661000146106 - SNOMED CT)\">type tabak gebruikt</span>\n            </td>\n            <td>\n              <span title=\"Rookt sigaretten (65568007 - SNOMED CT)\">Rookt sigaretten</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"hoeveelheid en type tabak gerookt (266918002 - SNOMED CT)\">hoeveelheid en type tabak gerookt</span>\n            </td>\n            <td>5 sigaretten per dag</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Pakjaren (waarneembare entiteit) (401201003 - SNOMED CT)\">Pakjaren (waarneembare entiteit)</span>\n            </td>\n            <td>10 PackYears</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "75ed237c-0421-11ec-2083-020000000000"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "365980008",
+                            "display": "Bevinding betreffende tabakgebruik en blootstelling aan tabaksrook (bevinding)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectivePeriod": {
+                    "start": "1985-02-18"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "449868002",
+                            "display": "Rookt dagelijks"
+                        }
+                    ]
+                },
+                "comment": "Echtgenote rookt ook",
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "53661000146106",
+                                    "display": "type tabak gebruikt"
+                                }
+                            ]
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "65568007",
+                                    "display": "Rookt sigaretten"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "266918002",
+                                    "display": "hoeveelheid en type tabak gerookt"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 5,
+                            "unit": "sigaretten per dag",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "{sigarets}/d"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "401201003",
+                                    "display": "Pakjaren (waarneembare entiteit)"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 10,
+                            "unit": "PackYears",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "{PackYears}"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

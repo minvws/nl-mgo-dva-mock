@@ -89,6 +89,35 @@
                             "display": "GGD Gelderland-Zuid"
                         }
                     }
+                ],
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "404904002",
+                                "display": "Kwetsbare oudere (bevinding)"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "19829001",
+                                "display": "Aandoening van long (aandoening)"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "159731000146104",
+                                "display": "Immunisatie nodig vanuit rijksvaccinatieprogramma (situatie)"
+                            }
+                        ]
+                    }
                 ]
             },
             "search": {

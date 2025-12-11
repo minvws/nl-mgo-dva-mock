@@ -1,0 +1,112 @@
+{
+    "resourceType": "Bundle",
+    "id": "941d2fbd-d7f6-4b4b-a6c9-eaafb1a9340f",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:50.018+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Coverage?_include=Coverage%3Apayor%3APatient&_include=Coverage%3Apayor%3AOrganization&beneficiary=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Coverage/ont-ver-ggz-coverage-Basis-verzekerd",
+            "resource": {
+                "resourceType": "Coverage",
+                "id": "ont-ver-ggz-coverage-Basis-verzekerd",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#391d0aca24ef8f6b"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:29.486+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Verzekering/garantstelling. Id: 70cf7a0c-0421-11ec-1843-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"Basis verzekerd (B - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Basis verzekerd</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Periode</th>\n            <td>1 januari 2018 - 31 januari 2019</td>\n          </tr>\n          <tr>\n            <th>verzekerde</th>\n            <td>Adam XXX_Bals</td>\n          </tr>\n          <tr>\n            <th>Verzekerdenummer</th>\n            <td>12345678</td>\n          </tr>\n          <tr>\n            <th>Betaler</th>\n            <td>Menzis Zorgverzekeraar N.V.</td>\n          </tr>\n          <tr>\n            <th>begunstigde</th>\n            <td>Adam XXX_Bals</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "70cf7a0c-0421-11ec-1843-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+                            "code": "B",
+                            "display": "Basis verzekerd"
+                        }
+                    ]
+                },
+                "subscriber": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "subscriberId": "12345678",
+                "beneficiary": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "period": {
+                    "start": "2018-01-01",
+                    "end": "2019-01-31"
+                },
+                "payor": [
+                    {
+                        "reference": "Organization/ont-ver-ggz-nl-core-organization-Menzis-Zorgverzekeraar",
+                        "display": "Menzis Zorgverzekeraar N.V."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Organization/ont-ver-ggz-nl-core-organization-Menzis-Zorgverzekeraar",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "ont-ver-ggz-nl-core-organization-Menzis-Zorgverzekeraar",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#75572ff6a05f712e"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:23.098+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Organisatie. Id: 3332 (UZOVI)</caption>\n        <tbody>\n          <tr>\n            <th>Naam</th>\n            <td>Menzis Zorgverzekeraar N.V.</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+                        "value": "3332"
+                    }
+                ],
+                "name": "Menzis Zorgverzekeraar N.V."
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

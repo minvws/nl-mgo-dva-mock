@@ -1,0 +1,234 @@
+{
+    "resourceType": "Bundle",
+    "id": "b8ae9ad0-98b7-43a5-bd53-0c002b77ead8",
+    "meta": {
+        "lastUpdated": "2025-09-12T12:39:02.808+00:00"
+    },
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/AllergyIntolerance?patient=Patient%2Font-ver-XXX-Mutter"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/AllergyIntolerance/ont-ver-bglz-1-1-allergieintolerantie-02",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "ont-ver-bglz-1-1-allergieintolerantie-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#413adb00d2516d11"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:18.200+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Allergie/intolerantie. Patiënt: Fiona XXX_Mutter. Id: 8a8e241b-e3e1-11eb-7409-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">Opgemerkt bij het dragen van nikkel bevattende sieraden.</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"Nikkelsulfaat (255848005 - SNOMED CT)\">Nikkelsulfaat</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Reactie</th>\n            <td>\n              <ul>\n                <li>\n                  <div>\n                    <span title=\"Contactdermatitis (40275004 - SNOMED CT)\">Contactdermatitis</span>\n                  </div>\n                  <div>Last van jeuk, roodheid en irritatie op de contactplek van nikkel bevattende sieraden.</div>\n                </li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8a8e241b-e3e1-11eb-7409-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                                        "code": "active",
+                                        "display": "Actief"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "criticality": "high",
+                "_criticality": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "6736007",
+                                        "display": "Matig"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "255848005",
+                            "display": "Nikkelsulfaat"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "note": [
+                    {
+                        "text": "Opgemerkt bij het dragen van nikkel bevattende sieraden."
+                    }
+                ],
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "40275004",
+                                        "display": "Contactdermatitis"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "Last van jeuk, roodheid en irritatie op de contactplek van nikkel bevattende sieraden."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/AllergyIntolerance/ont-ver-bglz-1-1-allergieintolerantie-01",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "ont-ver-bglz-1-1-allergieintolerantie-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#1999b071638d9f31"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:06.104+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Allergie/intolerantie. Patiënt: Fiona XXX_Mutter. Id: 8a237b6b-e3e1-11eb-1942-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">Na het eten van pinda's als student ontstond er een klinisch beeld van anafylaxie waarop de HA epipen heeft moeten toedienen</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <td>\n              <span title=\"Pinda (762952008 - SNOMED CT)\">Pinda</span>\n            </td>\n          </tr>\n          <tr>\n            <th>Reactie</th>\n            <td>\n              <ul>\n                <li>\n                  <div>\n                    <span title=\"Anafylaxie (39579001 - SNOMED CT)\">Anafylaxie</span>\n                  </div>\n                </li>\n                <li>\n                  <div>\n                    <span title=\"Angio-oedeem (41291007 - SNOMED CT)\">Angio-oedeem</span>\n                  </div>\n                  <div>Angio-oedeem van de tong, lippen en peri-orbitale regio met acute benauwdheid na het eten van pinda's.</div>\n                </li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8a237b6b-e3e1-11eb-1942-020000000000"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ActStatus",
+                                        "code": "active",
+                                        "display": "Actief"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "criticality": "high",
+                "_criticality": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "399166001",
+                                        "display": "Fataal"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "762952008",
+                            "display": "Pinda"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "note": [
+                    {
+                        "text": "Na het eten van pinda's als student ontstond er een klinisch beeld van anafylaxie waarop de HA epipen heeft moeten toedienen"
+                    }
+                ],
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "39579001",
+                                        "display": "Anafylaxie"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "41291007",
+                                        "display": "Angio-oedeem"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "Angio-oedeem van de tong, lippen en peri-orbitale regio met acute benauwdheid na het eten van pinda's."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

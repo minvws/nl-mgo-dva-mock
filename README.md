@@ -2,9 +2,9 @@
 
 ## Disclaimer
 
-This project and all associated code serve solely as documentation
-and demonstration purposes to illustrate potential system
-communication patterns and architectures.
+This project and all associated code serve solely as documentation and
+demonstration purposes to illustrate potential system communication patterns and
+architectures.
 
 This codebase:
 
@@ -14,7 +14,8 @@ This codebase:
 - May contain errors, omissions, or oversimplified implementations
 - Has NOT been tested or hardened for real-world scenarios
 
-The code examples are only meant to help understand concepts and demonstrate possibilities.
+The code examples are only meant to help understand concepts and demonstrate
+possibilities.
 
 By using or referencing this code, you acknowledge that you do so at your own
 risk and that the authors assume no liability for any consequences of its use.
@@ -72,11 +73,30 @@ Response: [7-2-DrugUse.json](./fhir/resources/BGZ/7-2-DrugUse.json)
 
 ## Contributing
 
-If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull
-request on the GitHub repository of this package.
+If you encounter any issues or have suggestions for improvements, please feel
+free to open an issue or submit a pull request on the GitHub repository of this
+package.
+
+### Commit Guidelines
+
+This project follows the
+**[Conventional Commits](https://www.conventionalcommits.org/)** specification
+for commit messages. To help enforce this, a
+**[pre-commit](https://pre-commit.com/)** configuration is included that can
+validate your commit messages.
+
+To enable the commit message validation hook, run:
+
+```bash
+pre-commit install --install-hooks
+```
+
+**Note:** Pre-commit is already preconfigured in the devcontainer.
 
 ## License
 
-This repository follows the [REUSE Specification v3.2](https://reuse.software/spec-3.2/). The code is available under the
-EUPL-1.2 license, but the fonts and images are not. Please see [LICENSES/](./LICENSES), [REUSE.toml](./REUSE.toml) and
-the individual `*.license` files (if any) for copyright and license information.
+This repository follows the
+[REUSE Specification v3.2](https://reuse.software/spec-3.2/). The code is
+available under the EUPL-1.2 license, but the fonts and images are not. Please
+see [LICENSES/](./LICENSES), [REUSE.toml](./REUSE.toml) and the individual
+`*.license` files (if any) for copyright and license information.

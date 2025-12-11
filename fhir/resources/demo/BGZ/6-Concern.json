@@ -5,7 +5,7 @@
         "lastUpdated": "2024-04-15T06:36:42.480+00:00"
     },
     "type": "searchset",
-    "total": 6,
+    "total": 5,
     "link": [
         {
             "relation": "self",
@@ -14,10 +14,10 @@
     ],
     "entry": [
         {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/3c77bb22-795d-4e5e-815e-1db080fca69f",
+            "fullUrl": "{{BASE_URL}}fhir/Condition/nictiz-case-1-diabetes",
             "resource": {
                 "resourceType": "Condition",
-                "id": "3c77bb22-795d-4e5e-815e-1db080fca69f",
+                "id": "nictiz-case-1-diabetes",
                 "meta": {
                     "extension": [
                         {
@@ -33,12 +33,12 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2d74f3ac-e3e4-11eb-7881-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption><tbody><tr><th>Code</th><td><span title=\"Amyotrofe laterale sclerose (G12.2 - ICD-10-CM)\">Amyotrofe laterale sclerose</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: nictiz-case-1 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Diabetes mellitus type 2 (44054006 - SNOMED CT)\">Diabetes mellitus type 2</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2d74f3ac-e3e4-11eb-7881-020000000000"
+                        "value": "nictiz-case-1"
                     }
                 ],
                 "clinicalStatus": "active",
@@ -58,29 +58,66 @@
                         }
                     ]
                 },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "439401001",
+                                "display": "diagnose"
+                            }
+                        ]
+                    }
+                ],
                 "code": {
                     "coding": [
                         {
-                            "system": "urn:oid:2.16.840.1.113883.6.90",
-                            "code": "G12.2",
-                            "display": "Amyotrofe laterale sclerose"
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "Diabetes mellitus type 2"
                         }
                     ]
                 },
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
                     "display": "Johan Helleman"
-                }
+                },
+                "onsetDateTime": "2012-09-20",
+                "asserter": {
+                    "display": "Huisarts"
+                },
+                "note": [
+                    {
+                        "text": "Controles bij huisarts, dieet en medicatie"
+                    }
+                ]
             },
             "search": {
                 "mode": "match"
             }
         },
         {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/5b5c0994-d284-42be-a813-f575e3ae3bc4",
+            "fullUrl": "{{BASE_URL}}fhir/Condition/nictiz-case-2-atriumfib",
             "resource": {
                 "resourceType": "Condition",
-                "id": "5b5c0994-d284-42be-a813-f575e3ae3bc4",
+                "id": "nictiz-case-2-atriumfib",
                 "meta": {
                     "extension": [
                         {
@@ -96,15 +133,15 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2d9d8a4c-e3e4-11eb-1723-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie:                               \n          <span title=\"interpretatie van diagnose (waarneembare entiteit) (282291009 - SNOMED CT)\">interpretatie van diagnose (waarneembare entiteit)</span>, Status: inactief / onbekend                        \n        </caption><tfoot><tr><td colspan=\"2\">Gevallen op kunstijsbaan.</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Fractuur van pols (aandoening) (31641000146105 - SNOMED CT)\">Fractuur van pols (aandoening)</span></td></tr><tr><th>Eerste symptomen</th><td>2001</td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: nictiz-case-2 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Atriumfibrilleren (49436004 - SNOMED CT)\">Atriumfibrilleren</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2d9d8a4c-e3e4-11eb-1723-020000000000"
+                        "value": "nictiz-case-2"
                     }
                 ],
-                "clinicalStatus": "inactive",
+                "clinicalStatus": "active",
                 "_clinicalStatus": {
                     "extension": [
                         {
@@ -113,15 +150,15 @@
                                 "coding": [
                                     {
                                         "system": "http://snomed.info/sct",
-                                        "code": "73425007",
-                                        "display": "Inactief (kwalificatiewaarde)"
+                                        "code": "55561003",
+                                        "display": "Actueel"
                                     }
                                 ]
                             }
                         }
                     ]
                 },
-                "verificationStatus": "unknown",
+                "verificationStatus": "confirmed",
                 "_verificationStatus": {
                     "extension": [
                         {
@@ -129,9 +166,9 @@
                             "valueCodeableConcept": {
                                 "coding": [
                                     {
-                                        "system": "http://hl7.org/fhir/v3/NullFlavor",
-                                        "code": "UNK",
-                                        "display": "Unknown"
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
                                     }
                                 ]
                             }
@@ -143,8 +180,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "282291009",
-                                "display": "interpretatie van diagnose (waarneembare entiteit)"
+                                "code": "439401001",
+                                "display": "diagnose"
                             }
                         ]
                     }
@@ -153,8 +190,119 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "31641000146105",
-                            "display": "Fractuur van pols (aandoening)"
+                            "code": "49436004",
+                            "display": "Atriumfibrilleren"
+                        }
+                    ]
+                },
+                "bodySite": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "80891009",
+                                "display": "Hart"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "onsetDateTime": "2017-10-21",
+                "asserter": {
+                    "display": "Cardioloog"
+                },
+                "note": [
+                    {
+                        "text": "Patiënte ervaart af en toe hartkloppingen, behandeld met medicatie, (nog) geen indicatie voor cardioversie"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/nictiz-case-3-trombose",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nictiz-case-3-trombose",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: nictiz-case-3 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Veneuze trombose (111293003 - SNOMED CT)\">Veneuze trombose</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "nictiz-case-3"
+                    }
+                ],
+                "clinicalStatus": "resolved",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "73425007",
+                                        "display": "inactief (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "439401001",
+                                "display": "diagnose"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "111293003",
+                            "display": "Veneuze trombose"
                         }
                     ]
                 },
@@ -177,8 +325,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "361289009",
-                                "display": "Gehele polsregio (lichaamsstructuur)"
+                                "code": "30021000",
+                                "display": "Onderbeen"
                             }
                         ]
                     }
@@ -187,10 +335,14 @@
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
                     "display": "Johan Helleman"
                 },
-                "onsetDateTime": "2001",
+                "onsetDateTime": "2013-04-02",
+                "abatementDateTime": "2013-11-15",
+                "asserter": {
+                    "display": "Internist"
+                },
                 "note": [
                     {
-                        "text": "Gevallen op kunstijsbaan."
+                        "text": "Trombose behandeld met antistolling, volledig hersteld"
                     }
                 ]
             },
@@ -199,10 +351,10 @@
             }
         },
         {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/c953ca04-89b1-4ddf-8af1-d9c41f0f9c8d",
+            "fullUrl": "{{BASE_URL}}fhir/Condition/nictiz-case-4-gonartrose",
             "resource": {
                 "resourceType": "Condition",
-                "id": "c953ca04-89b1-4ddf-8af1-d9c41f0f9c8d",
+                "id": "nictiz-case-4-gonartrose",
                 "meta": {
                     "extension": [
                         {
@@ -218,12 +370,12 @@
                 },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2dd0f65c-e3e4-11eb-3803-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"presbyacusis (aandoening) (49526009 - SNOMED CT)\">presbyacusis (aandoening)</span></td></tr></tbody></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: nictiz-case-4 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Gonartrose (239873007 - SNOMED CT)\">Gonartrose</span></td></tr></tbody></table></div>"
                 },
                 "identifier": [
                     {
                         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2dd0f65c-e3e4-11eb-3803-020000000000"
+                        "value": "nictiz-case-4"
                     }
                 ],
                 "clinicalStatus": "active",
@@ -260,250 +412,47 @@
                         }
                     ]
                 },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "49526009",
-                            "display": "presbyacusis (aandoening)"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan Helleman"
-                }
-            },
-            "search": {
-                "mode": "match"
-            }
-        },
-        {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/8794209f-9468-4c06-a2d2-ba10dc7d6325",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "8794209f-9468-4c06-a2d2-ba10dc7d6325",
-                "meta": {
-                    "extension": [
-                        {
-                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-                            "valueUri": "#0687da8460e3bc76"
-                        }
-                    ],
-                    "versionId": "1",
-                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
-                    "profile": [
-                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
-                    ]
-                },
-                "text": {
-                    "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2e0b8e5c-e3e4-11eb-1411-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tfoot><tr><td colspan=\"2\">Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie.</td></tr></tfoot><tbody><tr><th>Code</th><td><span title=\"Artropathie (aandoening) (399269003 - SNOMED CT)\">Artropathie (aandoening)</span></td></tr></tbody></table></div>"
-                },
-                "identifier": [
+                "category": [
                     {
-                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2e0b8e5c-e3e4-11eb-1411-020000000000"
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "439401001",
+                                "display": "diagnose"
+                            }
+                        ]
                     }
                 ],
-                "clinicalStatus": "active",
-                "_clinicalStatus": {
-                    "extension": [
-                        {
-                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "55561003",
-                                        "display": "Actueel"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "verificationStatus": "confirmed",
-                "_verificationStatus": {
-                    "extension": [
-                        {
-                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "410605003",
-                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "code": {
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "399269003",
-                            "display": "Artropathie (aandoening)"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan Helleman"
-                },
-                "note": [
-                    {
-                        "text": "Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie."
-                    }
-                ]
-            },
-            "search": {
-                "mode": "match"
-            }
-        },
-        {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/c7ff42bf-b258-4111-9d6a-97a8fc6ffe98",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "c7ff42bf-b258-4111-9d6a-97a8fc6ffe98",
-                "meta": {
-                    "extension": [
-                        {
-                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-                            "valueUri": "#0687da8460e3bc76"
-                        }
-                    ],
-                    "versionId": "1",
-                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
-                    "profile": [
-                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
-                    ]
-                },
-                "text": {
-                    "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2e38dfec-e3e4-11eb-5680-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Fractuur van onderste extremiteit (aandoening) (46866001 - SNOMED CT)\">Fractuur van onderste extremiteit (aandoening)</span></td></tr></tbody></table></div>"
-                },
-                "identifier": [
-                    {
-                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2e38dfec-e3e4-11eb-5680-020000000000"
-                    }
-                ],
-                "clinicalStatus": "resolved",
-                "_clinicalStatus": {
-                    "extension": [
-                        {
-                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "73425007",
-                                        "display": "inactief (kwalificatiewaarde)"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "verificationStatus": "confirmed",
-                "_verificationStatus": {
-                    "extension": [
-                        {
-                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "410605003",
-                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "46866001",
-                            "display": "Fractuur van onderste extremiteit (aandoening)"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
-                    "display": "Johan Helleman"
-                }
-            },
-            "search": {
-                "mode": "match"
-            }
-        },
-        {
-            "fullUrl": "{{BASE_URL}}fhir/Condition/a14e82b7-163e-411d-b378-cbbb34a2ea47",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "a14e82b7-163e-411d-b378-cbbb34a2ea47",
-                "meta": {
-                    "extension": [
-                        {
-                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-                            "valueUri": "#0687da8460e3bc76"
-                        }
-                    ],
-                    "versionId": "1",
-                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
-                    "profile": [
-                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
-                    ]
-                },
-                "text": {
-                    "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: 2e64aadc-e3e4-11eb-7041-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: opgelost</caption><tbody><tr><th>Code</th><td><span title=\"Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie) (21119008 - SNOMED CT)\">Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie)</span></td></tr></tbody></table></div>"
-                },
-                "identifier": [
-                    {
-                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
-                        "value": "2e64aadc-e3e4-11eb-7041-020000000000"
-                    }
-                ],
-                "clinicalStatus": "resolved",
-                "_clinicalStatus": {
-                    "extension": [
-                        {
-                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "73425007",
-                                        "display": "inactief (kwalificatiewaarde)"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "21119008",
-                            "display": "Naevus naevocellularis - geen ICD-O-subtype (afwijkende morfologie)"
+                            "code": "239873007",
+                            "display": "Gonartrose"
                         }
                     ]
                 },
                 "bodySite": [
                     {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "7771000",
+                                            "display": "Links"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "60819002",
-                                "display": "Structuur van bucca (lichaamsstructuur)"
+                                "code": "72696002",
+                                "display": "Knie"
                             }
                         ]
                     }
@@ -511,7 +460,116 @@
                 "subject": {
                     "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
                     "display": "Johan Helleman"
-                }
+                },
+                "onsetDateTime": "2018-08-09",
+                "asserter": {
+                    "display": "Orthopedische chirurg"
+                },
+                "note": [
+                    {
+                        "text": "Pijn bij traplopen en langdurig staan, behandeling met pijnstillers en fysiotherapie"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Condition/nictiz-case-5-hypertensie",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nictiz-case-5-hypertensie",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0687da8460e3bc76"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2023-06-22T05:04:29.976+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Aandoening. Subject: Johan Helleman. Id: nictiz-case-5 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief / bevestigd</caption><tbody><tr><th>Code</th><td><span title=\"Essentiële hypertensie (59621000 - SNOMED CT)\">Essentiële hypertensie</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "nictiz-case-5"
+                    }
+                ],
+                "clinicalStatus": "active",
+                "_clinicalStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "55561003",
+                                        "display": "Actueel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "verificationStatus": "confirmed",
+                "_verificationStatus": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "410605003",
+                                        "display": "aanwezigheid bevestigd (kwalificatiewaarde)"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "439401001",
+                                "display": "diagnose"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "59621000",
+                            "display": "Essentiële hypertensie"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/93cde269-ce35-4077-a39d-19296670e949",
+                    "display": "Johan Helleman"
+                },
+                "onsetDateTime": "2003-03-18",
+                "asserter": {
+                    "display": "Huisarts"
+                },
+                "note": [
+                    {
+                        "text": "Goed gereguleerd met antihypertensiva"
+                    }
+                ]
             },
             "search": {
                 "mode": "match"

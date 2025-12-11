@@ -1,0 +1,133 @@
+{
+    "resourceType": "Bundle",
+    "id": "d87e398d-a1cb-41ed-a1e8-fd9ba0a41760",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:52.810+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365470003&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-familysituation-01",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-familysituation-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#3e58f8e75ba6be18"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:22.722+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX-Bals. Id: 710779fc-0421-11ec-3114-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"bevinding betreffende gegevens over gezin en gezinssamenstelling (365470003 - SNOMED CT)\">bevinding betreffende gegevens over gezin en gezinssamenstelling</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"gezinssamenstelling (224130005 - SNOMED CT)\">gezinssamenstelling</span>\n            </td>\n            <td>\n              <span title=\"Samenwonend met partner (408821002 - SNOMED CT)\">Samenwonend met partner</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Aantal nakomelingen (waarneembare entiteit) (224118004 - SNOMED CT)\">Aantal nakomelingen (waarneembare entiteit)</span>\n            </td>\n            <td>1</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"aantal thuiswonende kinderen (55811000146107 - SNOMED CT)\">aantal thuiswonende kinderen</span>\n            </td>\n            <td>0</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Kind (67822003 - SNOMED CT)\">Kind</span>\n            </td>\n            <td>31 oktober 1990 (Uitwonend)</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "710779fc-0421-11ec-3114-020000000000"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "365470003",
+                            "display": "bevinding betreffende gegevens over gezin en gezinssamenstelling"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "224130005",
+                                    "display": "gezinssamenstelling"
+                                }
+                            ]
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "408821002",
+                                    "display": "Samenwonend met partner"
+                                }
+                            ],
+                            "text": "Samenwonend met partner"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "224118004",
+                                    "display": "Aantal nakomelingen (waarneembare entiteit)"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 1
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "55811000146107",
+                                    "display": "aantal thuiswonende kinderen"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 0
+                        }
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituation-LivingAtHomeIndicator",
+                                "valueBoolean": false
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "67822003",
+                                    "display": "Kind"
+                                }
+                            ]
+                        },
+                        "valueDateTime": "1990-10-31"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

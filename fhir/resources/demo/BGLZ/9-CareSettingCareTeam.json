@@ -1,0 +1,643 @@
+{
+    "resourceType": "Bundle",
+    "id": "b139af9a-1065-4511-b0d7-5af4c9c0f8a7",
+    "meta": {
+        "lastUpdated": "2025-09-12T12:39:11.569+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/CareTeam?_include=CareTeam%3Aparticipant&patient=Patient%2Font-ver-XXX-Mutter"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CareTeam/ont-ver-bglz-1-1-nl-core-careteam-01",
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "ont-ver-bglz-1-1-nl-core-careteam-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#36e7962c398cf0be"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:08.947+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-careteam"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgteam. Subject: Fiona XXX_Mutter. Id: 8fea361b-e3e1-11eb-2548-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Participant</th>\n            <td>\n              <ul>\n                <li>\n                  <span title=\"Verwijzer (REF - v3/ParticipationType)\">Verwijzer</span>Laura Lanen<div>Zorgverlenerrol: Huisarts</div>\n                </li>\n                <li>\n                  <span title=\"Hoofdbehandelaar (RESP - v3/ParticipationType)\">Hoofdbehandelaar</span>Niels Helmond<div>Zorgverlenerrol: Neuroloog</div> (uit naam van: AA-zkh - Noord)</li>\n                <li>Petra Johanna Vreeswijk<div>Zorgverlenerrol: Verpleegkundige</div> (uit naam van: AA-zkh - Noord)</li>\n                <li>Thomas Janssen<div>Zorgverlenerrol: Fysiotherapeut</div> (uit naam van: AA-zkh - Noord)</li>\n                <li>Hilda Bruinsma<div>Zorgverlenerrol: Logopedist</div> (uit naam van: AA-zkh - Noord)</li>\n                <li>AA-zkh - Noord</li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8fea361b-e3e1-11eb-2548-020000000000"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "participant": [
+                    {
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                    "code": "REF",
+                                    "display": "Verwijzer"
+                                }
+                            ]
+                        },
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-01",
+                                        "display": "Huisarts"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-01",
+                            "display": "Laura Lanen"
+                        }
+                    },
+                    {
+                        "role": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                    "code": "RESP",
+                                    "display": "Hoofdbehandelaar"
+                                }
+                            ]
+                        },
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-02",
+                                        "display": "Neuroloog"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-02",
+                            "display": "Niels Helmond"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+                            "display": "AA-zkh - Noord"
+                        }
+                    },
+                    {
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-03",
+                                        "display": "Verpleegkundige"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                            "display": "Petra Johanna Vreeswijk"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+                            "display": "AA-zkh - Noord"
+                        }
+                    },
+                    {
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-04",
+                                        "display": "Fysiotherapeut"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-04",
+                            "display": "Thomas Janssen"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+                            "display": "AA-zkh - Noord"
+                        }
+                    },
+                    {
+                        "member": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-05",
+                                        "display": "Logopedist"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-05",
+                            "display": "Hilda Bruinsma"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+                            "display": "AA-zkh - Noord"
+                        }
+                    },
+                    {
+                        "member": {
+                            "reference": "Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+                            "display": "AA-zkh - Noord"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Organization/ont-ver-bglz-1-1-zorgaanbieder-01",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "ont-ver-bglz-1-1-zorgaanbieder-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#facb54b1cb4c1ec4"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:12.147+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Organisatie. Id: 97018cab-e3e1-11eb-1125-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Naam</th>\n            <td>AA-zkh - Noord</td>\n          </tr>\n          <tr>\n            <th>Type</th>\n            <td>\n              <div>\n                <span title=\"Medisch specialisten, neurologie (0330 - AGB-medisch specialisme)\">Medisch specialisten, neurologie</span>\n              </div>\n              <div>\n                <span title=\"Algemeen ziekenhuis (V6 - organization-type)\">Algemeen ziekenhuis</span>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <th>Contactgegevens</th>\n            <td>\n              <a href=\"tel:+31182435768\">+31182435768</a> (Vast telefoonnummer Werk)<br/>\n              <a href=\"mailto:neurologie@AAZ.nl\">neurologie@AAZ.nl</a> (E-mail Werk)<br/>\n            </td>\n          </tr>\n          <tr>\n            <th>Adres</th>\n            <td>De Weststraat 3, 9999PK Stitswerd, Nederland (Werk)</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "97018cab-e3e1-11eb-1125-020000000000"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+                                "code": "0330",
+                                "display": "Medisch specialisten, neurologie"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
+                                "code": "V6",
+                                "display": "Algemeen ziekenhuis"
+                            }
+                        ]
+                    }
+                ],
+                "name": "AA-zkh - Noord",
+                "telecom": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelecomType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                                            "code": "LL",
+                                            "display": "Vast telefoonnummer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "phone",
+                        "value": "+31182435768",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "neurologie@AAZ.nl",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "line": [
+                            "De Weststraat 3"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                        "valueString": "De Weststraat"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                        "valueString": "3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Stitswerd",
+                        "postalCode": "9999PK",
+                        "country": "Nederland",
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+                                                "code": "6030",
+                                                "display": "Nederland"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-bglz-1-1-zorgverlener-02",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-bglz-1-1-zorgverlener-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0835b49da627d6d9"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:02.404+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 97b8a7ab-e3e1-11eb-7911-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Niels Helmond</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "97b8a7ab-e3e1-11eb-7911-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Niels Helmond",
+                        "family": "Helmond",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Helmond"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Niels",
+                            "N."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-bglz-1-1-zorgverlener-05",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-bglz-1-1-zorgverlener-05",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7bd977ba6c463149"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:10.831+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 99246cab-e3e1-11eb-2080-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Hilda Bruinsma</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "99246cab-e3e1-11eb-2080-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Hilda Bruinsma",
+                        "family": "Bruinsma",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Bruinsma"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Hilda",
+                            "H."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-bglz-1-1-zorgverlener-04",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-bglz-1-1-zorgverlener-04",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#71918a7326f49382"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:11.188+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 98aeee8b-e3e1-11eb-9318-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Thomas Janssen</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "98aeee8b-e3e1-11eb-9318-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Thomas Janssen",
+                        "family": "Janssen",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Janssen"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Thomas",
+                            "T."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-bglz-1-1-zorgverlener-03",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#2ec698f7f708b758"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:07.717+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 983aa8eb-e3e1-11eb-9861-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Petra Johanna Vreeswijk</div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "983aa8eb-e3e1-11eb-9861-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Petra Johanna Vreeswijk",
+                        "family": "Vreeswijk",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Vreeswijk"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Petra Johanna",
+                            "P.J."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Practitioner/ont-ver-bglz-1-1-zorgverlener-01",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "ont-ver-bglz-1-1-zorgverlener-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#5db3bf53186c89f8"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:04.922+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div>Id 9760276b-e3e1-11eb-1197-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), <span title=\"Naamsamenstelling: Eigennaam\">Laura Lanen</span>\n      </div>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9760276b-e3e1-11eb-1197-020000000000"
+                    }
+                ],
+                "name": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+                                "valueCode": "NL1"
+                            }
+                        ],
+                        "text": "Laura Lanen",
+                        "family": "Lanen",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                                    "valueString": "Lanen"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Laura",
+                            "L."
+                        ],
+                        "_given": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "BR"
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                                        "valueCode": "IN"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "resourceType": "Bundle",
+    "id": "5ca8196d-8217-47bc-af11-e477ebbd3b61",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:51.823+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-alcoholuse-Drinkt-alcohol",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-alcoholuse-Drinkt-alcohol",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6040a690b95808f4"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:30.744+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AlcoholUse"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 708c086c-0421-11ec-6544-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"2\">Borrel voor het slapen gaan</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>Vanaf 1985-02-18</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Bevinding betreffende alcoholgebruik (bevinding) (228273003 - SNOMED CT)\">Bevinding betreffende alcoholgebruik (bevinding)</span>\n            </td>\n            <td>\n              <span title=\"Drinkt alcohol (219006 - SNOMED CT)\">Drinkt alcohol</span>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Inname van alcohol (waarneembare entiteit) (160573003 - SNOMED CT)\">Inname van alcohol (waarneembare entiteit)</span>\n            </td>\n            <td>1 eenheid per dag</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "708c086c-0421-11ec-6544-020000000000"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "228273003",
+                            "display": "Bevinding betreffende alcoholgebruik (bevinding)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectivePeriod": {
+                    "start": "1985-02-18"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "219006",
+                            "display": "Drinkt alcohol"
+                        }
+                    ]
+                },
+                "comment": "Borrel voor het slapen gaan",
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "160573003",
+                                    "display": "Inname van alcohol (waarneembare entiteit)"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 1,
+                            "unit": "eenheid per dag",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "{eenheid}/d"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

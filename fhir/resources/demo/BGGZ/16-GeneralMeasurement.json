@@ -1,0 +1,1225 @@
+{
+    "resourceType": "Bundle",
+    "id": "7dd34892-4b9f-4232-9666-90a071641d29",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:54.540+00:00"
+    },
+    "type": "searchset",
+    "total": 14,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?category=http%3A%2F%2Fhl7.org%2Ffhir%2Fobservation-category%7Csurvey&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-2",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-2",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#1b6cd0a94417a3d0"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:16.282+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 71ce737b-0421-11ec-1268-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 2 - non-accidental self injury (assessment scale) (281116008 - SNOMED CT)\">Health of the Nation Outcome Scale item 2 - non-accidental self injury (assessment scale)</span>\n            </td>\n            <td>4 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "71ce737b-0421-11ec-1268-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281116008",
+                            "display": "Health of the Nation Outcome Scale item 2 - non-accidental self injury (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-4",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-4",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#d5900b7ac63d6894"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:28.563+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 72069a7b-0421-11ec-1021-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 4 - cognitive problems (assessment scale) (281118009 - SNOMED CT)\">Health of the Nation Outcome Scale item 4 - cognitive problems (assessment scale)</span>\n            </td>\n            <td>0 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "72069a7b-0421-11ec-1021-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281118009",
+                            "display": "Health of the Nation Outcome Scale item 4 - cognitive problems (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 0,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-8",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-8",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#b6fc43735f531247"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:24.881+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 727784bb-0421-11ec-5876-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 8 - other mental/behavioral problems (assessment scale) (281122004 - SNOMED CT)\">Health of the Nation Outcome Scale item 8 - other mental/behavioral problems (assessment scale)</span>\n            </td>\n            <td>4 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "727784bb-0421-11ec-5876-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281122004",
+                            "display": "Health of the Nation Outcome Scale item 8 - other mental/behavioral problems (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-7",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-7",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#99d8de58cf28e0df"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:30.071+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 725c0d7b-0421-11ec-8323-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 7 - depressed mood (assessment scale) (281121006 - SNOMED CT)\">Health of the Nation Outcome Scale item 7 - depressed mood (assessment scale)</span>\n            </td>\n            <td>4 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "725c0d7b-0421-11ec-8323-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281121006",
+                            "display": "Health of the Nation Outcome Scale item 7 - depressed mood (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-6",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-6",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#98f1c3d2be4f8d78"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:31.937+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 723f5dbb-0421-11ec-9751-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 6 - hallucinations/delusions (assessment scale) (281120007 - SNOMED CT)\">Health of the Nation Outcome Scale item 6 - hallucinations/delusions (assessment scale)</span>\n            </td>\n            <td>0 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "723f5dbb-0421-11ec-9751-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281120007",
+                            "display": "Health of the Nation Outcome Scale item 6 - hallucinations/delusions (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 0,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-9",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-9",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#c71c6b031d3028cc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:27.132+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 72934a1b-0421-11ec-1317-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 9 - relationship problems (assessment scale) (281123009 - SNOMED CT)\">Health of the Nation Outcome Scale item 9 - relationship problems (assessment scale)</span>\n            </td>\n            <td>3 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "72934a1b-0421-11ec-1317-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281123009",
+                            "display": "Health of the Nation Outcome Scale item 9 - relationship problems (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 3,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-summated",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-summated",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#94789f2053f8bb02"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:25.966+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 72afd2cb-0421-11ec-1250-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale - summated (generic version) (assessment scale) (281113000 - SNOMED CT)\">Health of the Nation Outcome Scale - summated (generic version) (assessment scale)</span>\n            </td>\n            <td>24 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "72afd2cb-0421-11ec-1250-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281113000",
+                            "display": "Health of the Nation Outcome Scale - summated (generic version) (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 24,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-12",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-12",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#97059f0aca1b3efb"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:27.926+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 71b3234b-0421-11ec-1802-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcomes scale item 12 - occupation/activities (assessment scale) (281126001 - SNOMED CT)\">Health of the Nation Outcomes scale item 12 - occupation/activities (assessment scale)</span>\n            </td>\n            <td>1 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "71b3234b-0421-11ec-1802-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281126001",
+                            "display": "Health of the Nation Outcomes scale item 12 - occupation/activities (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 1,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-1",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-1",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#5d7be8f3b312fd23"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:21.683+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 7160485b-0421-11ec-1886-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 1 - aggressive/disruptive behavior (assessment scale) (281115007 - SNOMED CT)\">Health of the Nation Outcome Scale item 1 - aggressive/disruptive behavior (assessment scale)</span>\n            </td>\n            <td>4 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "7160485b-0421-11ec-1886-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281115007",
+                            "display": "Health of the Nation Outcome Scale item 1 - aggressive/disruptive behavior (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-5",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-5",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#8792d9b264fb89e5"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:20.398+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 7222fc1b-0421-11ec-1647-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 5 - physical illness/disability (assessment scale) (281119001 - SNOMED CT)\">Health of the Nation Outcome Scale item 5 - physical illness/disability (assessment scale)</span>\n            </td>\n            <td>1 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "7222fc1b-0421-11ec-1647-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281119001",
+                            "display": "Health of the Nation Outcome Scale item 5 - physical illness/disability (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 1,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-3",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-3",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7652398e63c0787d"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:21.007+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 71eb715b-0421-11ec-1177-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 3 - alcohol/drug problem (assessment scale) (281117004 - SNOMED CT)\">Health of the Nation Outcome Scale item 3 - alcohol/drug problem (assessment scale)</span>\n            </td>\n            <td>1 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "71eb715b-0421-11ec-1177-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281117004",
+                            "display": "Health of the Nation Outcome Scale item 3 - alcohol/drug problem (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 1,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-10",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-10",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6c3db092a22032ff"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:22.386+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 717c34cb-0421-11ec-8999-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale item 10 - activities of daily living (assessment scale) (281124003 - SNOMED CT)\">Health of the Nation Outcome Scale item 10 - activities of daily living (assessment scale)</span>\n            </td>\n            <td>2 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "717c34cb-0421-11ec-8999-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281124003",
+                            "display": "Health of the Nation Outcome Scale item 10 - activities of daily living (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 2,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-11",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-assessment-scale-item-11",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#722eaf6ca0308d63"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:31:23.425+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 7197ac0b-0421-11ec-1144-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome scale item 11 - living conditions (assessment scale) (281125002 - SNOMED CT)\">Health of the Nation Outcome scale item 11 - living conditions (assessment scale)</span>\n            </td>\n            <td>0 {score}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "7197ac0b-0421-11ec-1144-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281125002",
+                            "display": "Health of the Nation Outcome scale item 11 - living conditions (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "valueQuantity": {
+                    "value": 0,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-generalmeasurement-Assessment-scale",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-generalmeasurement-Assessment-scale",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#511f7586146e93ae"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:18.973+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 72cc828b-0421-11ec-6294-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"survey (survey - observation-category)\">survey</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2024-08-23</td>\n          </tr>\n          <tr>\n            <th>Gerelateerd</th>\n            <td>\n              <ul>\n                <li>has-member - Health of the Nation Outcome Scale item 1 - aggressive/disruptive behavior (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 2 - non-accidental self injury (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 3 - alcohol/drug problem (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 4 - cognitive problems (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 5 - physical illness/disability (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 6 - hallucinations/delusions (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 7 - depressed mood (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 8 - other mental/behavioral problems (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 9 - relationship problems (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale item 10 - activities of daily living (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome scale item 11 - living conditions (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcomes scale item 12 - occupation/activities (assessment scale)</li>\n                <li>has-member - Health of the Nation Outcome Scale - summated (generic version) (assessment scale)</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Health of the Nation Outcome Scale (generic version) (assessment scale) (273513009 - SNOMED CT)\">Health of the Nation Outcome Scale (generic version) (assessment scale)</span>\n            </td>\n            <td/>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "72cc828b-0421-11ec-6294-020000000000"
+                    }
+                ],
+                "status": "final",
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+                                        "code": "final",
+                                        "display": "Final"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey",
+                                "display": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "273513009",
+                            "display": "Health of the Nation Outcome Scale (generic version) (assessment scale)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "effectiveDateTime": "2024-08-23",
+                "related": [
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-1",
+                            "display": "Health of the Nation Outcome Scale item 1 - aggressive/disruptive behavior (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-2",
+                            "display": "Health of the Nation Outcome Scale item 2 - non-accidental self injury (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-3",
+                            "display": "Health of the Nation Outcome Scale item 3 - alcohol/drug problem (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-4",
+                            "display": "Health of the Nation Outcome Scale item 4 - cognitive problems (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-5",
+                            "display": "Health of the Nation Outcome Scale item 5 - physical illness/disability (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-6",
+                            "display": "Health of the Nation Outcome Scale item 6 - hallucinations/delusions (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-7",
+                            "display": "Health of the Nation Outcome Scale item 7 - depressed mood (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-8",
+                            "display": "Health of the Nation Outcome Scale item 8 - other mental/behavioral problems (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-9",
+                            "display": "Health of the Nation Outcome Scale item 9 - relationship problems (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-10",
+                            "display": "Health of the Nation Outcome Scale item 10 - activities of daily living (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-11",
+                            "display": "Health of the Nation Outcome scale item 11 - living conditions (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-item-12",
+                            "display": "Health of the Nation Outcomes scale item 12 - occupation/activities (assessment scale)"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-ggz-generalmeasurement-assessment-scale-summated",
+                            "display": "Health of the Nation Outcome Scale - summated (generic version) (assessment scale)"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

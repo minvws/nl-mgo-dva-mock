@@ -1,0 +1,498 @@
+{
+    "resourceType": "Bundle",
+    "id": "d2da6d62-f779-4821-957d-55a9849c8f28",
+    "meta": {
+        "lastUpdated": "2025-09-12T12:39:07.618+00:00"
+    },
+    "type": "searchset",
+    "total": 5,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation/$lastn?_include=Observation%3Arelated-target&_include=Observation%3Aspecimen&category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&patient=Patient%2Font-ver-XXX-Mutter"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-bglz-1-3-laboratoriumuitslag-observation-01",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-bglz-1-3-laboratoriumuitslag-observation-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#936020ce2e3db74c"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:07.094+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Id: 9b83e07b-e3e1-11eb-6595-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tfoot>\n          <tr>\n            <td colspan=\"4\">Volgens richtlijn herseninfarct: streven naar &lt;1,8mmol/L</td>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"3\">2025-02-18T15:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Interpretatie</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Cholesterol [mol/volume] in serum of plasma (14647-2 - LOINC)\">Cholesterol [mol/volume] in serum of plasma</span>\n            </td>\n            <td>5.5 mmol/L</td>\n            <td>\n              <span title=\"High (H - v2/0078)\">High</span>\n            </td>\n            <td>\n              <div> - 1.8 mmol/L</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9b83e07b-e3e1-11eb-6595-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "14647-2",
+                            "display": "Cholesterol [mol/volume] in serum of plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "effectiveDateTime": "2025-02-18T15:00:00+01:00",
+                "valueQuantity": {
+                    "value": 5.5,
+                    "unit": "mmol/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                },
+                "interpretation": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v2/0078",
+                            "code": "H",
+                            "display": "High"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281302008",
+                            "display": "Boven referentiewaarde"
+                        }
+                    ]
+                },
+                "comment": "Volgens richtlijn herseninfarct: streven naar <1,8mmol/L",
+                "referenceRange": [
+                    {
+                        "high": {
+                            "value": 1.8,
+                            "unit": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mmol/L"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-bglz-1-1-laboratoriumuitslag-observation-03",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-bglz-1-1-laboratoriumuitslag-observation-03",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#7920200c2f3465df"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:09.626+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Id: 8dd5fc1b-e3e1-11eb-4880-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"3\">2025-02-18T15:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Interpretatie</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Glucose^2 uur na maaltijd [massa/volume] in serum of plasma (1521-4 - LOINC)\">Glucose^2 uur na maaltijd [massa/volume] in serum of plasma</span>\n            </td>\n            <td>5.9 mg/dL</td>\n            <td>\n              <span title=\"High (H - v2/0078)\">High</span>\n            </td>\n            <td>\n              <div>3.5 mg/dL - 7.8 mg/dL</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8dd5fc1b-e3e1-11eb-4880-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "1521-4",
+                            "display": "Glucose^2 uur na maaltijd [massa/volume] in serum of plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "effectiveDateTime": "2025-02-18T15:00:00+01:00",
+                "valueQuantity": {
+                    "value": 5.9,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "interpretation": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v2/0078",
+                            "code": "H",
+                            "display": "High"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281302008",
+                            "display": "Boven referentiewaarde"
+                        }
+                    ]
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3.5,
+                            "unit": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/dL"
+                        },
+                        "high": {
+                            "value": 7.8,
+                            "unit": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/dL"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-bglz-1-1-laboratoriumuitslag-observation-02",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-bglz-1-1-laboratoriumuitslag-observation-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#783285c16c1e153e"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:06.784+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Id: 8d8b106b-e3e1-11eb-1324-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"2\">2025-02-18T15:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hematocriet [volumefractie] in bloed (20570-8 - LOINC)\">Hematocriet [volumefractie] in bloed</span>\n            </td>\n            <td>47 %</td>\n            <td>\n              <div>39 % - 51 %</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8d8b106b-e3e1-11eb-1324-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "20570-8",
+                            "display": "Hematocriet [volumefractie] in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "effectiveDateTime": "2025-02-18T15:00:00+01:00",
+                "valueQuantity": {
+                    "value": 47,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 39,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        },
+                        "high": {
+                            "value": 51,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-bglz-1-1-laboratoriumuitslag-panel-01",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-bglz-1-1-laboratoriumuitslag-panel-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#9f130cd469a14c1a"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:13.330+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Id: 8e6da83b-e3e1-11eb-7610-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td>2025-02-18T15:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Gerelateerd</th>\n            <td>\n              <ul>\n                <li>has-member - Hemoglobine</li>\n                <li>has-member - Hematocriet</li>\n              </ul>\n            </td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hemoglobine &amp; hematocriet panel in bloed (24360-0 - LOINC)\">Hemoglobine &amp; hematocriet panel in bloed</span>\n            </td>\n            <td/>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8e6da83b-e3e1-11eb-7610-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24360-0",
+                            "display": "Hemoglobine & hematocriet panel in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "effectiveDateTime": "2025-02-18T15:00:00+01:00",
+                "related": [
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-bglz-1-1-laboratoriumuitslag-observation-01",
+                            "display": "Hemoglobine"
+                        }
+                    },
+                    {
+                        "type": "has-member",
+                        "target": {
+                            "reference": "Observation/ont-ver-bglz-1-1-laboratoriumuitslag-observation-02",
+                            "display": "Hematocriet"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-bglz-1-1-laboratoriumuitslag-observation-01",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-bglz-1-1-laboratoriumuitslag-observation-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#2529ae462c3943cc"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:13.644+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Fiona XXX_Mutter. Id: 8d71bc0b-e3e1-11eb-1608-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)\">bevinding betreffende laboratoriumonderzoek</span>, <span title=\"Klinische chemie (275711006 - SNOMED CT)\">Klinische chemie</span>, Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Bepalingdatum/tijd</th>\n            <td colspan=\"3\">2025-02-18T15:00:00+01:00</td>\n          </tr>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n            <th>Interpretatie</th>\n            <th>Referentiewaarden</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Hemoglobine [massa/volume] in bloed (718-7 - LOINC)\">Hemoglobine [massa/volume] in bloed</span>\n            </td>\n            <td>11.0 g/dL</td>\n            <td>\n              <span title=\"Low (L - v2/0078)\">Low</span>\n            </td>\n            <td>\n              <div>12.0 g/dL - 16.0 g/dL</div>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8d71bc0b-e3e1-11eb-1608-020000000000"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "49581000146104",
+                                "display": "bevinding betreffende laboratoriumonderzoek"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "275711006",
+                                "display": "Klinische chemie"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "718-7",
+                            "display": "Hemoglobine [massa/volume] in bloed"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "effectiveDateTime": "2025-02-18T15:00:00+01:00",
+                "valueQuantity": {
+                    "value": 11.0,
+                    "unit": "g/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g/dL"
+                },
+                "interpretation": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/v2/0078",
+                            "code": "L",
+                            "display": "Low"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "281300000",
+                            "display": "Onder referentiewaarde"
+                        }
+                    ]
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 12.0,
+                            "unit": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "g/dL"
+                        },
+                        "high": {
+                            "value": 16.0,
+                            "unit": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "g/dL"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

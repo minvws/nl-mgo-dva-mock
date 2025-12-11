@@ -1,0 +1,14 @@
+{
+    "resourceType": "Bundle",
+    "id": "108a45a2-9119-4127-92ee-ecba10f2aad9",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:53.119+00:00"
+    },
+    "type": "searchset",
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C55801000146105&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "resourceType": "Bundle",
+    "id": "ffdb879b-1bd3-496f-8f6a-82735b0fb4d2",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:53.886+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/CarePlan?category=http%3A%2F%2Fsnomed.info%2Fsct%7C243114000&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CarePlan/ont-ver-ggz-helpfromothers-Mantelzorg",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "ont-ver-ggz-helpfromothers-Mantelzorg",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#228b1c9ac2b34708"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:16.982+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgplan. Subject: Adam XXX_Bals. Id: 72e75d8c-0421-11ec-1549-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Ondersteuning (regime/therapie) (243114000 - SNOMED CT)\">Ondersteuning (regime/therapie)</span>, Status: actief<span style=\"display: block;\">Intentie: plan</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"Mantelzorg (386229000 - SNOMED CT)\">Mantelzorg</span>, Status: is bezig</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>Mentale ondersteuning en dagbesteding</td>\n                          </tr>\n                          <tr>\n                            <th>Schema</th>\n                            <td>Dagelijks</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Wilma Lanen-XXX_Bals</td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "72e75d8c-0421-11ec-1549-020000000000"
+                    }
+                ],
+                "status": "active",
+                "intent": "plan",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "243114000",
+                                "display": "Ondersteuning (regime/therapie)"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "activity": [
+                    {
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "386229000",
+                                        "display": "Mantelzorg"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "text": "Mentale ondersteuning en dagbesteding"
+                            },
+                            "status": "in-progress",
+                            "scheduledString": "Dagelijks",
+                            "performer": [
+                                {
+                                    "reference": "RelatedPerson/ont-ver-ggz-nl-core-relatedperson-Lanen-XXX-Bals",
+                                    "display": "Wilma Lanen-XXX_Bals"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

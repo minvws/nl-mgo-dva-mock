@@ -33,7 +33,7 @@ RUN apt update && \
     vim
 
 RUN pip3 install --upgrade pip && \
-    pip3 install poetry==1.8.* --no-cache-dir
+    pip3 install poetry --no-cache-dir
 
 WORKDIR ${PROJECT_DIR}
 
@@ -42,12 +42,15 @@ FROM base AS builder
 COPY ./pyproject.toml ./poetry.lock ./
 RUN --mount=type=cache,target=${POETRY_CACHE_DIR} poetry install --no-root --no-interaction
 
-FROM base AS final
+FROM base
+
+ARG PYTHON_VERSION
 
 COPY --chown=${APP_USER}:${APP_GROUP} --from=builder /usr/local /usr/local
+RUN chown -R ${APP_USER}:${APP_GROUP} /usr/local/lib/python${PYTHON_VERSION}/site-packages
+COPY --chown=${APP_USER}:${APP_GROUP} docker/entrypoint.sh /var/run/entrypoint.sh
 COPY --chown=${APP_USER}:${APP_GROUP} . ${PROJECT_DIR}
 
-COPY --chown=${APP_USER}:${APP_GROUP} docker/entrypoint.sh /var/run/entrypoint.sh
 RUN chmod +x /var/run/entrypoint.sh
 
 USER ${APP_USER}

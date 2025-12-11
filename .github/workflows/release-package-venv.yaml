@@ -16,12 +16,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Build venv package
-        uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/python-venv-package@main
+        uses: minvws/action-python-venv-package@v1
         with:
           working_directory: './'
           python_version: ${{ matrix.python_version }}
           package_file_name: dva-mock
-          checkout_repository: 'false'

@@ -1,0 +1,85 @@
+{
+    "resourceType": "Bundle",
+    "id": "04d166b3-b77f-4ae7-99e9-0519f4ff4afc",
+    "meta": {
+        "lastUpdated": "2025-09-12T12:39:00.824+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107&patient=Patient%2Font-ver-XXX-Mutter"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Consent/ont-ver-bglz-1-1-wilsverklaring-01",
+            "resource": {
+                "resourceType": "Consent",
+                "id": "ont-ver-bglz-1-1-wilsverklaring-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#6be879207ed31f50"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:10.226+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Toestemming. Patiënt: Fiona XXX_Mutter. Id: 96b7d97b-e3e1-11eb-4371-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"levenstestament en wilsverklaring in dossier (11341000146107 - SNOMED CT)\">levenstestament en wilsverklaring in dossier</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<span style=\"display: block;\">Toestemminggevende partij: Robert Prins</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Gemaakt</th>\n            <td>2025-02-18</td>\n          </tr>\n          <tr>\n            <th>Toestemminggevende partij</th>\n            <td>\n              <ul>\n                <li>Robert Prins</li>\n              </ul>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "96b7d97b-e3e1-11eb-4371-020000000000"
+                },
+                "status": "active",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "11341000146107",
+                                "display": "levenstestament en wilsverklaring in dossier"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+                                "code": "NR",
+                                "display": "Niet reanimeren verklaring"
+                            }
+                        ]
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "dateTime": "2025-02-18",
+                "consentingParty": [
+                    {
+                        "reference": "RelatedPerson/ont-ver-bglz-1-1-contactpersoon-01",
+                        "display": "Robert Prins"
+                    }
+                ],
+                "policy": [
+                    {
+                        "uri": "http://wetten.overheid.nl/"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

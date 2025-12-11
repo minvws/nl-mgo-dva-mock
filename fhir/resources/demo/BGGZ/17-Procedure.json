@@ -1,0 +1,118 @@
+{
+    "resourceType": "Bundle",
+    "id": "14d775c9-9609-4b5c-a2a8-d82ef0ad2e80",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:54.898+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Procedure?patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Procedure/ont-ver-ggz-procedure-Afnemen-van-anamnese",
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "ont-ver-ggz-procedure-Afnemen-van-anamnese",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#ea20398c70c1ccb3"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:24.515+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Verrichting. Subject: Adam XXX-Bals. Id: 757fbbac-0421-11ec-8200-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"Evaluatie van geestelijke gezondheidszorg (verrichting) (410223002 - SNOMED CT)\">Evaluatie van geestelijke gezondheidszorg (verrichting)</span>, Status: voltooid<span style=\"display: block;\">Uitvoerende: Dr. Behandelend Psychiater uit Behandelend Ziekenhuis</span>\n          <span style=\"display: block;\">Uitvoerende: Behandelend Ziekenhuis</span>\n        </caption>\n        <tbody>\n          <tr>\n            <td>\n              <span title=\"Afnemen van anamnese (84100007 - SNOMED CT)\">Afnemen van anamnese</span>\n            </td>\n            <td>\n              <div>Uitgevoerd: 2024-08-22 - 2024-08-22</div>\n            </td>\n          </tr>\n          <tr>\n            <th>Gebaseerd op</th>\n            <td>Aanvraag voor afnemen van anamnese</td>\n          </tr>\n          <tr>\n            <th>Reden</th>\n            <td>Probleem: Depressieve-stoornis</td>\n          </tr>\n          <tr>\n            <th>Report</th>\n            <td>TekstUitslag eerste psychiatrische beoordeling</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "757fbbac-0421-11ec-8200-020000000000"
+                    }
+                ],
+                "basedOn": [
+                    {
+                        "reference": "ProcedureRequest/ont-ver-ggz-procedure-Aanvraag",
+                        "display": "Aanvraag voor afnemen van anamnese"
+                    }
+                ],
+                "status": "completed",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410223002",
+                            "display": "Evaluatie van geestelijke gezondheidszorg (verrichting)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "84100007",
+                            "display": "Afnemen van anamnese"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX-Bals"
+                },
+                "performedPeriod": {
+                    "start": "2024-08-22",
+                    "end": "2024-08-22"
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                    "valueReference": {
+                                        "reference": "PractitionerRole/ont-ver-ggz-nl-core-practitionerrole-Behandelend-Psychiater",
+                                        "display": "Dr. Behandelend Psychiater uit Behandelend Ziekenhuis"
+                                    }
+                                }
+                            ],
+                            "reference": "Practitioner/ont-ver-ggz-nl-core-practitioner-Behandelend-Psychiater",
+                            "display": "Dr. Behandelend Psychiater"
+                        }
+                    },
+                    {
+                        "actor": {
+                            "reference": "Organization/ont-ver-ggz-nl-core-organization-Ziekenhuis",
+                            "display": "Behandelend Ziekenhuis"
+                        }
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Condition/ont-ver-ggz-problem-Depressieve-stoornis",
+                        "display": "Probleem: Depressieve-stoornis"
+                    }
+                ],
+                "report": [
+                    {
+                        "reference": "DiagnosticReport/ont-ver-ggz-textresult-DiagnosticReport",
+                        "display": "TekstUitslag eerste psychiatrische beoordeling"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

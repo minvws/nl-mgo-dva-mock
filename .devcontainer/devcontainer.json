@@ -5,6 +5,13 @@
         "context": "../"
     },
     "remoteUser": "app",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/app/.gnupg,type=bind"
+    ],
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+    },
+    "postCreateCommand": "pre-commit install",
     "customizations": {
         "vscode": {
             "extensions": [

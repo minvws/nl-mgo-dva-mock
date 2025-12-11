@@ -55,6 +55,26 @@
                     }
                 ],
                 "status": "active",
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "9632001",
+                                "display": "verpleegkundige verrichting (verrichting)"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "238612002",
+                                "display": "gegeneraliseerde psoriasis pustulosa (aandoening)"
+                            }
+                        ]
+                    }
+                ],
                 "category": {
                     "coding": [
                         {

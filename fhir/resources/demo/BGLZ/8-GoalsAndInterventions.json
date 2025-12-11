@@ -1,0 +1,875 @@
+{
+    "resourceType": "Bundle",
+    "id": "f28bcf59-1f83-4f59-bbcd-6951ed97d3ba",
+    "meta": {
+        "lastUpdated": "2025-09-12T12:39:08.738+00:00"
+    },
+    "type": "searchset",
+    "total": 3,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/CarePlan?_include=CarePlan%3Aactivity-goal%3AGoal&_include=CarePlan%3Aactivity-outcomereference%3AObservation&_include=CarePlan%3Aactivity-medicaldevice%3ADeviceUseStatement&_include%3Arecurse=DeviceUseStatement%3Adevice%3ADevice&patient=Patient%2Font-ver-XXX-Mutter"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CarePlan/ont-ver-bglz-1-1-nl-core-careplan-02",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "ont-ver-bglz-1-1-nl-core-careplan-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#ef2fbacaf3606e3b"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:14.247+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-careplan"
+                    ]
+                },
+                "text": {
+                    "status": "additional",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table style=\"min-width: 50%; border: 1px solid black; cell-padding: 1em; cell-spacing: 1em;\">\n        <tr>\n          <th style=\"width: 30%; text-align: left;\">probleem</th>\n          <th style=\"width: 20%; text-align: left;\">behandeldoel</th>\n          <th style=\"width: 50%; text-align: left;\">interventie</th>\n        </tr>\n        <tr>\n          <td valign=\"top\">probleem met zichzelf wassen en afdrogen</td>\n          <td valign=\"top\">wassen onafhankelijk</td>\n          <td valign=\"top\">ondersteunen bij wassen en/of persoonlijke hygiëne <br/>1 x per dag</td>\n        </tr>\n        <tr>\n          <td valign=\"top\">probleem met zichzelf kleden </td>\n          <td valign=\"top\">kleden onafhankelijk</td>\n          <td valign=\"top\">ondersteunen bij aankleden <br/>2 x per dag</td>\n        </tr>\n        <tr>\n          <td valign=\"top\">probleem met lopen</td>\n          <td valign=\"top\">lopen met hulp</td>\n          <td valign=\"top\">patiënt mobiliseren</td>\n        </tr>\n        <tr>\n          <td valign=\"top\">risico op decubitus</td>\n          <td valign=\"top\">huid blijft intact</td>\n          <td valign=\"top\">wisselen van positie van patiënt </td>\n        </tr>\n        <tr>\n          <td valign=\"top\">overbelaste mantelzorg</td>\n          <td valign=\"top\">zorgtaken voor echtgenoot worden gecontinueerd</td>\n          <td valign=\"top\">ondersteuning voor verzorger</td>\n        </tr>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8f6fd5fb-e3e1-11eb-4723-020000000000"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CarePlan/ont-ver-bglz-1-3-nl-core-careplan-01",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "ont-ver-bglz-1-3-nl-core-careplan-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#9f5f9e05765c7146"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:03.006+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-careplan"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgplan. Subject: Fiona XXX_Mutter. Id: 9ea67d3b-e3e1-11eb-1837-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief<span style=\"display: block;\">Intentie: aanvraag</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Decubituswond is verbeterd van categorie 2 naar 1.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"Verpleegkundige verrichting (verrichting) (9632001 - SNOMED CT)\">Verpleegkundige verrichting (verrichting)</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"Aanleggen van verband op wond (182531007 - SNOMED CT)\">Aanleggen van verband op wond</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Schema</th>\n                            <td>\n                              <div>eenmalig per dag</div>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>decubitus</td>\n                          </tr>\n                          <tr>\n                            <th>Medisch hulpmiddel</th>\n                            <td>\n                              <div>schuimverband - hiel, Links</div>\n                              <div>huidvervangende wondbedekkers - hiel, Links</div>\n                            </td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9ea67d3b-e3e1-11eb-1837-020000000000"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "activity": [
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Decubituswond is verbeterd van categorie 2 naar 1."
+                            }
+                        ],
+                        "detail": {
+                            "extension": [
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice",
+                                    "valueReference": {
+                                        "reference": "DeviceUseStatement/ont-ver-bglz-1-3-medischhulpmiddel-01",
+                                        "display": "schuimverband - hiel, Links"
+                                    }
+                                },
+                                {
+                                    "url": "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice",
+                                    "valueReference": {
+                                        "reference": "DeviceUseStatement/ont-ver-bglz-1-3-medischhulpmiddel-02",
+                                        "display": "huidvervangende wondbedekkers - hiel, Links"
+                                    }
+                                }
+                            ],
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "Verpleegkundige verrichting (verrichting)"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "182531007",
+                                        "display": "Aanleggen van verband op wond"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-3-probleem-01",
+                                    "display": "decubitus"
+                                }
+                            ],
+                            "status": "completed",
+                            "scheduledTiming": {
+                                "repeat": {
+                                    "frequency": 1,
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/CarePlan/ont-ver-bglz-1-1-nl-core-careplan-01",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "ont-ver-bglz-1-1-nl-core-careplan-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#50c7885843366d6e"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:02.028+00:00",
+                    "profile": [
+                        "http://fhir.nl/fhir/StructureDefinition/nl-core-careplan"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Zorgplan. Subject: Fiona XXX_Mutter. Id: 8ee19fbb-e3e1-11eb-1379-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief<span style=\"display: block;\">Intentie: aanvraag</span>\n        </caption>\n        <tbody>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Wassen met hulp.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"verpleegkundige verrichting (9632001 - SNOMED CT)\">verpleegkundige verrichting</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"ondersteunen bij wassen en/of persoonlijke hygiëne (386420003 - SNOMED CT)\">ondersteunen bij wassen en/of persoonlijke hygiëne</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Schema</th>\n                            <td>\n                              <div>eenmalig per dag</div>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>probleem met zichzelf wassen en afdrogen</td>\n                          </tr>\n                          <tr>\n                            <th>Doel</th>\n                            <td>wassen onafhankelijk</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Petra Johanna Vreeswijk<div>Zorgverlenerrol: Verpleegkundige</div>\n                            </td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Kleden met hulp.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"verpleegkundige verrichting (9632001 - SNOMED CT)\">verpleegkundige verrichting</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"ondersteunen bij aankleden (313332003 - SNOMED CT)\">ondersteunen bij aankleden</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Schema</th>\n                            <td>\n                              <div>2 maal per dag</div>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>probleem met zichzelf kleden</td>\n                          </tr>\n                          <tr>\n                            <th>Doel</th>\n                            <td>kleden onafhankelijk</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Petra Johanna Vreeswijk</td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Lopen geheel afhankelijk.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"verpleegkundige verrichting (9632001 - SNOMED CT)\">verpleegkundige verrichting</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"patiënt mobiliseren (62013009 - SNOMED CT)\">patiënt mobiliseren</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>probleem met lopen</td>\n                          </tr>\n                          <tr>\n                            <th>Doel</th>\n                            <td>lopen met hulp</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Petra Johanna Vreeswijk</td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Huid is intact zonder decubitus wonden.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"verpleegkundige verrichting (9632001 - SNOMED CT)\">verpleegkundige verrichting</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"wisselen van positie van patiënt (225286008 - SNOMED CT)\">wisselen van positie van patiënt</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>risico op decubitus</td>\n                          </tr>\n                          <tr>\n                            <th>Doel</th>\n                            <td>huid blijft intact</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Petra Johanna Vreeswijk</td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n          <tr>\n            <th>Activiteit</th>\n            <td>\n              <table>\n                <tbody>\n                  <tr>\n                    <th>Resultaat</th>\n                    <td>Thuiszorg is aangevraagd voor continuering van zorgtaken en huishoudelijke hulp.</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"2\">\n                      <table>\n                        <caption>Details<span style=\"display: block;\">Categorie: <span title=\"verpleegkundige verrichting (9632001 - SNOMED CT)\">verpleegkundige verrichting</span>, Status: voltooid</span>\n                        </caption>\n                        <tbody>\n                          <tr>\n                            <th>Code</th>\n                            <td>\n                              <span title=\"ondersteuning voor verzorger (386229000 - SNOMED CT)\">ondersteuning voor verzorger</span>\n                            </td>\n                          </tr>\n                          <tr>\n                            <th>Reden</th>\n                            <td>overbelaste mantelzorg</td>\n                          </tr>\n                          <tr>\n                            <th>Doel</th>\n                            <td>zorgtaken voor echtgenoot worden gecontinueerd</td>\n                          </tr>\n                          <tr>\n                            <th>Uitvoerende</th>\n                            <td>Petra Johanna Vreeswijk</td>\n                          </tr>\n                        </tbody>\n                      </table>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8ee19fbb-e3e1-11eb-1379-020000000000"
+                    }
+                ],
+                "status": "active",
+                "intent": "order",
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "activity": [
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Wassen met hulp."
+                            }
+                        ],
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "verpleegkundige verrichting"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "386420003",
+                                        "display": "ondersteunen bij wassen en/of persoonlijke hygiëne"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-1-probleem-03",
+                                    "display": "probleem met zichzelf wassen en afdrogen"
+                                }
+                            ],
+                            "goal": [
+                                {
+                                    "reference": "Goal/ont-ver-bglz-1-1-behandeldoel-01",
+                                    "display": "wassen onafhankelijk"
+                                }
+                            ],
+                            "status": "completed",
+                            "scheduledTiming": {
+                                "repeat": {
+                                    "frequency": 1,
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            },
+                            "performer": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+                                            "valueReference": {
+                                                "reference": "PractitionerRole/ont-ver-bglz-1-1-zorgverlenerrol-03",
+                                                "display": "Verpleegkundige"
+                                            }
+                                        }
+                                    ],
+                                    "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                                    "display": "Petra Johanna Vreeswijk"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Kleden met hulp."
+                            }
+                        ],
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "verpleegkundige verrichting"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "313332003",
+                                        "display": "ondersteunen bij aankleden"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-1-probleem-04",
+                                    "display": "probleem met zichzelf kleden"
+                                }
+                            ],
+                            "goal": [
+                                {
+                                    "reference": "Goal/ont-ver-bglz-1-1-behandeldoel-02",
+                                    "display": "kleden onafhankelijk"
+                                }
+                            ],
+                            "status": "completed",
+                            "scheduledTiming": {
+                                "repeat": {
+                                    "frequency": 2,
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            },
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                                    "display": "Petra Johanna Vreeswijk"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Lopen geheel afhankelijk."
+                            }
+                        ],
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "verpleegkundige verrichting"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "62013009",
+                                        "display": "patiënt mobiliseren"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-1-probleem-05",
+                                    "display": "probleem met lopen"
+                                }
+                            ],
+                            "goal": [
+                                {
+                                    "reference": "Goal/ont-ver-bglz-1-1-behandeldoel-03",
+                                    "display": "lopen met hulp"
+                                }
+                            ],
+                            "status": "completed",
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                                    "display": "Petra Johanna Vreeswijk"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Huid is intact zonder decubitus wonden."
+                            }
+                        ],
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "verpleegkundige verrichting"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "225286008",
+                                        "display": "wisselen van positie van patiënt"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-1-probleem-07",
+                                    "display": "risico op decubitus"
+                                }
+                            ],
+                            "goal": [
+                                {
+                                    "reference": "Goal/ont-ver-bglz-1-1-behandeldoel-04",
+                                    "display": "huid blijft intact"
+                                }
+                            ],
+                            "status": "completed",
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                                    "display": "Petra Johanna Vreeswijk"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "outcomeCodeableConcept": [
+                            {
+                                "text": "Thuiszorg is aangevraagd voor continuering van zorgtaken en huishoudelijke hulp."
+                            }
+                        ],
+                        "detail": {
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "9632001",
+                                        "display": "verpleegkundige verrichting"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "386229000",
+                                        "display": "ondersteuning voor verzorger"
+                                    }
+                                ]
+                            },
+                            "reasonReference": [
+                                {
+                                    "reference": "Condition/ont-ver-bglz-1-1-probleem-08",
+                                    "display": "overbelaste mantelzorg"
+                                }
+                            ],
+                            "goal": [
+                                {
+                                    "reference": "Goal/ont-ver-bglz-1-1-behandeldoel-05",
+                                    "display": "zorgtaken voor echtgenoot worden gecontinueerd"
+                                }
+                            ],
+                            "status": "completed",
+                            "performer": [
+                                {
+                                    "reference": "Practitioner/ont-ver-bglz-1-1-zorgverlener-03",
+                                    "display": "Petra Johanna Vreeswijk"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/ont-ver-bglz-1-3-medischhulpmiddel-01",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "ont-ver-bglz-1-3-medischhulpmiddel-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#4738f3f2aae90929"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:02.704+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Beschrijving apparaatgebruik. Subject: Fiona XXX_Mutter. Id: 9cc735eb-e3e1-11eb-1533-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Apparaat/Systeem</th>\n            <td>schuimverband</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"Hiel (76853006 - SNOMED CT)\">Hiel</span>\n              <span title=\"Links (7771000 - SNOMED CT)\">Links</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9cc735eb-e3e1-11eb-1533-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "device": {
+                    "reference": "Device/ont-ver-bglz-1-3-medischhulpmiddelproduct-01",
+                    "display": "schuimverband"
+                },
+                "bodySite": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "7771000",
+                                        "display": "Links"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "76853006",
+                            "display": "Hiel"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/DeviceUseStatement/ont-ver-bglz-1-3-medischhulpmiddel-02",
+            "resource": {
+                "resourceType": "DeviceUseStatement",
+                "id": "ont-ver-bglz-1-3-medischhulpmiddel-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#ce05afd94add5687"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:17.249+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Beschrijving apparaatgebruik. Subject: Fiona XXX_Mutter. Id: 9d4147eb-e3e1-11eb-1249-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Apparaat/Systeem</th>\n            <td>huidvervangende wondbedekkers</td>\n          </tr>\n          <tr>\n            <th>Deel van lichaam</th>\n            <td>\n              <span title=\"Hiel (76853006 - SNOMED CT)\">Hiel</span>\n              <span title=\"Links (7771000 - SNOMED CT)\">Links</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9d4147eb-e3e1-11eb-1249-020000000000"
+                    }
+                ],
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                },
+                "device": {
+                    "reference": "Device/ont-ver-bglz-1-3-medischhulpmiddelproduct-02",
+                    "display": "huidvervangende wondbedekkers"
+                },
+                "bodySite": {
+                    "extension": [
+                        {
+                            "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "7771000",
+                                        "display": "Links"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "76853006",
+                            "display": "Hiel"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Goal/ont-ver-bglz-1-1-behandeldoel-03",
+            "resource": {
+                "resourceType": "Goal",
+                "id": "ont-ver-bglz-1-1-behandeldoel-03",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#969cfee244170f41"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:11.841+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Fiona XXX_Mutter. Id: 8c03ad1b-e3e1-11eb-1334-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>lopen met hulp</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8c03ad1b-e3e1-11eb-1334-020000000000"
+                    }
+                ],
+                "status": "accepted",
+                "description": {
+                    "text": "lopen met hulp"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Goal/ont-ver-bglz-1-1-behandeldoel-05",
+            "resource": {
+                "resourceType": "Goal",
+                "id": "ont-ver-bglz-1-1-behandeldoel-05",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#babee37b0958da83"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:15.477+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Fiona XXX_Mutter. Id: 8c7d49eb-e3e1-11eb-1969-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>zorgtaken voor echtgenoot worden gecontinueerd</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8c7d49eb-e3e1-11eb-1969-020000000000"
+                    }
+                ],
+                "status": "accepted",
+                "description": {
+                    "text": "zorgtaken voor echtgenoot worden gecontinueerd"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Goal/ont-ver-bglz-1-1-behandeldoel-04",
+            "resource": {
+                "resourceType": "Goal",
+                "id": "ont-ver-bglz-1-1-behandeldoel-04",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#90acb86d7584004a"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:12.705+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Fiona XXX_Mutter. Id: 8c6a371b-e3e1-11eb-2087-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>huid blijft intact</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8c6a371b-e3e1-11eb-2087-020000000000"
+                    }
+                ],
+                "status": "accepted",
+                "description": {
+                    "text": "huid blijft intact"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Goal/ont-ver-bglz-1-1-behandeldoel-02",
+            "resource": {
+                "resourceType": "Goal",
+                "id": "ont-ver-bglz-1-1-behandeldoel-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#346d27ea7035d3d6"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:15.173+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Fiona XXX_Mutter. Id: 8b99c7bb-e3e1-11eb-9409-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>kleden onafhankelijk</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8b99c7bb-e3e1-11eb-9409-020000000000"
+                    }
+                ],
+                "status": "accepted",
+                "description": {
+                    "text": "kleden onafhankelijk"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Goal/ont-ver-bglz-1-1-behandeldoel-01",
+            "resource": {
+                "resourceType": "Goal",
+                "id": "ont-ver-bglz-1-1-behandeldoel-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#df6360a5fd34d343"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:18.477+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Doel. Subject: Fiona XXX_Mutter. Id: 8b3a429b-e3e1-11eb-4135-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: geaccepteerd</caption>\n        <tbody>\n          <tr>\n            <th>Omschrijving</th>\n            <td>wassen onafhankelijk</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "8b3a429b-e3e1-11eb-4135-020000000000"
+                    }
+                ],
+                "status": "accepted",
+                "description": {
+                    "text": "wassen onafhankelijk"
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Device/ont-ver-bglz-1-3-medischhulpmiddelproduct-02",
+            "resource": {
+                "resourceType": "Device",
+                "id": "ont-ver-bglz-1-3-medischhulpmiddelproduct-02",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#0e82ed982987c020"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:35:10.552+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Apparaat/Systeem. Patiënt: Fiona XXX_Mutter. Id: 9e0d236b-e3e1-11eb-1248-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"adhesiestrip voor huidafdekking (465239008 - SNOMED CT)\">adhesiestrip voor huidafdekking</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9e0d236b-e3e1-11eb-1248-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "465239008",
+                            "display": "adhesiestrip voor huidafdekking"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Device/ont-ver-bglz-1-3-medischhulpmiddelproduct-01",
+            "resource": {
+                "resourceType": "Device",
+                "id": "ont-ver-bglz-1-3-medischhulpmiddelproduct-01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#eb704a08ee8db956"
+                        }
+                    ],
+                    "versionId": "2",
+                    "lastUpdated": "2025-02-18T10:35:04.624+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Apparaat/Systeem. Patiënt: Fiona XXX_Mutter. Id: 9d9c121b-e3e1-11eb-1873-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6)</caption>\n        <tbody>\n          <tr>\n            <th>Type</th>\n            <td>\n              <span title=\"schuimverband (448416005 - SNOMED CT)\">schuimverband</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "9d9c121b-e3e1-11eb-1873-020000000000"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "448416005",
+                            "display": "schuimverband"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Mutter",
+                    "display": "Fiona XXX_Mutter"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

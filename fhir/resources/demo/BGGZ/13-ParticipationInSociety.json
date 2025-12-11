@@ -1,0 +1,102 @@
+{
+    "resourceType": "Bundle",
+    "id": "d9beedfa-1f51-439b-9342-444f8f04559e",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:53.400+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C314845004&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Observation/ont-ver-ggz-participationinsociety-Softwareontwikkelaar",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ont-ver-ggz-participationinsociety-Softwareontwikkelaar",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#bb2f26f1f1ae1b85"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:23.774+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Observatie/bepaling. Subject: Adam XXX_Bals. Id: 75356c3c-0421-11ec-5451-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Status: definitief</caption>\n        <tbody>\n          <tr>\n            <th>Code</th>\n            <th>Waarde</th>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Status van participatie van patiënt (bevinding) (314845004 - SNOMED CT)\">Status van participatie van patiënt (bevinding)</span>\n            </td>\n            <td/>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Bevinding betreffende netwerk van gezin, familie en ondersteuners (bevinding) (365469004 - SNOMED CT)\">Bevinding betreffende netwerk van gezin, familie en ondersteuners (bevinding)</span>\n            </td>\n            <td>Hechte band met echtgenote en dochter, daarbuiten beperkt sociaal contact met collega's en buren. Geen contact meer met eigen familie (ouders, twee broers)</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Vrijetijdsgedrag (waarneembare entiteit) (405081003 - SNOMED CT)\">Vrijetijdsgedrag (waarneembare entiteit)</span>\n            </td>\n            <td>O.a. lezen en gitaar spelen maar komt hier wegens drukke baan weinig aan toe</td>\n          </tr>\n          <tr>\n            <td>\n              <span title=\"Arbeidssituatie (waarneembare entiteit) (364703007 - SNOMED CT)\">Arbeidssituatie (waarneembare entiteit)</span>\n            </td>\n            <td>Senior ICT software ontwikkelaar, stuurt team van 10 junior collega's aan als enige senior, ervaart hierdoor veel druk</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                        "value": "75356c3c-0421-11ec-5451-020000000000"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "314845004",
+                            "display": "Status van participatie van patiënt (bevinding)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "365469004",
+                                    "display": "Bevinding betreffende netwerk van gezin, familie en ondersteuners (bevinding)"
+                                }
+                            ]
+                        },
+                        "valueString": "Hechte band met echtgenote en dochter, daarbuiten beperkt sociaal contact met collega's en buren. Geen contact meer met eigen familie (ouders, twee broers)"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "405081003",
+                                    "display": "Vrijetijdsgedrag (waarneembare entiteit)"
+                                }
+                            ]
+                        },
+                        "valueString": "O.a. lezen en gitaar spelen maar komt hier wegens drukke baan weinig aan toe"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "364703007",
+                                    "display": "Arbeidssituatie (waarneembare entiteit)"
+                                }
+                            ]
+                        },
+                        "valueString": "Senior ICT software ontwikkelaar, stuurt team van 10 junior collega's aan als enige senior, ervaart hierdoor veel druk"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

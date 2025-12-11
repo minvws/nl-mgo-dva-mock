@@ -1,0 +1,125 @@
+{
+    "resourceType": "Bundle",
+    "id": "9f85e64c-b637-4b52-9af5-e0088f1b2392",
+    "meta": {
+        "lastUpdated": "2025-10-31T09:03:50.332+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "{{BASE_URL}}fhir/Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105&patient=Patient%2Font-ver-XXX-Bals"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "{{BASE_URL}}fhir/Consent/ont-ver-ggz-treatmentdirective-Behandeling-niet-toegestaan",
+            "resource": {
+                "resourceType": "Consent",
+                "id": "ont-ver-ggz-treatmentdirective-Behandeling-niet-toegestaan",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+                            "valueUri": "#61976a17a1b20233"
+                        }
+                    ],
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-18T10:31:22.044+00:00",
+                    "profile": [
+                        "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table>\n        <caption>Toestemming. Patiënt: Adam XXX_Bals. Id: 7616565c-0421-11ec-3277-020000000000 (urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6), Categorie: <span title=\"behandelaanwijzing (11291000146105 - SNOMED CT)\">behandelaanwijzing</span>, Status: actief</caption>\n        <tbody>\n          <tr>\n            <th>Geldigheidsperiode</th>\n            <td>Vanaf 2024-08-22</td>\n          </tr>\n          <tr>\n            <th>Geverifieerd</th>\n            <td>ja - 2024-08-16 - <span title=\"Patiënt (116154003 - SNOMED CT)\">Patiënt</span>\n            </td>\n          </tr>\n          <tr>\n            <th>\n              <span title=\"Toediening van een bloedproduct (116762002 - SNOMED CT)\">Toediening van een bloedproduct</span>\n            </th>\n            <td>\n              <span title=\"Behandeling niet toegestaan en/of wenselijk (NEE - 2.16.840.1.113883.2.4.3.11.60.40.4)\">Behandeling niet toegestaan en/of wenselijk</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Verification",
+                        "extension": [
+                            {
+                                "url": "Verified",
+                                "valueBoolean": true
+                            },
+                            {
+                                "url": "VerifiedWith",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "116154003",
+                                            "display": "Patiënt"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "VerificationDate",
+                                "valueDateTime": "2024-08-16"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "116762002",
+                                    "display": "Toediening van een bloedproduct"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "modifierExtension": [
+                    {
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4",
+                                    "code": "NEE",
+                                    "display": "Behandeling niet toegestaan en/of wenselijk"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6",
+                    "value": "7616565c-0421-11ec-3277-020000000000"
+                },
+                "status": "active",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "11291000146105",
+                                "display": "behandelaanwijzing"
+                            }
+                        ]
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/ont-ver-XXX-Bals",
+                    "display": "Adam XXX_Bals"
+                },
+                "period": {
+                    "start": "2024-08-22"
+                },
+                "policy": [
+                    {
+                        "uri": "http://wetten.overheid.nl/"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}
