@@ -40,7 +40,9 @@ WORKDIR ${PROJECT_DIR}
 FROM base AS builder
 
 COPY ./pyproject.toml ./poetry.lock ./
-RUN --mount=type=cache,target=${POETRY_CACHE_DIR} poetry install --no-root --no-interaction
+RUN --mount=type=cache,target=${POETRY_CACHE_DIR} \
+    poetry lock --no-interaction && \
+    poetry install --no-root --no-interaction
 
 FROM base
 

@@ -1,2 +1,6 @@
 /app.conf
 /.coverage
+*__pycache__/
+/.idea/
+*.pyc
+.DS_Store

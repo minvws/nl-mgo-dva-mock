@@ -11,6 +11,13 @@ from app.routers.resource_router import __handle_request
 from fhir.models import Resource
 
 
+def fhir_stu3_headers(medmij_request_id: str) -> dict[str, str]:
+    return {
+        "Accept": "application/fhir+json; fhirVersion=3.0",
+        "MedMij-Request-ID": medmij_request_id,
+    }
+
+
 @pytest.mark.parametrize(
     "endpoint",
     ["/99/fhir/Patient/nl-core-patient-01", "/99/fhir/Patient/nl-core-patient-01/"],
@@ -18,10 +25,11 @@ from fhir.models import Resource
 def test_show(
     endpoint: str,
     test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
     response = test_client.get(
         url=endpoint,
-        headers={"Accept": "application/fhir+json; fhirVersion=3.0"},
+        headers=fhir_stu3_headers(medmij_request_id),
     )
 
     assert response.status_code == 200
@@ -31,10 +39,11 @@ def test_show(
 
 def test_not_found(
     test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
     response = test_client.get(
         url="/99/fhir/NonExistentResource/123",
-        headers={"Accept": "application/fhir+json; fhirVersion=3.0"},
+        headers=fhir_stu3_headers(medmij_request_id),
     )
     assert response.status_code == 404
     assert response.json() == {
@@ -65,7 +74,10 @@ def test_list_resources(
         assert Resource(**item)
 
 
-def test_handle_request_with_valid_hcim_response(mocker: MockerFixture) -> None:
+def test_handle_request_with_valid_hcim_response(
+    mocker: MockerFixture,
+    medmij_request_id: str,
+) -> None:
     resource_path = "/valid/path/to/resource"
 
     hcim_service = mocker.patch.object(HCIMResourceMatcher, "match_resource")
@@ -97,6 +109,7 @@ def test_handle_request_with_valid_hcim_response(mocker: MockerFixture) -> None:
         "123",
         request,
         accept_header="application/fhir+json; fhirVersion=3.0",
+        medmij_request_id=medmij_request_id,
     )
 
     mock_open.assert_called_once_with(resource_path)
@@ -106,6 +119,7 @@ def test_handle_request_with_valid_hcim_response(mocker: MockerFixture) -> None:
 
 def test_handle_request_hcim_response_none_but_id_returns_response(
     mocker: MockerFixture,
+    medmij_request_id: str,
 ) -> None:
     hcim_service = mocker.patch.object(HCIMResourceMatcher, "match_resource")
     hcim_service.match_resource.return_value = None
@@ -133,6 +147,7 @@ def test_handle_request_hcim_response_none_but_id_returns_response(
         "123",
         request,
         accept_header="application/fhir+json; fhirVersion=3.0",
+        medmij_request_id=medmij_request_id,
     )
 
     assert response.body == b'{"id":"123","resourceType":"Patient"}'
@@ -141,6 +156,7 @@ def test_handle_request_hcim_response_none_but_id_returns_response(
 
 def test_handle_request_hcim_response_non_existing_path_returns_404(
     mocker: MockerFixture,
+    medmij_request_id: str,
 ) -> None:
     mock_match = mocker.Mock(spec=HCIMResourceMatch)
     mock_match.resource_path = "/non/existing/path"
@@ -168,15 +184,19 @@ def test_handle_request_hcim_response_non_existing_path_returns_404(
         "123",
         request,
         accept_header="application/fhir+json; fhirVersion=3.0",
+        medmij_request_id=medmij_request_id,
     )
 
     assert response.status_code == 404
 
 
-def test_no_id_no_hcim_match_returns_404(test_client: TestClient) -> None:
+def test_no_id_no_hcim_match_returns_404(
+    test_client: TestClient,
+    medmij_request_id: str,
+) -> None:
     response = test_client.get(
         url="/99/fhir/Patient",
-        headers={"Accept": "application/fhir+json; fhirVersion=3.0"},
+        headers=fhir_stu3_headers(medmij_request_id),
     )
 
     assert response.status_code == 404
@@ -210,21 +230,29 @@ def test_no_id_no_hcim_match_returns_404(test_client: TestClient) -> None:
     ],
 )
 def test_it_can_request_singular_resources(
-    test_client: TestClient, resource_file: str
+    test_client: TestClient,
+    resource_file: str,
+    medmij_request_id: str,
 ) -> None:
     str_path = resource_file.replace("fhir/resources/", "").replace(".json", "")
     response = test_client.get(
         url=f"/99/fhir/{str_path}",
-        headers={"Accept": "application/fhir+json; fhirVersion=3.0"},
+        headers=fhir_stu3_headers(medmij_request_id),
     )
 
     assert response.status_code == 200
 
 
-def test_invalid_format_header(test_client: TestClient) -> None:
+def test_invalid_format_header(
+    test_client: TestClient,
+    medmij_request_id: str,
+) -> None:
     response = test_client.get(
         "/48/fhir/NutritionOrder",
-        headers={"Accept": "application/json"},
+        headers={
+            "Accept": "application/json",
+            "MedMij-Request-ID": medmij_request_id,
+        },
     )
     assert response.status_code == 400
     assert response.json() == {
@@ -239,9 +267,13 @@ def test_invalid_format_header(test_client: TestClient) -> None:
     }
 
 
-def test_missing_format_header(test_client: TestClient) -> None:
+def test_missing_format_header(
+    test_client: TestClient,
+    medmij_request_id: str,
+) -> None:
     response = test_client.get(
         "/48/fhir/NutritionOrder",
+        headers={"MedMij-Request-ID": medmij_request_id},
     )
 
     assert response.status_code == 400
@@ -257,9 +289,13 @@ def test_missing_format_header(test_client: TestClient) -> None:
     }
 
 
-def test_www_authenticate_header_is_sent_on_error(test_client: TestClient) -> None:
+def test_www_authenticate_header_is_sent_on_error(
+    test_client: TestClient,
+    medmij_request_id: str,
+) -> None:
     response = test_client.get(
         "/48/fhir/NutritionOrder",
+        headers={"MedMij-Request-ID": medmij_request_id},
     )
 
     assert response.status_code == 400
@@ -269,24 +305,30 @@ def test_www_authenticate_header_is_sent_on_error(test_client: TestClient) -> No
     )
 
 
-@pytest.mark.parametrize(
-    "medmij_request_id",
-    [None, "123"],
-)
-def test_medmij_request_id_header_is_passed_on_if_exists(
-    test_client: TestClient, medmij_request_id: str | None
+def test_medmij_request_id_header_is_passed_on(
+    test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
-    headers = {"Accept": "application/fhir+json; fhirVersion=3.0"}
-    if medmij_request_id:
-        headers["MedMij-Request-ID"] = medmij_request_id
-
     response = test_client.get(
         "/48/fhir/NutritionOrder",
-        headers=headers,
+        headers={
+            "Accept": "application/fhir+json; fhirVersion=3.0",
+            "MedMij-Request-ID": medmij_request_id,
+        },
     )
 
     assert response.status_code == 200
-    if medmij_request_id:
-        assert response.headers.get("MedMij-Request-ID") == medmij_request_id
-    else:
-        assert response.headers.get("MedMij-Request-ID") is None
+    assert response.headers.get("MedMij-Request-ID") == medmij_request_id
+
+
+def test_it_returns_422_when_missing_medmij_request_id_header(
+    test_client: TestClient,
+) -> None:
+    response = test_client.get(
+        "/48/fhir/NutritionOrder",
+        headers={"Accept": "application/fhir+json; fhirVersion=3.0"},
+    )
+
+    assert response.status_code == 422
+    detail = response.json()["detail"]
+    assert detail[0]["loc"] == ["header", "MedMij-Request-ID"]

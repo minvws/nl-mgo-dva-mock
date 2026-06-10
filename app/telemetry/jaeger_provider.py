@@ -13,7 +13,7 @@ from app.config.models import TelemetryConfig
 from opentelemetry.sdk.trace.export import SpanExporter
 
 
-@inject.autoparams()
+@inject.autoparams("telemetry_config", "span_exporter")
 def setup_jaeger(
     app: FastAPI, telemetry_config: TelemetryConfig, span_exporter: SpanExporter
 ) -> None:

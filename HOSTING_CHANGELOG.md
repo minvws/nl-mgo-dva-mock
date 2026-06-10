@@ -2,6 +2,18 @@
 
 - ## NEXT FUTURE RELEASE
 
+- ### [0.13.1]
+
+  No changes required
+
+- ### [0.13.0]
+
+  #### Added
+
+  - `image_availability` section
+    - `serve_client_app`
+      - boolean (default: `false`) - enables serving the image availability test client via an endpoint.
+
 - ### [0.12.0]
 
   No changes required

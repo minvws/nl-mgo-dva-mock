@@ -13,9 +13,12 @@ from app.hcim.constants import (
     WWW_AUTHENTICATE_HEADER,
 )
 from app.hcim.factories import OperationOutcomeFactory
-from app.hcim.matchers import HCIMResourceMatch, HCIMResourceMatcher
+from app.hcim.matchers import (
+    FhirVersionAcceptHeaderMatcher,
+    HCIMResourceMatch,
+    HCIMResourceMatcher,
+)
 from app.hcim.schemas import Code, OperationOutcome, Severity
-from app.hcim.services import FhirVersionAcceptHeaderMatcher
 from app.path import resource_dir
 from app.utils import resolve_instance
 from fhir.models import Resource
@@ -31,19 +34,26 @@ def list_resources(
     return resource_scanner.scan()
 
 
-@router.get("/{dataservice_id:int}/fhir/{resource:str}/{id:str}")
-@router.get("/{dataservice_id:int}/fhir/{resource:str}/{id:str}/")
+@router.get("/{dataservice_id:int}/fhir/{resource:str}/{resource_id:str}")
+@router.get("/{dataservice_id:int}/fhir/{resource:str}/{resource_id:str}/")
 def show(
     dataservice_id: int,
     resource: str,
-    id: str,
+    resource_id: str,
     request: Request,
     config: AppConfig = resolve_instance(AppConfig),
     hcim_resource_matcher: HCIMResourceMatcher = resolve_instance(HCIMResourceMatcher),
     accept_header: str = Header(None, alias="Accept"),
+    medmij_request_id: str = Header(..., alias=MEDMIJ_REQUEST_ID_HEADER),
 ) -> JSONResponse:
     return __handle_request(
-        config, hcim_resource_matcher, resource, id, request, accept_header
+        config,
+        hcim_resource_matcher,
+        resource,
+        resource_id,
+        request,
+        accept_header,
+        medmij_request_id,
     )
 
 
@@ -56,9 +66,16 @@ def index(
     config: AppConfig = resolve_instance(AppConfig),
     hcim_resource_matcher: HCIMResourceMatcher = resolve_instance(HCIMResourceMatcher),
     accept_header: str = Header(None, alias="Accept"),
+    medmij_request_id: str = Header(..., alias=MEDMIJ_REQUEST_ID_HEADER),
 ) -> JSONResponse:
     return __handle_request(
-        config, hcim_resource_matcher, resource, None, request, accept_header
+        config,
+        hcim_resource_matcher,
+        resource,
+        None,
+        request,
+        accept_header,
+        medmij_request_id,
     )
 
 
@@ -66,14 +83,14 @@ def __handle_request(
     config: AppConfig,
     hcim_resource_matcher: HCIMResourceMatcher,
     resource: str,
-    id: str | None,
+    resource_id: str | None,
     request: Request,
     accept_header: str,
+    medmij_request_id: str,
 ) -> JSONResponse:
     tracer = trace.get_tracer(__name__)
     with tracer.start_as_current_span("matching_request_to_resource"):
         path_prefix = "demo" if config.use_demo_hcims else ""
-        medmij_request_id = request.headers.get(MEDMIJ_REQUEST_ID_HEADER)
 
         hcim_resource: HCIMResourceMatch | None = hcim_resource_matcher.match_resource(
             request
@@ -97,7 +114,7 @@ def __handle_request(
             )
 
         if hcim_resource is None:
-            if id is None:
+            if resource_id is None:
                 return __error_response(
                     OperationOutcomeFactory.with_issue(
                         severity=Severity.ERROR,
@@ -108,7 +125,9 @@ def __handle_request(
                     medmij_request_id=medmij_request_id,
                 )
             else:
-                resource_path = resource_dir(path_prefix, f"{resource}", f"{id}.json")
+                resource_path = resource_dir(
+                    path_prefix, f"{resource}", f"{resource_id}.json"
+                )
         else:
             resource_path = resource_dir(path_prefix, hcim_resource.resource_path)
 
@@ -116,10 +135,10 @@ def __handle_request(
             with open(resource_path) as file:
                 contents = file.read().replace("{{BASE_URL}}", config.base_url)
                 data = jsonable_encoder(json.loads(contents))
-                headers = headers = {"Content-Type": RESPONSE_CONTENT_TYPE_HEADER}
-
-                if medmij_request_id:
-                    headers[MEDMIJ_REQUEST_ID_HEADER] = medmij_request_id
+                headers = {
+                    "Content-Type": RESPONSE_CONTENT_TYPE_HEADER,
+                    MEDMIJ_REQUEST_ID_HEADER: medmij_request_id,
+                }
 
                 return JSONResponse(
                     content=data,
@@ -140,13 +159,13 @@ def __handle_request(
 def __error_response(
     operation_outcome: OperationOutcome,
     status_code: int,
-    medmij_request_id: str | None,
+    medmij_request_id: str,
     www_authenticate_error: str | None = None,
 ) -> JSONResponse:
-    headers = headers = {"Content-Type": RESPONSE_CONTENT_TYPE_HEADER}
-
-    if medmij_request_id:
-        headers[MEDMIJ_REQUEST_ID_HEADER] = medmij_request_id
+    headers = {
+        "Content-Type": RESPONSE_CONTENT_TYPE_HEADER,
+        MEDMIJ_REQUEST_ID_HEADER: medmij_request_id,
+    }
 
     if www_authenticate_error:
         headers[WWW_AUTHENTICATE_HEADER] = f"Bearer {www_authenticate_error}"

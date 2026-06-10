@@ -4,12 +4,23 @@
         "dockerfile": "../docker/Dockerfile",
         "context": "../"
     },
+    "containerEnv": {
+        "SSL_ENABLED": "false",
+        "PORT": "8000"
+    },
+    "overrideCommand": false,
+    "appPort": [
+        "8000:8000"
+    ],
+    "forwardPorts": [
+        8000
+    ],
     "remoteUser": "app",
     "mounts": [
         "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/app/.gnupg,type=bind"
     ],
     "features": {
-        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+        "ghcr.io/devcontainers-extra/features/pre-commit:2": {}
     },
     "postCreateCommand": "pre-commit install",
     "customizations": {

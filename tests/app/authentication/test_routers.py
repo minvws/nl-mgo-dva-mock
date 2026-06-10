@@ -13,12 +13,16 @@ from app.authentication.services import (
     AuthenticationMock,
     MedMijAuthCallbackUrlDirector,
 )
-from app.config.models import AppConfig, OAuthConfig
+from app.config.models import AppConfig, ImageAvailabilityConfig, OAuthConfig
 from app.main import create_app
 from tests.utils import clear_bindings, configure_bindings
 
 
-def test_authenticate_success(mocker: MockerFixture, test_client: TestClient) -> None:
+def test_authenticate_success(
+    mocker: MockerFixture,
+    test_client: TestClient,
+    medmij_request_id: str,
+) -> None:
     mock_builder: MedMijAuthCallbackUrlDirector = mocker.Mock(
         MedMijAuthCallbackUrlDirector
     )
@@ -42,7 +46,7 @@ def test_authenticate_success(mocker: MockerFixture, test_client: TestClient) ->
             "scope": "eenofanderezorgaanbieder",
             "state": "xyz",
             "X-Correlation-ID": "test_correlation_id",
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
         follow_redirects=False,
     )
@@ -56,7 +60,9 @@ def test_authenticate_success(mocker: MockerFixture, test_client: TestClient) ->
 
 
 def test_authenticate_failed_authentication(
-    mocker: MockerFixture, test_client: TestClient
+    mocker: MockerFixture,
+    test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
     mock_authenticator = mocker.Mock(AuthenticationMock)
     mock_authenticator.authenticate.side_effect = AuthorizationHttpException(
@@ -76,7 +82,7 @@ def test_authenticate_failed_authentication(
             "scope": "eenofanderezorgaanbieder",
             "state": "xyz",
             "X-Correlation-ID": "test_correlation_id",
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
         follow_redirects=False,
     )
@@ -90,7 +96,9 @@ def test_authenticate_failed_authentication(
 
 
 def test_authenticate_missing_correlation_id(
-    mocker: MockerFixture, test_client: TestClient
+    mocker: MockerFixture,
+    test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
     response: Response = test_client.get(
         "/auth",
@@ -98,7 +106,7 @@ def test_authenticate_missing_correlation_id(
             "redirect_uri": "http://example.com/callback",
             "scope": "eenofanderezorgaanbieder",
             "state": "xyz",
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
         follow_redirects=False,
     )
@@ -111,7 +119,9 @@ def test_authenticate_missing_correlation_id(
 
 
 def test_it_can_hand_out_access_tokens_for_authorization_code(
-    test_client: TestClient, mocker: MockerFixture
+    test_client: TestClient,
+    mocker: MockerFixture,
+    medmij_request_id: str,
 ) -> None:
     authorization_code = "abc-123"
     expected_acces_token = uuid.uuid4().hex
@@ -132,7 +142,7 @@ def test_it_can_hand_out_access_tokens_for_authorization_code(
         },
         headers={
             "X-Correlation-ID": "test_correlation_id",
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
     )
 
@@ -143,7 +153,9 @@ def test_it_can_hand_out_access_tokens_for_authorization_code(
 
 
 def test_it_can_hand_out_access_tokens_for_refresh_token_request(
-    test_client: TestClient, mocker: MockerFixture
+    test_client: TestClient,
+    mocker: MockerFixture,
+    medmij_request_id: str,
 ) -> None:
     refresh_token = "abc-123"
     expected_acces_token = uuid.uuid4().hex
@@ -163,7 +175,7 @@ def test_it_can_hand_out_access_tokens_for_refresh_token_request(
         },
         headers={
             "X-Correlation-ID": "test_correlation_id",
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
     )
 
@@ -179,6 +191,8 @@ def test_it_returns_a_404_on_token_endpoint_when_mock_oauth_false(
     config = mocker.Mock(spec=AppConfig)
     config.oauth = mocker.Mock(OAuthConfig)
     config.oauth.mock_oauth_servers = False
+    config.image_availability = mocker.Mock(spec=ImageAvailabilityConfig)
+    config.image_availability.serve_client_app = False
 
     configure_bindings(bindings_override=lambda binder: binder.bind(AppConfig, config))
     # Need to instantiate app after bindings are configured because router registration is based on bound config
@@ -200,6 +214,7 @@ def test_it_returns_a_404_on_token_endpoint_when_mock_oauth_false(
 
 def test_it_returns_422_when_missing_correlation_id_header(
     test_client: TestClient,
+    medmij_request_id: str,
 ) -> None:
     response: Response = test_client.post(
         "/token",
@@ -209,21 +224,17 @@ def test_it_returns_422_when_missing_correlation_id_header(
             "client_id": "random-client-id",
         },
         headers={
-            "MedMij-Request-ID": "test_medmij_id",
+            "MedMij-Request-ID": medmij_request_id,
         },
     )
 
     assert response.status_code == 422
-    assert response.json() == {
-        "detail": [
-            {
-                "type": "missing",
-                "loc": ["header", "X-Correlation-ID"],
-                "msg": "Field required",
-                "input": None,
-            }
-        ]
-    }
+    detail = response.json()["detail"]
+    assert len(detail) == 1
+    assert detail[0]["type"] == "missing"
+    assert detail[0]["loc"] == ["header", "X-Correlation-ID"]
+    assert detail[0]["msg"] == "Field required"
+    assert detail[0]["input"] is None
 
 
 def test_it_returns_422_when_missing_medmij_request_id_header(
@@ -242,13 +253,9 @@ def test_it_returns_422_when_missing_medmij_request_id_header(
     )
 
     assert response.status_code == 422
-    assert response.json() == {
-        "detail": [
-            {
-                "type": "missing",
-                "loc": ["header", "MedMij-Request-ID"],
-                "msg": "Field required",
-                "input": None,
-            }
-        ]
-    }
+    detail = response.json()["detail"]
+    assert len(detail) == 1
+    assert detail[0]["type"] == "missing"
+    assert detail[0]["loc"] == ["header", "MedMij-Request-ID"]
+    assert detail[0]["msg"] == "Field required"
+    assert detail[0]["input"] is None

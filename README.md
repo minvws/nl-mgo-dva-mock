@@ -34,6 +34,19 @@ data is exposed via several fixed endpoints as specified by MedMij. For example,
 the "BgZ" dataservice implements to following specification:
 [MedMij FHIR Implementation Guide: BgZ 3.1.26](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/FHIR_BGZ_2017).
 
+### Run locally with devcontainer
+
+This project includes a [devcontainer](./.devcontainer/devcontainer.json)
+configuration for VS Code. Open the project in VS Code and use
+**Reopen in Container** to start the development environment. The mock will be
+available at `http://localhost:8000`.
+
+Before starting, copy the example configuration:
+
+```bash
+cp app.conf.example app.conf
+```
+
 To inspect the full list of endpoints (and in some cases their required URL
 parameters), refer to [endpoints.json](./app/hcim/endpoints.json).
 
@@ -41,8 +54,9 @@ parameters), refer to [endpoints.json](./app/hcim/endpoints.json).
 
 | Dataservice ID | Dataservice name                                       | Implemented in DVA Mock (Y/N) |
 | -------------- | ------------------------------------------------------ | ----------------------------- |
+| 9000002        | Beeldbeschikbaarheid 1.0.0-beta                        | Y                             |
 | 65             | Verzamelen Integrale Zwangerschapskaart 1.0            | N                             |
-| 63             | Verzamelen Vaccinaties 1.0                             | N                             |
+| 66             | Verzamelen Vaccinaties 2.0                             | Y                             |
 | 61             | Verzamelen Basisgegevens Langdurige Zorg 3.0           | N                             |
 | 59             | Verzamelen Verwijzing naar vragenlijst 2.0             | N                             |
 | 58             | Verzamelen Medicatiegerelateerde Overgevoeligheden 2.A | N                             |

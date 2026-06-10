@@ -21,9 +21,14 @@ class OAuthConfig(BaseModel):
     mock_oauth_servers: bool = False
 
 
+class ImageAvailabilityConfig(BaseModel):
+    serve_client_app: bool = False
+
+
 class AppConfig(BaseModel):
     base_url: str = "http://localhost:8000"
     use_demo_hcims: bool = False
     telemetry: TelemetryConfig
     logging: LoggingConfig = LoggingConfig()
     oauth: OAuthConfig
+    image_availability: ImageAvailabilityConfig = ImageAvailabilityConfig()

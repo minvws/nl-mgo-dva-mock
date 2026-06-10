@@ -9,23 +9,26 @@ packages = [{ include = "app" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-uvicorn = "^0.38.0"
-fastapi = "^0.121"
-mypy = "^1.18"
-requests = "^2.32"
+uvicorn = ">=0.42,<0.45"
+fastapi = ">=0.135,<0.137"
+mypy = "^1.19"
+requests = "^2.33"
 opentelemetry-instrumentation-fastapi = "v0.49b0"
 opentelemetry-exporter-otlp = "^1.27.0"
 opentelemetry-api = "^1.27.0"
 opentelemetry-sdk = "^1.27.0"
 inject = "^5.3.0"
+numpy = "^2.3.4"
+pillow = "^12.0.0"
+pydicom = "^3.0.1"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^9.0.1"
-pytest-cov = "^7.0.0"
+pytest = "^9.0.3"
+pytest-cov = "^7.1.0"
 httpx = "^0.28.1"
-ruff = "^0.14"
-faker = "^38.2"
-codespell = "^2.4.1"
+ruff = "^0.15"
+faker = "^40.13"
+codespell = "^2.4.2"
 pytest-mock = "^3.15.1"
 
 [build-system]
@@ -63,5 +66,9 @@ testpaths = [
 skip = [
     "./certs/*",
     "./static/*.js",
+    "./static/bbs-client/app.js",
+    "./static/bbs-client/index.html",
+    "./static/bbs-client/styles.css",
     "./fhir/resources/*",
+    "./temp/*"
 ]

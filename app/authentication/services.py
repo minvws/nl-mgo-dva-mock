@@ -41,7 +41,7 @@ class UrlBuilder:
 
 
 class MedMijAuthCallbackUrlDirector:
-    @inject.autoparams()
+    @inject.autoparams("builder")
     def __init__(self, builder: UrlBuilder) -> None:
         self._builder: UrlBuilder = builder
 

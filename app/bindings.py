@@ -1,17 +1,20 @@
-from opentelemetry.sdk.trace.export import SpanExporter
-from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import (
-    OTLPSpanExporter as OTLPSpanExporterGRPC,
-)
 import configparser
 import logging
 import logging.config
 
 import inject
 from inject import Binder
+from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import (
+    OTLPSpanExporter as OTLPSpanExporterGRPC,
+)
+from opentelemetry.sdk.trace.export import SpanExporter
 
+from app.binary.repositories import BinaryFileRepository, BinaryRepository
+from app.binary.services import BinaryRouteResolver
 from app.config.models import AppConfig, InjectableConfig
 from app.config.services import ConfigParser
 from app.hcim.matchers import HCIMResourceMatcher
+from app.health.services import HealthService, TelemetryHealthChecker
 from app.path import project_root, resource_dir
 from app.utils import root_path
 from app.version.models import VersionInfo
@@ -30,7 +33,9 @@ def configure_bindings(binder: Binder, config_file: str) -> None:
     __bind_sub_configs(binder, app_config, logger)
     __bind_resource_scanner(binder)
     __bind_hcim_resource_matcher(binder)
+    __bind_binary_services(binder, app_config)
     __bind_span_processor(binder, app_config)
+    __bind_health_service(binder, app_config)
     binder.bind(VersionInfo, read_version_info())
 
 
@@ -135,10 +140,32 @@ def __bind_hcim_resource_matcher(binder: Binder) -> None:
     )
 
 
+def __bind_binary_services(binder: Binder, app_config: AppConfig) -> None:
+    binder.bind_to_constructor(
+        BinaryRepository, lambda: BinaryFileRepository(app_config.base_url)
+    )
+
+    binder.bind_to_constructor(
+        BinaryRouteResolver,
+        lambda: BinaryRouteResolver(
+            use_demo_hcims=app_config.use_demo_hcims,
+        ),
+    )
+
+
 def __bind_span_processor(binder: Binder, app_config: AppConfig) -> None:
     binder.bind(
         SpanExporter,
         OTLPSpanExporterGRPC(
             endpoint=app_config.telemetry.collector_grpc_url, insecure=True
+        ),
+    )
+
+
+def __bind_health_service(binder: Binder, app_config: AppConfig) -> None:
+    binder.bind_to_constructor(
+        HealthService,
+        lambda: HealthService(
+            checkers=[TelemetryHealthChecker(app_config.telemetry)],
         ),
     )

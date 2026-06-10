@@ -23,3 +23,8 @@ def test_client() -> Generator[TestClient, None, None]:
 @pytest.fixture()
 def faker() -> Faker:
     return Faker()
+
+
+@pytest.fixture()
+def medmij_request_id(faker: Faker) -> str:
+    return faker.uuid4()

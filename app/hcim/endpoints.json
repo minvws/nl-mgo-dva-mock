@@ -562,12 +562,16 @@
             }
         ]
     },
-    "/63/fhir/Immunization": {
+    "/66/fhir/Immunization": {
         "data_service": "Vaccination-Immunization",
         "matches": [
             {
                 "fhir_version": "4.0",
-                "required_params": [],
+                "required_params": [
+                    "_include=Immunization:patient",
+                    "_include=Immunization:location",
+                    "_include=Immunization:performer"
+                ],
                 "resource_path": "Vaccination-Immunization/1-Immunization.json"
             }
         ]
@@ -858,6 +862,54 @@
                     "_include=CareTeam:participant"
                 ],
                 "resource_path": "BGGZ/19-CareTeam.json"
+            }
+        ]
+    },
+    "/9000002/fhir/DocumentReference": {
+        "data_service": "ImageAvailability",
+        "matches": [
+            {
+                "fhir_version": "4.0",
+                "required_params": [
+                    "status=current",
+                    "contenttype=application/pdf"
+                ],
+                "resource_path": "ImageAvailability/DocumentReference-search-current-pdf.json"
+            },
+            {
+                "fhir_version": "4.0",
+                "required_params": [
+                    "status=current",
+                    "contenttype=application/dicom"
+                ],
+                "resource_path": "ImageAvailability/DocumentReference-search-current-dicom.json"
+            },
+            {
+                "fhir_version": "4.0",
+                "required_params": [
+                    "status=current"
+                ],
+                "resource_path": "ImageAvailability/DocumentReference-search-current.json"
+            }
+        ]
+    },
+    "/9000002/fhir/DocumentReference/ia-doc-report-01": {
+        "data_service": "ImageAvailability",
+        "matches": [
+            {
+                "fhir_version": "4.0",
+                "required_params": [],
+                "resource_path": "ImageAvailability/DocumentReference-ia-doc-report-01.json"
+            }
+        ]
+    },
+    "/9000002/fhir/Binary/ia-report-01": {
+        "data_service": "ImageAvailability",
+        "matches": [
+            {
+                "fhir_version": "4.0",
+                "required_params": [],
+                "resource_path": "ImageAvailability/Binary-ia-report-01.json"
             }
         ]
     }

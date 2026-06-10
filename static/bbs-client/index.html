@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beeldbeschikbaarheid Testscherm</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero panel">
+        <div class="hero-main">
+          <p class="eyebrow">nl-mgo-dva-mock</p>
+          <h1>Beeldbeschikbaarheid Testscherm</h1>
+          <p class="hero-copy">
+            Dit scherm volgt de praktische testflow voor beeldbeschikbaarheid:
+            eerst de FHIR zoekactie op <code>DocumentReference</code>, daarna de
+            WADO-study en series metadata, en tenslotte de ruwe DICOM- of
+            JPEG-responsen.
+          </p>
+          <div class="hero-meta">
+            <span id="connection-badge" class="status-badge pending">
+              Verbinding nog niet gecontroleerd
+            </span>
+            <span id="workflow-badge" class="status-badge neutral">
+              Voorbeelddata nog niet geladen
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button id="load-samples-button" class="primary">
+            Voorbeelddata opnieuw laden
+          </button>
+          <button id="clear-log-button" class="ghost">Requestlog wissen</button>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="panel controls-panel">
+          <div class="panel-heading">
+            <h2>1. Verbinding en start</h2>
+            <p class="section-copy">
+              Normaal hoef je hier alleen te controleren of de mock op de juiste
+              URL staat. Het scherm probeert bij openen direct de standaard
+              beeldbeschikbaarheid-voorbeelden op te halen.
+            </p>
+          </div>
+
+          <label class="field">
+            <span>Mock base URL</span>
+            <input
+              id="base-url-input"
+              type="url"
+              value="http://localhost:8000"
+              spellcheck="false"
+            />
+          </label>
+
+          <label class="field">
+            <span>FHIR zoekpad voor beeldstudies</span>
+            <input
+              id="search-path-input"
+              type="text"
+              value="/9000002/fhir/DocumentReference?status=current&contenttype=application/dicom"
+              spellcheck="false"
+            />
+          </label>
+
+          <label class="field">
+            <span>MedMij Request ID</span>
+            <input
+              id="request-id-input"
+              type="text"
+              value="beeldbeschikbaarheid-test"
+              spellcheck="false"
+            />
+          </label>
+
+          <label class="field">
+            <span>Accept overschrijven</span>
+            <input
+              id="accept-input"
+              type="text"
+              value=""
+              placeholder="Alleen nodig voor handmatige varianten"
+              spellcheck="false"
+            />
+          </label>
+
+          <div class="quick-actions">
+            <button id="probe-health-button" class="secondary">
+              Controleer /health
+            </button>
+            <button id="probe-openapi-button" class="secondary">
+              Controleer /openapi.json
+            </button>
+          </div>
+
+          <article class="guide-card">
+            <h3>Wat je hier test</h3>
+            <ol class="step-list">
+              <li>
+                De FHIR zoekactie die beschikbare beeldstudies als
+                <code>DocumentReference</code> teruggeeft.
+              </li>
+              <li>
+                De WADO study- en series-endpoints die laten zien welke beelden
+                en instances beschikbaar zijn.
+              </li>
+              <li>
+                De uiteindelijke representaties: DICOM JSON, KOS manifest,
+                multipart DICOM en gerenderde JPEG.
+              </li>
+            </ol>
+          </article>
+
+          <article class="hint-card">
+            <p class="hint-title">Als je geen data ziet</p>
+            <p id="helper-message" class="helper-message">
+              Het scherm probeert automatisch de voorbeeldstudies te laden. Als
+              dat niet lukt, controleer dan de mock URL hierboven en klik daarna
+              op <strong>Voorbeelddata opnieuw laden</strong>.
+            </p>
+            <ul class="hint-list">
+              <li>
+                De FHIR zoekactie gebruikt automatisch
+                <code>application/fhir+json; fhirVersion=4.0</code>.
+              </li>
+              <li>
+                WADO metadata gebruikt <code>application/dicom+json</code>.
+              </li>
+              <li>
+                De JPEG preview vraagt expliciet <code>image/jpeg</code> op.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="panel studies-panel">
+          <div class="panel-heading">
+            <div class="panel-header">
+              <h2>2. Beschikbare onderzoeken</h2>
+              <span id="studies-summary" class="summary">Nog niet geladen</span>
+            </div>
+            <p class="section-copy">
+              Deze lijst komt uit de beeldbeschikbaarheid zoekactie op
+              <code>DocumentReference</code> voor DICOM-content.
+            </p>
+          </div>
+          <div id="studies-list" class="list"></div>
+        </section>
+
+        <section class="panel explorer-panel">
+          <div class="panel-heading">
+            <div class="panel-header">
+              <h2>3. Series en beelden</h2>
+              <span id="selection-summary" class="summary">
+                Nog geen onderzoek geselecteerd
+              </span>
+            </div>
+            <p class="section-copy">
+              Na selectie van een onderzoek worden series en instances
+              automatisch opgehaald. Gebruik daarna de knoppen hieronder om de
+              verschillende study- en series-responsen te testen.
+            </p>
+          </div>
+
+          <div id="selection-actions" class="selection-actions" hidden>
+            <button id="study-json-button" class="secondary">
+              Study metadata JSON
+            </button>
+            <button id="study-kos-button" class="secondary">
+              KOS manifest DICOM
+            </button>
+            <button id="study-multipart-button" class="secondary">
+              Volledige study multipart
+            </button>
+          </div>
+
+          <p id="selection-note" class="selection-note">
+            Kies een onderzoek. Daarna verschijnen hier de series en de
+            individuele beelden.
+          </p>
+
+          <div id="series-list" class="series-list empty-state">
+            Nog geen onderzoek geselecteerd.
+          </div>
+        </section>
+      </main>
+
+      <section class="workspace">
+        <section class="panel inspector-panel">
+          <div class="panel-heading">
+            <div class="panel-header">
+              <h2>Laatste server-respons</h2>
+              <span id="response-summary" class="summary">
+                Nog geen testactie uitgevoerd
+              </span>
+            </div>
+            <p class="section-copy">
+              Hier zie je precies wat de mockserver terugstuurt voor de laatste
+              testactie: het pad, de statuscode, headers en een leesbare preview
+              van de body.
+            </p>
+          </div>
+
+          <div id="request-meta" class="meta-grid"></div>
+
+          <div class="response-grid">
+            <article class="subpanel">
+              <h3>Headers</h3>
+              <pre id="headers-output" class="code-block muted">
+Nog geen respons.</pre
+              >
+            </article>
+            <article class="subpanel">
+              <h3>Body / voorbeeld</h3>
+              <pre id="body-output" class="code-block muted">
+Nog geen respons.</pre
+              >
+            </article>
+          </div>
+        </section>
+
+        <section class="panel preview-panel">
+          <div class="panel-heading">
+            <div class="panel-header">
+              <h2>Gerenderde afbeelding</h2>
+              <span id="preview-summary" class="summary">
+                Nog geen preview geladen
+              </span>
+            </div>
+            <p class="section-copy">
+              Deze weergave gebruikt het rendered endpoint en laat zien of de
+              instance succesvol als JPEG gerenderd kan worden.
+            </p>
+          </div>
+
+          <div id="preview-card" class="preview-card empty-state">
+            Kies een instance en klik op <strong>JPEG preview</strong>.
+          </div>
+        </section>
+      </section>
+
+      <section class="panel request-log-panel">
+        <div class="panel-heading">
+          <div class="panel-header">
+            <h2>Uitgevoerde testacties</h2>
+            <span id="log-summary" class="summary">0 acties</span>
+          </div>
+          <p class="section-copy">
+            Alleen expliciete testacties van jou worden hier gelogd. Automatische
+            achtergrondverrijking van series blijft buiten dit overzicht.
+          </p>
+        </div>
+        <div id="request-log" class="log-list empty-state">
+          Nog geen testacties uitgevoerd.
+        </div>
+      </section>
+    </div>
+
+    <template id="study-card-template">
+      <article class="study-card">
+        <div class="study-card-header">
+          <div>
+            <p class="study-badge"></p>
+            <h3 class="study-title"></h3>
+          </div>
+          <button class="study-select-button primary small">
+            Open onderzoek
+          </button>
+        </div>
+        <p class="study-meta"></p>
+        <dl class="study-details"></dl>
+      </article>
+    </template>
+
+    <template id="series-card-template">
+      <article class="series-card">
+        <div class="series-card-header">
+          <div>
+            <p class="series-label"></p>
+            <h3 class="series-title"></h3>
+          </div>
+          <div class="series-actions">
+            <button class="series-json-button secondary small">
+              Series metadata
+            </button>
+            <button class="series-multipart-button secondary small">
+              Series multipart
+            </button>
+          </div>
+        </div>
+        <p class="series-meta"></p>
+        <div class="instance-list"></div>
+      </article>
+    </template>
+
+    <template id="instance-row-template">
+      <div class="instance-row">
+        <div class="instance-copy">
+          <p class="instance-title"></p>
+          <p class="instance-meta"></p>
+        </div>
+        <div class="instance-actions">
+          <button class="instance-dicom-button secondary small">
+            Instance DICOM
+          </button>
+          <button class="instance-preview-button primary small">
+            JPEG preview
+          </button>
+        </div>
+      </div>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

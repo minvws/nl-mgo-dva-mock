@@ -12,3 +12,6 @@ collector_grpc_url=http://jaeger:4317
 
 [oauth]
 ;mock_oauth_servers = False
+
+;[image_availability]
+;serve_client_app =
